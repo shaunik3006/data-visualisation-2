@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 750,
+  "height": 400,
+  "background": "#ffffff",
+  "config": {"view": {"stroke": null}},
+  "data": {
+    "values": [
+      {"category": "Employer Sponsored", "group": "Female", "pct": 38},
+      {"category": "Employer Sponsored", "group": "Male", "pct": 62},
+      {"category": "State/Territory Nominated", "group": "Female", "pct": 45},
+      {"category": "State/Territory Nominated", "group": "Male", "pct": 55},
+      {"category": "Skilled Independent", "group": "Female", "pct": 41},
+      {"category": "Skilled Independent", "group": "Male", "pct": 59},
+      {"category": "Regional", "group": "Female", "pct": 50},
+      {"category": "Regional", "group": "Male", "pct": 50},
+      {"category": "Global Talent", "group": "Female", "pct": 33},
+      {"category": "Global Talent", "group": "Male", "pct": 67},
+      {"category": "Business Innovation", "group": "Female", "pct": 28},
+      {"category": "Business Innovation", "group": "Male", "pct": 72},
+      {"category": "Partner (Family)", "group": "Female", "pct": 62},
+      {"category": "Partner (Family)", "group": "Male", "pct": 38},
+      {"category": "Child", "group": "Female", "pct": 49},
+      {"category": "Child", "group": "Male", "pct": 51}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2, "color": "#e2e8f0"},
+      "encoding": {
+        "y": {
+          "field": "category",
+          "type": "nominal",
+          "sort": ["Employer Sponsored", "State/Territory Nominated", "Skilled Independent", "Regional", "Global Talent", "Business Innovation", "Partner (Family)", "Child"],
+          "axis": {"title": null, "labelFontSize": 11}
+        },
+        "x": {
+          "field": "pct",
+          "type": "quantitative",
+          "axis": {
+            "title": "Share (%)",
+            "gridColor": "#f0f0f0"
+          }
+        },
+        "detail": {"field": "category"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 120, "opacity": 1},
+      "encoding": {
+        "y": {
+          "field": "category",
+          "type": "nominal",
+          "sort": ["Employer Sponsored", "State/Territory Nominated", "Skilled Independent", "Regional", "Global Talent", "Business Innovation", "Partner (Family)", "Child"],
+          "axis": {"title": null, "labelFontSize": 11}
+        },
+        "x": {
+          "field": "pct",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Female", "Male"],
+            "range": ["#ec4899", "#2563eb"]
+          },
+          "legend": {"title": "Gender", "orient": "top-right"}
+        },
+        "tooltip": [
+          {"field": "category", "title": "Visa Category"},
+          {"field": "group", "title": "Gender"},
+          {"field": "pct", "title": "Share (%)", "format": ".0f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 4],
+        "color": "#94a3b8",
+        "strokeWidth": 1
+      },
+      "data": {"values": [{"x": 50}]},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"}
+      }
+    }
+  ]
+}

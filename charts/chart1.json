@@ -1,0 +1,347 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 400,
+    "background": "#ffffff",
+    "config": {
+        "view": {
+            "stroke": null
+        }
+    },
+    "layer": [
+        {
+            "data": {
+                "values": [
+                    {
+                        "year": "1984–85",
+                        "total": 54500,
+                        "i": 0
+                    },
+                    {
+                        "year": "1985–86",
+                        "total": 80000,
+                        "i": 1
+                    },
+                    {
+                        "year": "1986–87",
+                        "total": 101700,
+                        "i": 2
+                    },
+                    {
+                        "year": "1987–88",
+                        "total": 122100,
+                        "i": 3
+                    },
+                    {
+                        "year": "1988–89",
+                        "total": 124700,
+                        "i": 4
+                    },
+                    {
+                        "year": "1989–90",
+                        "total": 120200,
+                        "i": 5
+                    },
+                    {
+                        "year": "1990–91",
+                        "total": 112200,
+                        "i": 6
+                    },
+                    {
+                        "year": "1991–92",
+                        "total": 98900,
+                        "i": 7
+                    },
+                    {
+                        "year": "1992–93",
+                        "total": 67900,
+                        "i": 8
+                    },
+                    {
+                        "year": "1993–94",
+                        "total": 62800,
+                        "i": 9
+                    },
+                    {
+                        "year": "1994–95",
+                        "total": 76500,
+                        "i": 10
+                    },
+                    {
+                        "year": "1995–96",
+                        "total": 82500,
+                        "i": 11
+                    },
+                    {
+                        "year": "1996–97",
+                        "total": 73587,
+                        "i": 12
+                    },
+                    {
+                        "year": "1997–98",
+                        "total": 66840,
+                        "i": 13
+                    },
+                    {
+                        "year": "1998–99",
+                        "total": 67821,
+                        "i": 14
+                    },
+                    {
+                        "year": "1999–00",
+                        "total": 70237,
+                        "i": 15
+                    },
+                    {
+                        "year": "2000–01",
+                        "total": 80597,
+                        "i": 16
+                    },
+                    {
+                        "year": "2001–02",
+                        "total": 93054,
+                        "i": 17
+                    },
+                    {
+                        "year": "2002–03",
+                        "total": 108072,
+                        "i": 18
+                    },
+                    {
+                        "year": "2003–04",
+                        "total": 114362,
+                        "i": 19
+                    },
+                    {
+                        "year": "2004–05",
+                        "total": 120064,
+                        "i": 20
+                    },
+                    {
+                        "year": "2005–06",
+                        "total": 142933,
+                        "i": 21
+                    },
+                    {
+                        "year": "2006–07",
+                        "total": 148200,
+                        "i": 22
+                    },
+                    {
+                        "year": "2007–08",
+                        "total": 158630,
+                        "i": 23
+                    },
+                    {
+                        "year": "2008–09",
+                        "total": 171318,
+                        "i": 24
+                    },
+                    {
+                        "year": "2009–10",
+                        "total": 168623,
+                        "i": 25
+                    },
+                    {
+                        "year": "2010–11",
+                        "total": 168685,
+                        "i": 26
+                    },
+                    {
+                        "year": "2011–12",
+                        "total": 184998,
+                        "i": 27
+                    },
+                    {
+                        "year": "2012–13",
+                        "total": 190000,
+                        "i": 28
+                    },
+                    {
+                        "year": "2013–14",
+                        "total": 190000,
+                        "i": 29
+                    },
+                    {
+                        "year": "2014–15",
+                        "total": 189097,
+                        "i": 30
+                    },
+                    {
+                        "year": "2015–16",
+                        "total": 189770,
+                        "i": 31
+                    },
+                    {
+                        "year": "2016–17",
+                        "total": 183608,
+                        "i": 32
+                    },
+                    {
+                        "year": "2017–18",
+                        "total": 162417,
+                        "i": 33
+                    },
+                    {
+                        "year": "2018–19",
+                        "total": 160323,
+                        "i": 34
+                    },
+                    {
+                        "year": "2019–20",
+                        "total": 140366,
+                        "i": 35
+                    },
+                    {
+                        "year": "2020–21",
+                        "total": 160052,
+                        "i": 36
+                    },
+                    {
+                        "year": "2021–22",
+                        "total": 143556,
+                        "i": 37
+                    },
+                    {
+                        "year": "2022–23",
+                        "total": 195004,
+                        "i": 38
+                    },
+                    {
+                        "year": "2023–24",
+                        "total": 190000,
+                        "i": 39
+                    },
+                    {
+                        "year": "2024–25",
+                        "total": 185001,
+                        "i": 40
+                    }
+                ]
+            },
+            "mark": {
+                "type": "area",
+                "line": {
+                    "color": "#2563eb",
+                    "strokeWidth": 2.5
+                },
+                "color": "#2563eb",
+                "opacity": 0.15
+            },
+            "encoding": {
+                "x": {
+                    "field": "i",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": null,
+                        "values": [
+                            0,
+                            5,
+                            10,
+                            15,
+                            20,
+                            25,
+                            30,
+                            35,
+                            40
+                        ],
+                        "labelExpr": "[\"1984–85\",\"1989–90\",\"1994–95\",\"1999–00\",\"2004–05\",\"2009–10\",\"2014–15\",\"2019–20\",\"2024–25\"][indexof([0,5,10,15,20,25,30,35,40], datum.value)]",
+                        "labelAngle": -35,
+                        "gridColor": "#e5e7eb"
+                    }
+                },
+                "y": {
+                    "field": "total",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": "Visa Grants",
+                        "format": "~s",
+                        "gridColor": "#e5e7eb",
+                        "labelExpr": "datum.value >= 1000 ? (datum.value/1000) + 'k' : datum.value"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "total",
+                        "title": "Visa Grants",
+                        "format": ","
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "i": 8,
+                        "total": 67900,
+                        "label": "Recession 1992–93"
+                    },
+                    {
+                        "i": 24,
+                        "total": 171318,
+                        "label": "GFC 2008–09"
+                    },
+                    {
+                        "i": 35,
+                        "total": 140366,
+                        "label": "COVID 2019–20"
+                    },
+                    {
+                        "i": 38,
+                        "total": 195004,
+                        "label": "Record surge 2022–23"
+                    }
+                ]
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "point",
+                        "filled": true,
+                        "size": 80,
+                        "color": "#dc2626"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "i",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "total",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "dx": 8,
+                        "dy": -8,
+                        "fontSize": 11,
+                        "color": "#374151",
+                        "fontWeight": "bold"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "i",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "total",
+                            "type": "quantitative"
+                        },
+                        "text": {
+                            "field": "label"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

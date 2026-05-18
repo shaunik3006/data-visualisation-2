@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 420,
+  "background": "#1f1f1f",
+  "config": {
+    "view": {"stroke": null},
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#9a9590",
+      "titleColor": "#9a9590",
+      "gridColor": "#2a2a2a",
+      "domainColor": "#2a2a2a",
+      "tickColor": "#2a2a2a"
+    },
+    "legend": {
+      "labelColor": "#9a9590",
+      "titleColor": "#9a9590"
+    }
+  },
+  "data": {
+    "values": [
+      {"year": "2015–16", "visas": 189770, "covid": false},
+      {"year": "2016–17", "visas": 183608, "covid": false},
+      {"year": "2017–18", "visas": 162417, "covid": false},
+      {"year": "2018–19", "visas": 160323, "covid": false},
+      {"year": "2019–20", "visas": 140366, "covid": false},
+      {"year": "2020–21", "visas": 160052, "covid": true},
+      {"year": "2021–22", "visas": 143556, "covid": true},
+      {"year": "2022–23", "visas": 195004, "covid": false},
+      {"year": "2023–24", "visas": 190000, "covid": false},
+      {"year": "2024–25", "visas": 185001, "covid": false}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "strokeWidth": 2},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "axis": {"labelAngle": -35, "title": null}},
+        "y": {"field": "visas", "type": "quantitative", "axis": {"title": "Total Visa Grants", "labelExpr": "(datum.value/1000) + 'k'"}},
+        "y2": {"datum": 0},
+        "color": {
+          "condition": {"test": "datum.covid", "value": "#c0392b"},
+          "value": "#3b82f6"
+        }
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 150},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "visas", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum.covid", "value": "#c0392b"},
+          "value": "#3b82f6"
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "visas", "title": "Visas Granted", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -12, "fontSize": 10, "fontWeight": "bold"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "visas", "type": "quantitative"},
+        "text": {"field": "visas", "format": ","},
+        "color": {
+          "condition": {"test": "datum.covid", "value": "#c0392b"},
+          "value": "#9a9590"
+        }
+      }
+    }
+  ]
+}
