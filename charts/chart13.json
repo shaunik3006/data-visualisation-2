@@ -1,0 +1,240 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 680,
+  "height": 400,
+  "background": "#ffffff",
+
+  "config": {
+    "view": { "stroke": null },
+    "font": "Georgia, serif",
+    "axis": {
+      "labelFont": "Georgia, serif",
+      "titleFont": "Georgia, serif",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#f1f5f9",
+      "gridWidth": 1,
+      "domainColor": "#e2e8f0",
+      "tickColor": "#e2e8f0",
+      "labelColor": "#64748b",
+      "titleColor": "#475569"
+    },
+    "legend": {
+      "labelFont": "Georgia, serif",
+      "titleFont": "Georgia, serif",
+      "labelFontSize": 12,
+      "labelColor": "#475569"
+    }
+  },
+
+  "data": {
+    "values": [
+      { "x": 1,  "xlabel": "<2 yrs",  "rate": 13.72, "stream": "Skill stream" },
+      { "x": 1,  "xlabel": "<2 yrs",  "rate": 23.96, "stream": "Family stream" },
+      { "x": 1,  "xlabel": "<2 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 2,  "xlabel": "2 yrs",   "rate": 6.29,  "stream": "Skill stream" },
+      { "x": 2,  "xlabel": "2 yrs",   "rate": 10.32, "stream": "Family stream" },
+      { "x": 2,  "xlabel": "2 yrs",   "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 4,  "xlabel": "4 yrs",   "rate": 5.29,  "stream": "Skill stream" },
+      { "x": 4,  "xlabel": "4 yrs",   "rate": 8.02,  "stream": "Family stream" },
+      { "x": 4,  "xlabel": "4 yrs",   "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 6,  "xlabel": "6 yrs",   "rate": 4.64,  "stream": "Skill stream" },
+      { "x": 6,  "xlabel": "6 yrs",   "rate": 7.02,  "stream": "Family stream" },
+      { "x": 6,  "xlabel": "6 yrs",   "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 8,  "xlabel": "8 yrs",   "rate": 4.23,  "stream": "Skill stream" },
+      { "x": 8,  "xlabel": "8 yrs",   "rate": 6.54,  "stream": "Family stream" },
+      { "x": 8,  "xlabel": "8 yrs",   "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 10, "xlabel": "10 yrs",  "rate": 4.36,  "stream": "Skill stream" },
+      { "x": 10, "xlabel": "10 yrs",  "rate": 6.07,  "stream": "Family stream" },
+      { "x": 10, "xlabel": "10 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 12, "xlabel": "12 yrs",  "rate": 4.15,  "stream": "Skill stream" },
+      { "x": 12, "xlabel": "12 yrs",  "rate": 5.85,  "stream": "Family stream" },
+      { "x": 12, "xlabel": "12 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 14, "xlabel": "14 yrs",  "rate": 4.24,  "stream": "Skill stream" },
+      { "x": 14, "xlabel": "14 yrs",  "rate": 5.62,  "stream": "Family stream" },
+      { "x": 14, "xlabel": "14 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 16, "xlabel": "16 yrs",  "rate": 4.00,  "stream": "Skill stream" },
+      { "x": 16, "xlabel": "16 yrs",  "rate": 5.61,  "stream": "Family stream" },
+      { "x": 16, "xlabel": "16 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 18, "xlabel": "18 yrs",  "rate": 3.80,  "stream": "Skill stream" },
+      { "x": 18, "xlabel": "18 yrs",  "rate": 5.20,  "stream": "Family stream" },
+      { "x": 18, "xlabel": "18 yrs",  "rate": 4.81,  "stream": "Australian-born" },
+      { "x": 20, "xlabel": "20+ yrs", "rate": 3.53,  "stream": "Skill stream" },
+      { "x": 20, "xlabel": "20+ yrs", "rate": 5.06,  "stream": "Family stream" },
+      { "x": 20, "xlabel": "20+ yrs", "rate": 4.81,  "stream": "Australian-born" }
+    ]
+  },
+
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Years spent in Australia",
+      "axis": {
+        "values": [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
+        "labelExpr": "datum.value === 1 ? '<2' : datum.value === 20 ? '20+' : datum.value + ''",
+        "labelFontSize": 11,
+        "titleFontSize": 12,
+        "grid": true
+      },
+      "scale": { "domain": [0.5, 21] }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "Unemployment rate (%)",
+      "axis": {
+        "labelExpr": "datum.value + '%'",
+        "labelFontSize": 11,
+        "titleFontSize": 12
+      },
+      "scale": { "domain": [0, 26] }
+    }
+  },
+
+  "layer": [
+
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#e2e8f0",
+        "strokeWidth": 1,
+        "strokeDash": [3, 3]
+      },
+      "transform": [
+        { "filter": "datum.stream === 'Australian-born' && datum.x === 1" }
+      ],
+      "encoding": {
+        "y":  { "datum": 4.81 },
+        "x":  { "datum": 0.5 },
+        "x2": { "datum": 21 }
+      }
+    },
+
+    {
+      "mark": { "type": "area", "interpolate": "monotone", "opacity": 0.06 },
+      "transform": [ { "filter": "datum.stream === 'Family stream'" } ],
+      "encoding": {
+        "x":    { "field": "x",    "type": "quantitative" },
+        "y":    { "field": "rate", "type": "quantitative" },
+        "y2":   { "datum": 4.81 },
+        "color": { "value": "#e67e22" }
+      }
+    },
+
+    {
+      "mark": { "type": "area", "interpolate": "monotone", "opacity": 0.06 },
+      "transform": [ { "filter": "datum.stream === 'Skill stream'" } ],
+      "encoding": {
+        "x":    { "field": "x",    "type": "quantitative" },
+        "y":    { "field": "rate", "type": "quantitative" },
+        "y2":   { "datum": 4.81 },
+        "color": { "value": "#2980b9" }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone",
+        "strokeDash": [5, 4],
+        "opacity": 0.5
+      },
+      "transform": [ { "filter": "datum.stream === 'Australian-born'" } ],
+      "encoding": {
+        "x":    { "field": "x",    "type": "quantitative" },
+        "y":    { "field": "rate", "type": "quantitative" },
+        "color": { "value": "#94a3b8" }
+      }
+    },
+
+    {
+      "params": [
+        {
+          "name": "highlight",
+          "select": { "type": "point", "fields": ["stream"] },
+          "bind": "legend"
+        }
+      ],
+      "mark": { "type": "line", "strokeWidth": 3, "interpolate": "monotone" },
+      "transform": [ { "filter": "datum.stream !== 'Australian-born'" } ],
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": {
+          "field": "stream",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Skill stream", "Family stream"],
+            "range":  ["#2980b9", "#e67e22"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top-right",
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 3,
+            "symbolSize": 200,
+            "offset": 12
+          }
+        },
+        "opacity": {
+          "condition": { "param": "highlight", "value": 1 },
+          "value": 0.2
+        }
+      }
+    },
+
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "on": "mouseover",
+            "fields": ["x"],
+            "nearest": true
+          }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 70, "strokeWidth": 1.5 },
+      "transform": [ { "filter": "datum.stream !== 'Australian-born'" } ],
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": {
+          "field": "stream",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Skill stream", "Family stream"],
+            "range":  ["#2980b9", "#e67e22"]
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": { "param": "hover", "value": 1 },
+          "value": 0.4
+        },
+        "tooltip": [
+          { "field": "xlabel", "title": "Time in Australia" },
+          { "field": "stream", "title": "Stream" },
+          { "field": "rate",   "title": "Unemployment rate", "format": ".2f" }
+        ]
+      }
+    },
+
+    {
+      "mark": { "type": "rule", "color": "#cbd5e1", "strokeWidth": 1 },
+      "transform": [
+        { "filter": { "param": "hover", "empty": false } },
+        { "filter": "datum.stream === 'Skill stream'" }
+      ],
+      "encoding": {
+        "x":  { "field": "x", "type": "quantitative" },
+        "y":  { "datum": 0 },
+        "y2": { "datum": 26 }
+      }
+    }
+
+  ]
+}

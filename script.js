@@ -10,3 +10,4 @@ vegaEmbed('#chart9', 'charts/chart9.json', { actions: false })
 vegaEmbed('#chart10', 'charts/chart10.json', { actions: false })
 vegaEmbed('#chart11', 'charts/chart11.json', { actions: false })
 vegaEmbed('#chart12', 'charts/chart12.json', { actions: false })
+vegaEmbed('#chart13', 'charts/chart13.json', { actions: false });
