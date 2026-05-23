@@ -1,0 +1,720 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 820,
+  "height": 600,
+  "padding": {
+    "left": 10,
+    "right": 10,
+    "top": 25,
+    "bottom": 20
+  },
+  "background": "#ffffff",
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 49
+          },
+          "y": {
+            "value": 12
+          },
+          "text": {
+            "value": "Gender"
+          },
+          "align": {
+            "value": "center"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#374151"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 359
+          },
+          "y": {
+            "value": 12
+          },
+          "text": {
+            "value": "World Region"
+          },
+          "align": {
+            "value": "center"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#374151"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": {
+            "value": 659
+          },
+          "y": {
+            "value": 12
+          },
+          "text": {
+            "value": "Country"
+          },
+          "align": {
+            "value": "center"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#374151"
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "enter": {
+          "path": {
+            "field": "path"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.35
+          },
+          "stroke": {
+            "field": "color"
+          },
+          "strokeOpacity": {
+            "value": 0.1
+          },
+          "strokeWidth": {
+            "value": 0.5
+          },
+          "tooltip": {
+            "signal": "{'From': datum.from, 'To': datum.to, 'Conferrals': format(datum.value, ',')}"
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 0.35
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 0.7
+          },
+          "cursor": {
+            "value": "pointer"
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "width": {
+            "value": 18
+          },
+          "height": {
+            "field": "h"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "cornerRadius": {
+            "value": 3
+          },
+          "tooltip": {
+            "signal": "{'Name': datum.name, 'Total Conferrals': format(datum.value, ',')}"
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 1
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 0.75
+          },
+          "cursor": {
+            "value": "pointer"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "labelX"
+          },
+          "y": {
+            "field": "labelY"
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "field": "align"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "value": "#374151"
+          }
+        }
+      }
+    }
+  ],
+  "data": [
+    {
+      "name": "links",
+      "values": [
+        {
+          "path": "M 58 20.0 C 204.0 20.0 204.0 20.0 350 20.0 L 350 92.5 C 204.0 92.5 204.0 79.8 58 79.8 Z",
+          "color": "#ec4899",
+          "value": 18637,
+          "from": "Female",
+          "to": "South Asia"
+        },
+        {
+          "path": "M 58 79.8 C 204.0 79.8 204.0 173.0 350 173.0 L 350 239.6 C 204.0 239.6 204.0 134.6 58 134.6 Z",
+          "color": "#ec4899",
+          "value": 17080,
+          "from": "Female",
+          "to": "Pacific & Oceania"
+        },
+        {
+          "path": "M 58 134.6 C 204.0 134.6 204.0 312.0 350 312.0 L 350 345.4 C 204.0 345.4 204.0 162.1 58 162.1 Z",
+          "color": "#ec4899",
+          "value": 8587,
+          "from": "Female",
+          "to": "Middle East & Africa"
+        },
+        {
+          "path": "M 58 162.1 C 204.0 162.1 204.0 389.0 350 389.0 L 350 427.6 C 204.0 427.6 204.0 193.9 58 193.9 Z",
+          "color": "#ec4899",
+          "value": 9919,
+          "from": "Female",
+          "to": "Southeast Asia"
+        },
+        {
+          "path": "M 58 193.9 C 204.0 193.9 204.0 463.0 350 463.0 L 350 486.5 C 204.0 486.5 204.0 213.4 58 213.4 Z",
+          "color": "#ec4899",
+          "value": 6069,
+          "from": "Female",
+          "to": "Europe"
+        },
+        {
+          "path": "M 58 213.4 C 204.0 213.4 204.0 522.0 350 522.0 L 350 532.8 C 204.0 532.8 204.0 222.4 58 222.4 Z",
+          "color": "#ec4899",
+          "value": 2794,
+          "from": "Female",
+          "to": "East Asia"
+        },
+        {
+          "path": "M 58 222.4 C 204.0 222.4 204.0 552.0 350 552.0 L 350 556.4 C 204.0 556.4 204.0 226.1 58 226.1 Z",
+          "color": "#ec4899",
+          "value": 1158,
+          "from": "Female",
+          "to": "Americas"
+        },
+        {
+          "path": "M 58 310.0 C 204.0 310.0 204.0 92.5 350 92.5 L 350 163.0 C 204.0 163.0 204.0 368.1 58 368.1 Z",
+          "color": "#3b82f6",
+          "value": 18114,
+          "from": "Male",
+          "to": "South Asia"
+        },
+        {
+          "path": "M 58 368.1 C 204.0 368.1 204.0 239.6 350 239.6 L 350 302.0 C 204.0 302.0 204.0 419.6 58 419.6 Z",
+          "color": "#3b82f6",
+          "value": 16023,
+          "from": "Male",
+          "to": "Pacific & Oceania"
+        },
+        {
+          "path": "M 58 419.6 C 204.0 419.6 204.0 345.4 350 345.4 L 350 379.0 C 204.0 379.0 204.0 447.3 58 447.3 Z",
+          "color": "#3b82f6",
+          "value": 8643,
+          "from": "Male",
+          "to": "Middle East & Africa"
+        },
+        {
+          "path": "M 58 447.3 C 204.0 447.3 204.0 427.6 350 427.6 L 350 453.0 C 204.0 453.0 204.0 468.2 58 468.2 Z",
+          "color": "#3b82f6",
+          "value": 6507,
+          "from": "Male",
+          "to": "Southeast Asia"
+        },
+        {
+          "path": "M 58 468.2 C 204.0 468.2 204.0 486.5 350 486.5 L 350 512.0 C 204.0 512.0 204.0 489.4 58 489.4 Z",
+          "color": "#3b82f6",
+          "value": 6605,
+          "from": "Male",
+          "to": "Europe"
+        },
+        {
+          "path": "M 58 489.4 C 204.0 489.4 204.0 532.8 350 532.8 L 350 542.0 C 204.0 542.0 204.0 497.1 58 497.1 Z",
+          "color": "#3b82f6",
+          "value": 2400,
+          "from": "Male",
+          "to": "East Asia"
+        },
+        {
+          "path": "M 58 497.1 C 204.0 497.1 204.0 556.4 350 556.4 L 350 560.0 C 204.0 560.0 204.0 500.1 58 500.1 Z",
+          "color": "#3b82f6",
+          "value": 944,
+          "from": "Male",
+          "to": "Americas"
+        },
+        {
+          "path": "M 368 173.0 C 509.0 173.0 509.0 20.0 650 20.0 L 650 142.0 C 509.0 142.0 509.0 302.0 368 302.0 Z",
+          "color": "#10b981",
+          "value": 33103,
+          "from": "Pacific & Oceania",
+          "to": "New Zealand"
+        },
+        {
+          "path": "M 368 20.0 C 509.0 20.0 509.0 148.0 650 148.0 L 650 233.0 C 509.0 233.0 509.0 109.6 368 109.6 Z",
+          "color": "#f97316",
+          "value": 23015,
+          "from": "South Asia",
+          "to": "India"
+        },
+        {
+          "path": "M 368 463.0 C 509.0 463.0 509.0 239.0 650 239.0 L 650 286.0 C 509.0 286.0 509.0 512.0 368 512.0 Z",
+          "color": "#06b6d4",
+          "value": 12674,
+          "from": "Europe",
+          "to": "United Kingdom"
+        },
+        {
+          "path": "M 368 389.0 C 509.0 389.0 509.0 292.0 650 292.0 L 650 323.0 C 509.0 323.0 509.0 422.2 368 422.2 Z",
+          "color": "#8b5cf6",
+          "value": 8517,
+          "from": "Southeast Asia",
+          "to": "Philippines"
+        },
+        {
+          "path": "M 368 422.2 C 509.0 422.2 509.0 329.0 650 329.0 L 650 349.0 C 509.0 349.0 509.0 443.3 368 443.3 Z",
+          "color": "#8b5cf6",
+          "value": 5430,
+          "from": "Southeast Asia",
+          "to": "Vietnam"
+        },
+        {
+          "path": "M 368 109.6 C 509.0 109.6 509.0 355.0 650 355.0 L 650 375.0 C 509.0 375.0 509.0 130.6 368 130.6 Z",
+          "color": "#f97316",
+          "value": 5398,
+          "from": "South Asia",
+          "to": "Nepal"
+        },
+        {
+          "path": "M 368 312.0 C 509.0 312.0 509.0 381.0 650 381.0 L 650 400.0 C 509.0 400.0 509.0 332.5 368 332.5 Z",
+          "color": "#ef4444",
+          "value": 5272,
+          "from": "Middle East & Africa",
+          "to": "Iraq"
+        },
+        {
+          "path": "M 368 522.0 C 509.0 522.0 509.0 406.0 650 406.0 L 650 425.0 C 509.0 425.0 509.0 542.0 368 542.0 Z",
+          "color": "#eab308",
+          "value": 5194,
+          "from": "East Asia",
+          "to": "China"
+        },
+        {
+          "path": "M 368 130.6 C 509.0 130.6 509.0 431.0 650 431.0 L 650 448.0 C 509.0 448.0 509.0 148.8 368 148.8 Z",
+          "color": "#f97316",
+          "value": 4690,
+          "from": "South Asia",
+          "to": "Pakistan"
+        },
+        {
+          "path": "M 368 332.5 C 509.0 332.5 509.0 454.0 650 454.0 L 650 470.0 C 509.0 470.0 509.0 349.7 368 349.7 Z",
+          "color": "#ef4444",
+          "value": 4428,
+          "from": "Middle East & Africa",
+          "to": "South Africa"
+        },
+        {
+          "path": "M 368 349.7 C 509.0 349.7 509.0 476.0 650 476.0 L 650 491.0 C 509.0 491.0 509.0 365.8 368 365.8 Z",
+          "color": "#ef4444",
+          "value": 4136,
+          "from": "Middle East & Africa",
+          "to": "Afghanistan"
+        },
+        {
+          "path": "M 368 148.8 C 509.0 148.8 509.0 497.0 650 497.0 L 650 510.0 C 509.0 510.0 509.0 163.0 368 163.0 Z",
+          "color": "#f97316",
+          "value": 3648,
+          "from": "South Asia",
+          "to": "Sri Lanka"
+        },
+        {
+          "path": "M 368 365.8 C 509.0 365.8 509.0 516.0 650 516.0 L 650 529.0 C 509.0 529.0 509.0 379.0 368 379.0 Z",
+          "color": "#ef4444",
+          "value": 3394,
+          "from": "Middle East & Africa",
+          "to": "Iran"
+        },
+        {
+          "path": "M 368 443.3 C 509.0 443.3 509.0 535.0 650 535.0 L 650 544.0 C 509.0 544.0 509.0 453.0 368 453.0 Z",
+          "color": "#8b5cf6",
+          "value": 2479,
+          "from": "Southeast Asia",
+          "to": "Myanmar"
+        },
+        {
+          "path": "M 368 552.0 C 509.0 552.0 509.0 550.0 650 550.0 L 650 558.0 C 509.0 558.0 509.0 560.0 368 560.0 Z",
+          "color": "#84cc16",
+          "value": 2102,
+          "from": "Americas",
+          "to": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "values": [
+        {
+          "x": 40,
+          "y": 20,
+          "h": 280,
+          "color": "#ec4899",
+          "name": "Female",
+          "value": 87292,
+          "labelX": 34,
+          "labelY": 160.0,
+          "align": "right",
+          "label": "Female"
+        },
+        {
+          "x": 40,
+          "y": 310,
+          "h": 250,
+          "color": "#3b82f6",
+          "name": "Male",
+          "value": 77901,
+          "labelX": 34,
+          "labelY": 435.0,
+          "align": "right",
+          "label": "Male"
+        },
+        {
+          "x": 350,
+          "y": 20,
+          "h": 143,
+          "color": "#f97316",
+          "name": "South Asia",
+          "value": 36751,
+          "labelX": 344,
+          "labelY": 91.5,
+          "align": "right",
+          "label": "South Asia"
+        },
+        {
+          "x": 350,
+          "y": 173,
+          "h": 129,
+          "color": "#10b981",
+          "name": "Pacific & Oceania",
+          "value": 33103,
+          "labelX": 344,
+          "labelY": 237.5,
+          "align": "right",
+          "label": "Pacific & Oceania"
+        },
+        {
+          "x": 350,
+          "y": 312,
+          "h": 67,
+          "color": "#ef4444",
+          "name": "Middle East & Africa",
+          "value": 17230,
+          "labelX": 344,
+          "labelY": 345.5,
+          "align": "right",
+          "label": "Middle East & Africa"
+        },
+        {
+          "x": 350,
+          "y": 389,
+          "h": 64,
+          "color": "#8b5cf6",
+          "name": "Southeast Asia",
+          "value": 16426,
+          "labelX": 344,
+          "labelY": 421.0,
+          "align": "right",
+          "label": "Southeast Asia"
+        },
+        {
+          "x": 350,
+          "y": 463,
+          "h": 49,
+          "color": "#06b6d4",
+          "name": "Europe",
+          "value": 12674,
+          "labelX": 344,
+          "labelY": 487.5,
+          "align": "right",
+          "label": "Europe"
+        },
+        {
+          "x": 350,
+          "y": 522,
+          "h": 20,
+          "color": "#eab308",
+          "name": "East Asia",
+          "value": 5194,
+          "labelX": 344,
+          "labelY": 532.0,
+          "align": "right",
+          "label": "East Asia"
+        },
+        {
+          "x": 350,
+          "y": 552,
+          "h": 8,
+          "color": "#84cc16",
+          "name": "Americas",
+          "value": 2102,
+          "labelX": 344,
+          "labelY": 556.0,
+          "align": "right",
+          "label": "Americas"
+        },
+        {
+          "x": 650,
+          "y": 20,
+          "h": 122,
+          "color": "#10b981",
+          "name": "New Zealand",
+          "value": 33103,
+          "labelX": 674,
+          "labelY": 81.0,
+          "align": "left",
+          "label": "New Zealand  33,103"
+        },
+        {
+          "x": 650,
+          "y": 148,
+          "h": 85,
+          "color": "#f97316",
+          "name": "India",
+          "value": 23015,
+          "labelX": 674,
+          "labelY": 190.5,
+          "align": "left",
+          "label": "India  23,015"
+        },
+        {
+          "x": 650,
+          "y": 239,
+          "h": 47,
+          "color": "#06b6d4",
+          "name": "United Kingdom",
+          "value": 12674,
+          "labelX": 674,
+          "labelY": 262.5,
+          "align": "left",
+          "label": "United Kingdom  12,674"
+        },
+        {
+          "x": 650,
+          "y": 292,
+          "h": 31,
+          "color": "#8b5cf6",
+          "name": "Philippines",
+          "value": 8517,
+          "labelX": 674,
+          "labelY": 307.5,
+          "align": "left",
+          "label": "Philippines  8,517"
+        },
+        {
+          "x": 650,
+          "y": 329,
+          "h": 20,
+          "color": "#8b5cf6",
+          "name": "Vietnam",
+          "value": 5430,
+          "labelX": 674,
+          "labelY": 339.0,
+          "align": "left",
+          "label": "Vietnam  5,430"
+        },
+        {
+          "x": 650,
+          "y": 355,
+          "h": 20,
+          "color": "#f97316",
+          "name": "Nepal",
+          "value": 5398,
+          "labelX": 674,
+          "labelY": 365.0,
+          "align": "left",
+          "label": "Nepal  5,398"
+        },
+        {
+          "x": 650,
+          "y": 381,
+          "h": 19,
+          "color": "#ef4444",
+          "name": "Iraq",
+          "value": 5272,
+          "labelX": 674,
+          "labelY": 390.5,
+          "align": "left",
+          "label": "Iraq  5,272"
+        },
+        {
+          "x": 650,
+          "y": 406,
+          "h": 19,
+          "color": "#eab308",
+          "name": "China",
+          "value": 5194,
+          "labelX": 674,
+          "labelY": 415.5,
+          "align": "left",
+          "label": "China  5,194"
+        },
+        {
+          "x": 650,
+          "y": 431,
+          "h": 17,
+          "color": "#f97316",
+          "name": "Pakistan",
+          "value": 4690,
+          "labelX": 674,
+          "labelY": 439.5,
+          "align": "left",
+          "label": "Pakistan  4,690"
+        },
+        {
+          "x": 650,
+          "y": 454,
+          "h": 16,
+          "color": "#ef4444",
+          "name": "South Africa",
+          "value": 4428,
+          "labelX": 674,
+          "labelY": 462.0,
+          "align": "left",
+          "label": "South Africa  4,428"
+        },
+        {
+          "x": 650,
+          "y": 476,
+          "h": 15,
+          "color": "#ef4444",
+          "name": "Afghanistan",
+          "value": 4136,
+          "labelX": 674,
+          "labelY": 483.5,
+          "align": "left",
+          "label": "Afghanistan  4,136"
+        },
+        {
+          "x": 650,
+          "y": 497,
+          "h": 13,
+          "color": "#f97316",
+          "name": "Sri Lanka",
+          "value": 3648,
+          "labelX": 674,
+          "labelY": 503.5,
+          "align": "left",
+          "label": "Sri Lanka  3,648"
+        },
+        {
+          "x": 650,
+          "y": 516,
+          "h": 13,
+          "color": "#ef4444",
+          "name": "Iran",
+          "value": 3394,
+          "labelX": 674,
+          "labelY": 522.5,
+          "align": "left",
+          "label": "Iran  3,394"
+        },
+        {
+          "x": 650,
+          "y": 535,
+          "h": 9,
+          "color": "#8b5cf6",
+          "name": "Myanmar",
+          "value": 2479,
+          "labelX": 674,
+          "labelY": 539.5,
+          "align": "left",
+          "label": "Myanmar  2,479"
+        },
+        {
+          "x": 650,
+          "y": 550,
+          "h": 8,
+          "color": "#84cc16",
+          "name": "Brazil",
+          "value": 2102,
+          "labelX": 674,
+          "labelY": 554.0,
+          "align": "left",
+          "label": "Brazil  2,102"
+        }
+      ]
+    }
+  ]
+}

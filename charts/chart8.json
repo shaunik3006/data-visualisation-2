@@ -1,53 +1,52 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 420,
-  "background": "#1f1f1f",
-  "config": {
-    "view": {"stroke": null},
-    "font": "DM Sans, sans-serif",
-    "legend": {
-      "labelColor": "#9a9590",
-      "titleColor": "#9a9590"
-    }
-  },
+  "width": 750,
+  "height": 500,
+  "background": "#ffffff",
+  "config": {"view": {"stroke": null}},
   "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
   "layer": [
     {
       "data": {
-        "url": "/charts/aus-states.json",
-        "format": {"type": "json", "property": "features"}
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
       },
-      "mark": {"type": "geoshape", "fill": "#2a2a2a", "stroke": "#444", "strokeWidth": 0.5}
+      "transform": [{"filter": "datum.id === 36"}],
+      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#cbd5e1", "strokeWidth": 0.5}
     },
     {
       "data": {
-        "url": "/charts/aus-states.json",
-        "format": {"type": "json", "property": "features"}
+        "values": [
+          {"state": "New South Wales", "arrivals": 169990, "id": "1"},
+          {"state": "Victoria", "arrivals": 149490, "id": "2"},
+          {"state": "Queensland", "arrivals": 97370, "id": "3"},
+          {"state": "South Australia", "arrivals": 27160, "id": "4"},
+          {"state": "Western Australia", "arrivals": 65310, "id": "5"},
+          {"state": "Tasmania", "arrivals": 4750, "id": "6"},
+          {"state": "Northern Territory", "arrivals": 5250, "id": "7"},
+          {"state": "Australian Capital Territory", "arrivals": 9480, "id": "8"}
+        ]
       },
       "transform": [
         {
-          "lookup": "properties.STATE_NAME",
+          "lookup": "state",
           "from": {
             "data": {
-              "values": [
-                {"state": "New South Wales", "arrivals": 169990},
-                {"state": "Victoria", "arrivals": 149490},
-                {"state": "Queensland", "arrivals": 97370},
-                {"state": "South Australia", "arrivals": 27160},
-                {"state": "Western Australia", "arrivals": 65310},
-                {"state": "Tasmania", "arrivals": 4750},
-                {"state": "Northern Territory", "arrivals": 5250},
-                {"state": "Australian Capital Territory", "arrivals": 9480}
-              ]
+              "url": "/charts/aus-states.json",
+              "format": {"type": "json", "property": "features"}
             },
-            "key": "state",
-            "fields": ["arrivals", "state"]
-          }
+            "key": "properties.STATE_NAME",
+            "fields": ["type", "geometry", "properties"]
+          },
+          "as": ["type", "geometry", "properties"]
         }
       ],
-      "mark": {"type": "geoshape", "stroke": "#1f1f1f", "strokeWidth": 1},
+      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 1},
       "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        },
         "color": {
           "field": "arrivals",
           "type": "quantitative",
@@ -57,9 +56,7 @@
             "labelExpr": "(datum.value / 1000) + 'k'",
             "orient": "bottom-right",
             "direction": "horizontal",
-            "gradientLength": 200,
-            "labelColor": "#9a9590",
-            "titleColor": "#9a9590"
+            "gradientLength": 200
           }
         },
         "tooltip": [

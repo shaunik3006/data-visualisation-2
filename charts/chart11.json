@@ -1,76 +1,152 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
-  "height": 420,
-  "background": "#1f1f1f",
-  "config": {
-    "view": {"stroke": null},
-    "font": "DM Sans, sans-serif",
-    "axis": {
-      "labelColor": "#9a9590",
-      "titleColor": "#9a9590",
-      "gridColor": "#2a2a2a",
-      "domainColor": "#2a2a2a",
-      "tickColor": "#2a2a2a"
-    },
-    "legend": {
-      "labelColor": "#9a9590",
-      "titleColor": "#9a9590"
-    }
-  },
+
+  "width": 750,
+  "height": 340,
+  "background": "#ffffff",
+
   "data": {
     "values": [
-      {"year": "2015–16", "visas": 189770, "covid": false},
-      {"year": "2016–17", "visas": 183608, "covid": false},
-      {"year": "2017–18", "visas": 162417, "covid": false},
-      {"year": "2018–19", "visas": 160323, "covid": false},
-      {"year": "2019–20", "visas": 140366, "covid": false},
-      {"year": "2020–21", "visas": 160052, "covid": true},
-      {"year": "2021–22", "visas": 143556, "covid": true},
-      {"year": "2022–23", "visas": 195004, "covid": false},
-      {"year": "2023–24", "visas": 190000, "covid": false},
-      {"year": "2024–25", "visas": 185001, "covid": false}
+
+      {"stream":"Skilled Independent","period":"Pre-COVID","value":65200},
+      {"stream":"Skilled Independent","period":"During COVID","value":22300},
+      {"stream":"Skilled Independent","period":"Post-COVID","value":30200},
+
+      {"stream":"Employer Sponsored","period":"Pre-COVID","value":38600},
+      {"stream":"Employer Sponsored","period":"During COVID","value":22000},
+      {"stream":"Employer Sponsored","period":"Post-COVID","value":48500},
+
+      {"stream":"Regional","period":"Pre-COVID","value":9800},
+      {"stream":"Regional","period":"During COVID","value":6200},
+      {"stream":"Regional","period":"Post-COVID","value":32400},
+
+      {"stream":"Business Innovation","period":"Pre-COVID","value":7300},
+      {"stream":"Business Innovation","period":"During COVID","value":11800},
+      {"stream":"Business Innovation","period":"Post-COVID","value":9200},
+
+      {"stream":"Global Talent","period":"Pre-COVID","value":5000},
+      {"stream":"Global Talent","period":"During COVID","value":15100},
+      {"stream":"Global Talent","period":"Post-COVID","value":6200},
+
+      {"stream":"Partner","period":"Pre-COVID","value":39500},
+      {"stream":"Partner","period":"During COVID","value":72300},
+      {"stream":"Partner","period":"Post-COVID","value":40500}
     ]
   },
+
   "layer": [
+
     {
-      "mark": {"type": "rule", "strokeWidth": 2},
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "opacity": 0.9
+      },
+
       "encoding": {
-        "x": {"field": "year", "type": "ordinal", "axis": {"labelAngle": -35, "title": null}},
-        "y": {"field": "visas", "type": "quantitative", "axis": {"title": "Total Visa Grants", "labelExpr": "(datum.value/1000) + 'k'"}},
-        "y2": {"datum": 0},
+
+        "y": {
+          "field": "stream",
+          "type": "nominal",
+          "sort": [
+            "Partner",
+            "Skilled Independent",
+            "Employer Sponsored",
+            "Regional",
+            "Global Talent",
+            "Business Innovation"
+          ],
+          "axis": {
+            "title": null,
+            "labelFontSize": 11,
+            "labelColor": "#444"
+          }
+        },
+
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "title": "Visa Grants",
+            "grid": true,
+            "gridColor": "#ececec",
+            "labelColor": "#555",
+            "titleColor": "#444",
+            "tickCount": 6
+          }
+        },
+
+        "detail": {
+          "field": "stream"
+        },
+
         "color": {
-          "condition": {"test": "datum.covid", "value": "#c0392b"},
-          "value": "#3b82f6"
+          "field": "period",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Pre-COVID", "During COVID", "Post-COVID"],
+            "range": ["#3b82f6", "#ef4444", "#10b981"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "right",
+            "labelFontSize": 11,
+            "labelColor": "#444",
+            "symbolType": "circle"
+          }
         }
       }
     },
+
     {
-      "mark": {"type": "point", "filled": true, "size": 150},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      },
+
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "visas", "type": "quantitative"},
-        "color": {
-          "condition": {"test": "datum.covid", "value": "#c0392b"},
-          "value": "#3b82f6"
+
+        "y": {
+          "field": "stream",
+          "type": "nominal",
+          "sort": [
+            "Partner",
+            "Skilled Independent",
+            "Employer Sponsored",
+            "Regional",
+            "Global Talent",
+            "Business Innovation"
+          ]
         },
+
+        "x": {
+          "field": "value",
+          "type": "quantitative"
+        },
+
+        "color": {
+          "field": "period",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Pre-COVID", "During COVID", "Post-COVID"],
+            "range": ["#3b82f6", "#ef4444", "#10b981"]
+          }
+        },
+
         "tooltip": [
-          {"field": "year", "title": "Year"},
-          {"field": "visas", "title": "Visas Granted", "format": ","}
+          {"field": "stream", "title": "Visa Stream"},
+          {"field": "period", "title": "Period"},
+          {"field": "value", "title": "Visa Grants", "format": ","}
         ]
       }
-    },
-    {
-      "mark": {"type": "text", "dy": -12, "fontSize": 10, "fontWeight": "bold"},
-      "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "visas", "type": "quantitative"},
-        "text": {"field": "visas", "format": ","},
-        "color": {
-          "condition": {"test": "datum.covid", "value": "#c0392b"},
-          "value": "#9a9590"
-        }
-      }
     }
-  ]
+
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
 }
