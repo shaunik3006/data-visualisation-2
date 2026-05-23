@@ -8,7 +8,7 @@
   "layer": [
     {
       "data": {
-        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+        "url": "https://shaunik3006.github.io/data-visualisation-2/charts/aus-states.json"
         "format": {"type": "topojson", "feature": "countries"}
       },
       "transform": [{"filter": "datum.id === 36"}],
