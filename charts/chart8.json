@@ -32,7 +32,7 @@
           "lookup": "state",
           "from": {
             "data": {
-              "url": "/charts/aus-states.json",
+              "url": "https://shaunik3006.github.io/data-visualisation-2/charts/aus-states.json"
               "format": {"type": "json", "property": "features"}
             },
             "key": "properties.STATE_NAME",
