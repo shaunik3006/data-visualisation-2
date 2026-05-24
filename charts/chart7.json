@@ -75,7 +75,7 @@
         "x": {
           "field": "year",
           "type": "ordinal",
-          "axis": {"labelAngle": -35, "title": null, "labelFontSize": 10}
+          "axis": {"labelAngle": -35, "title": null, "labelFontSize": 10, "labelFontWeight": "bold"}
         },
         "y": {
           "field": "visas",
@@ -83,7 +83,8 @@
           "axis": {
             "title": "Employer Sponsored Visas",
             "labelExpr": "(datum.value/1000) + 'k'",
-            "gridColor": "#f0f0f0"
+            "gridColor": "#f0f0f0",
+            "labelFontWeight": "bold"
           }
         },
         "color": {
@@ -105,10 +106,10 @@
     {
       "data": {
         "values": [
-          {"year": "2020–21", "visas": 5900, "label": "COVID — every sector collapsed"}
+          {"year": "2020–21", "visas": 3500, "label": "COVID — every sector collapsed", "bottom": 30}
         ]
       },
-      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#374151"},
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#000000"},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "visas", "type": "quantitative"},
@@ -121,7 +122,7 @@
           {"year": "2023–24", "visas": 6100, "label": "IT & Health lead the recovery"}
         ]
       },
-      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#374151"},
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#7205a5"},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "visas", "type": "quantitative"},
