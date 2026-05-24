@@ -26,10 +26,7 @@
           {"year": "2024-25", "country": "South Africa", "value": 8620}
         ]
       },
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2.5
-      },
+      "mark": {"type": "line", "strokeWidth": 2.5},
       "encoding": {
         "x": {
           "field": "year",
@@ -37,7 +34,8 @@
           "axis": {
             "title": null,
             "labelFontSize": 13,
-            "labelFontWeight": "bold"
+            "labelFontWeight": "bold",
+            "labelAngle": 0
           }
         },
         "y": {
@@ -55,7 +53,7 @@
             "domain": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "South Africa"],
             "range": ["#f97316", "#ef4444", "#3b82f6", "#10b981", "#8b5cf6", "#ec4899", "#14b8a6", "#f59e0b"]
           },
-          "legend": null
+          "legend": {"title": "Country", "orient": "right"}
         },
         "tooltip": [
           {"field": "country", "title": "Country"},
@@ -67,56 +65,101 @@
     {
       "data": {
         "values": [
-          {"year": "2004-05", "country": "India", "value": 21070},
-          {"year": "2024-25", "country": "India", "value": 74540},
-          {"year": "2004-05", "country": "China", "value": 28870},
-          {"year": "2024-25", "country": "China", "value": 69860},
-          {"year": "2004-05", "country": "UK", "value": 39870},
-          {"year": "2024-25", "country": "UK", "value": 40180},
-          {"year": "2004-05", "country": "New Zealand", "value": 32030},
-          {"year": "2024-25", "country": "New Zealand", "value": 35050},
-          {"year": "2004-05", "country": "Philippines", "value": 7900},
-          {"year": "2024-25", "country": "Philippines", "value": 25560},
-          {"year": "2004-05", "country": "Nepal", "value": 630},
-          {"year": "2024-25", "country": "Nepal", "value": 18480},
-          {"year": "2004-05", "country": "Vietnam", "value": 4280},
-          {"year": "2024-25", "country": "Vietnam", "value": 13950},
-          {"year": "2004-05", "country": "South Africa", "value": 7400},
-          {"year": "2024-25", "country": "South Africa", "value": 8620}
+          {
+            "year": "2024-25",
+            "value": 57000,
+            "label": "Asia surges ahead",
+            "sub": "India & China combined: 144k"
+          }
         ]
       },
       "mark": {
         "type": "text",
         "fontSize": 11,
-        "fontWeight": "bold"
+        "fontWeight": "bold",
+        "align": "right",
+        "dx": -10,
+        "dy": -8,
+        "color": "#111827"
       },
       "encoding": {
-        "x": {
-          "field": "year",
-          "type": "ordinal"
-        },
-        "y": {
-          "field": "value",
-          "type": "quantitative"
-        },
-        "text": {"field": "country"},
-        "color": {
-          "field": "country",
-          "type": "nominal",
-          "scale": {
-            "domain": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "South Africa"],
-            "range": ["#f97316", "#ef4444", "#3b82f6", "#10b981", "#8b5cf6", "#ec4899", "#14b8a6", "#f59e0b"]
-          },
-          "legend": null
-        },
-        "dx": {
-          "condition": {"test": "datum.year == '2024-25'", "value": 8},
-          "value": -8
-        },
-        "align": {
-          "condition": {"test": "datum.year == '2024-25'", "value": "left"},
-          "value": "right"
-        }
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": "2024-25",
+            "value": 57000,
+            "sub": "India & China combined: 144k"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "normal",
+        "fontStyle": "italic",
+        "align": "right",
+        "dx": -10,
+        "dy": 6,
+        "color": "#6b7280"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "text": {"field": "sub"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": "2004-05",
+            "value": 40500,
+            "label": "UK led in 2004"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "align": "left",
+        "dx": 10,
+        "color": "#3b82f6"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": "2004-05",
+            "value": 1800,
+            "label": "Nepal: just 630 arrivals"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "align": "left",
+        "dx": 10,
+        "color": "#ec4899"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
   ]

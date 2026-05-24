@@ -163,7 +163,7 @@
         "domain": ["Skill", "Family", "Child"],
         "range": ["#2563eb", "#f59e0b", "#10b981"]
       },
-      "legend": {"title": "Stream", "orient": "top-left"}
+      "legend": {"title": "Stream", "orient": "right"}
     },
     "tooltip": [
       {"field": "year", "title": "Year"},

@@ -222,12 +222,12 @@
       "field": "arrivals",
       "type": "quantitative",
       "scale": {"scheme": "blues"},
-      "legend": {
+     "legend": {
         "title": "Arrivals",
         "labelExpr": "(datum.value/1000) + 'k'",
-        "orient": "bottom-right",
-        "direction": "horizontal",
-        "gradientLength": 200
+        "orient": "right",
+        "direction": "vertical",
+        "gradientLength": 150
       }
     },
     "tooltip": [

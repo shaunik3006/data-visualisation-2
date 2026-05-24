@@ -6,13 +6,13 @@
   "config": {"view": {"stroke": null}},
   "projection": {"type": "naturalEarth1", "rotate": [-10, 0, 0]},
   "layer": [
-        {
-    "data": {
+    {
+      "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
         "format": {"type": "topojson", "feature": "countries"}
-    },
-    "transform": [{"filter": "datum.id !== 10"}],
-    "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#cbd5e1", "strokeWidth": 0.5}
+      },
+      "transform": [{"filter": "datum.id !== 10"}],
+      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#cbd5e1", "strokeWidth": 0.5}
     },
     {
       "data": {
@@ -61,19 +61,19 @@
       "encoding": {
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
-        "field": "arrivals",
-        "type": "quantitative",
-        "scale": {
+          "field": "arrivals",
+          "type": "quantitative",
+          "scale": {
             "scheme": "blues",
             "domain": [1000, 80000]
-        },
-        "legend": {
+          },
+          "legend": {
             "title": "Arrivals 2024–25",
             "labelExpr": "(datum.value/1000) + 'k'",
-            "orient": "bottom-right",
-            "direction": "horizontal",
-            "gradientLength": 200
-        }
+            "orient": "right",
+            "direction": "vertical",
+            "gradientLength": 150
+          }
         },
         "tooltip": [
           {"field": "country", "title": "Country"},

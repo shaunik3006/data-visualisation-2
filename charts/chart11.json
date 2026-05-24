@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 750,
+  "width": 650,
   "height": 340,
   "background": "#ffffff",
 
@@ -92,7 +92,8 @@
             "orient": "right",
             "labelFontSize": 11,
             "labelColor": "#444",
-            "symbolType": "circle"
+            "symbolType": "circle",
+            "offset": 50
           }
         }
       }

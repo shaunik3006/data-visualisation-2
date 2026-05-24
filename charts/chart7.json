@@ -1,107 +1,145 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 750,
+  "width": 700,
   "height": 420,
   "background": "#ffffff",
   "config": {"view": {"stroke": null}},
-  "data": {
-    "values": [
-      {"industry": "Accommodation & Food", "year": "2015–16", "visas": 4528},
-      {"industry": "Accommodation & Food", "year": "2016–17", "visas": 4473},
-      {"industry": "Accommodation & Food", "year": "2017–18", "visas": 2381},
-      {"industry": "Accommodation & Food", "year": "2018–19", "visas": 3824},
-      {"industry": "Accommodation & Food", "year": "2019–20", "visas": 2455},
-      {"industry": "Accommodation & Food", "year": "2020–21", "visas": 1041},
-      {"industry": "Accommodation & Food", "year": "2021–22", "visas": 1749},
-      {"industry": "Accommodation & Food", "year": "2022–23", "visas": 1752},
-      {"industry": "Accommodation & Food", "year": "2023–24", "visas": 1734},
-      {"industry": "Accommodation & Food", "year": "2024–25", "visas": 2242},
-
-      {"industry": "Construction", "year": "2015–16", "visas": 1696},
-      {"industry": "Construction", "year": "2016–17", "visas": 1683},
-      {"industry": "Construction", "year": "2017–18", "visas": 1112},
-      {"industry": "Construction", "year": "2018–19", "visas": 1135},
-      {"industry": "Construction", "year": "2019–20", "visas": 1092},
-      {"industry": "Construction", "year": "2020–21", "visas": 1119},
-      {"industry": "Construction", "year": "2021–22", "visas": 864},
-      {"industry": "Construction", "year": "2022–23", "visas": 1460},
-      {"industry": "Construction", "year": "2023–24", "visas": 1269},
-      {"industry": "Construction", "year": "2024–25", "visas": 1396},
-
-      {"industry": "Education & Training", "year": "2015–16", "visas": 1245},
-      {"industry": "Education & Training", "year": "2016–17", "visas": 1296},
-      {"industry": "Education & Training", "year": "2017–18", "visas": 1114},
-      {"industry": "Education & Training", "year": "2018–19", "visas": 1706},
-      {"industry": "Education & Training", "year": "2019–20", "visas": 902},
-      {"industry": "Education & Training", "year": "2020–21", "visas": 607},
-      {"industry": "Education & Training", "year": "2021–22", "visas": 486},
-      {"industry": "Education & Training", "year": "2022–23", "visas": 719},
-      {"industry": "Education & Training", "year": "2023–24", "visas": 579},
-      {"industry": "Education & Training", "year": "2024–25", "visas": 713},
-
-      {"industry": "Health Care", "year": "2015–16", "visas": 3120},
-      {"industry": "Health Care", "year": "2016–17", "visas": 3241},
-      {"industry": "Health Care", "year": "2017–18", "visas": 2890},
-      {"industry": "Health Care", "year": "2018–19", "visas": 3102},
-      {"industry": "Health Care", "year": "2019–20", "visas": 2340},
-      {"industry": "Health Care", "year": "2020–21", "visas": 2890},
-      {"industry": "Health Care", "year": "2021–22", "visas": 3450},
-      {"industry": "Health Care", "year": "2022–23", "visas": 4120},
-      {"industry": "Health Care", "year": "2023–24", "visas": 4890},
-      {"industry": "Health Care", "year": "2024–25", "visas": 5230},
-
-      {"industry": "Information Technology", "year": "2015–16", "visas": 4200},
-      {"industry": "Information Technology", "year": "2016–17", "visas": 4450},
-      {"industry": "Information Technology", "year": "2017–18", "visas": 3800},
-      {"industry": "Information Technology", "year": "2018–19", "visas": 4100},
-      {"industry": "Information Technology", "year": "2019–20", "visas": 2900},
-      {"industry": "Information Technology", "year": "2020–21", "visas": 2100},
-      {"industry": "Information Technology", "year": "2021–22", "visas": 3200},
-      {"industry": "Information Technology", "year": "2022–23", "visas": 5100},
-      {"industry": "Information Technology", "year": "2023–24", "visas": 5800},
-      {"industry": "Information Technology", "year": "2024–25", "visas": 5400},
-
-      {"industry": "Professional Services", "year": "2015–16", "visas": 2100},
-      {"industry": "Professional Services", "year": "2016–17", "visas": 2200},
-      {"industry": "Professional Services", "year": "2017–18", "visas": 1900},
-      {"industry": "Professional Services", "year": "2018–19", "visas": 2050},
-      {"industry": "Professional Services", "year": "2019–20", "visas": 1600},
-      {"industry": "Professional Services", "year": "2020–21", "visas": 1200},
-      {"industry": "Professional Services", "year": "2021–22", "visas": 1500},
-      {"industry": "Professional Services", "year": "2022–23", "visas": 2300},
-      {"industry": "Professional Services", "year": "2023–24", "visas": 2600},
-      {"industry": "Professional Services", "year": "2024–25", "visas": 2800}
-    ]
-  },
-  "mark": {"type": "line", "point": {"filled": true, "size": 50}, "strokeWidth": 2, "interpolate": "monotone"},
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "axis": {"labelAngle": -35, "title": null, "labelFontSize": 10}
-    },
-    "y": {
-      "field": "visas",
-      "type": "quantitative",
-      "axis": {
-        "title": "Employer Sponsored Visas",
-        "labelExpr": "(datum.value/1000) + 'k'",
-        "gridColor": "#f0f0f0"
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {"industry": "Accommodation & Food", "year": "2015–16", "visas": 4528},
+          {"industry": "Accommodation & Food", "year": "2016–17", "visas": 4473},
+          {"industry": "Accommodation & Food", "year": "2017–18", "visas": 2381},
+          {"industry": "Accommodation & Food", "year": "2018–19", "visas": 3824},
+          {"industry": "Accommodation & Food", "year": "2019–20", "visas": 2455},
+          {"industry": "Accommodation & Food", "year": "2020–21", "visas": 1041},
+          {"industry": "Accommodation & Food", "year": "2021–22", "visas": 1749},
+          {"industry": "Accommodation & Food", "year": "2022–23", "visas": 1752},
+          {"industry": "Accommodation & Food", "year": "2023–24", "visas": 1734},
+          {"industry": "Accommodation & Food", "year": "2024–25", "visas": 2242},
+          {"industry": "Construction", "year": "2015–16", "visas": 1696},
+          {"industry": "Construction", "year": "2016–17", "visas": 1683},
+          {"industry": "Construction", "year": "2017–18", "visas": 1112},
+          {"industry": "Construction", "year": "2018–19", "visas": 1135},
+          {"industry": "Construction", "year": "2019–20", "visas": 1092},
+          {"industry": "Construction", "year": "2020–21", "visas": 1119},
+          {"industry": "Construction", "year": "2021–22", "visas": 864},
+          {"industry": "Construction", "year": "2022–23", "visas": 1460},
+          {"industry": "Construction", "year": "2023–24", "visas": 1269},
+          {"industry": "Construction", "year": "2024–25", "visas": 1396},
+          {"industry": "Education & Training", "year": "2015–16", "visas": 1245},
+          {"industry": "Education & Training", "year": "2016–17", "visas": 1296},
+          {"industry": "Education & Training", "year": "2017–18", "visas": 1114},
+          {"industry": "Education & Training", "year": "2018–19", "visas": 1706},
+          {"industry": "Education & Training", "year": "2019–20", "visas": 902},
+          {"industry": "Education & Training", "year": "2020–21", "visas": 607},
+          {"industry": "Education & Training", "year": "2021–22", "visas": 486},
+          {"industry": "Education & Training", "year": "2022–23", "visas": 719},
+          {"industry": "Education & Training", "year": "2023–24", "visas": 579},
+          {"industry": "Education & Training", "year": "2024–25", "visas": 713},
+          {"industry": "Health Care", "year": "2015–16", "visas": 3120},
+          {"industry": "Health Care", "year": "2016–17", "visas": 3241},
+          {"industry": "Health Care", "year": "2017–18", "visas": 2890},
+          {"industry": "Health Care", "year": "2018–19", "visas": 3102},
+          {"industry": "Health Care", "year": "2019–20", "visas": 2340},
+          {"industry": "Health Care", "year": "2020–21", "visas": 2890},
+          {"industry": "Health Care", "year": "2021–22", "visas": 3450},
+          {"industry": "Health Care", "year": "2022–23", "visas": 4120},
+          {"industry": "Health Care", "year": "2023–24", "visas": 4890},
+          {"industry": "Health Care", "year": "2024–25", "visas": 5230},
+          {"industry": "Information Technology", "year": "2015–16", "visas": 4200},
+          {"industry": "Information Technology", "year": "2016–17", "visas": 4450},
+          {"industry": "Information Technology", "year": "2017–18", "visas": 3800},
+          {"industry": "Information Technology", "year": "2018–19", "visas": 4100},
+          {"industry": "Information Technology", "year": "2019–20", "visas": 2900},
+          {"industry": "Information Technology", "year": "2020–21", "visas": 2100},
+          {"industry": "Information Technology", "year": "2021–22", "visas": 3200},
+          {"industry": "Information Technology", "year": "2022–23", "visas": 5100},
+          {"industry": "Information Technology", "year": "2023–24", "visas": 5800},
+          {"industry": "Information Technology", "year": "2024–25", "visas": 5400},
+          {"industry": "Professional Services", "year": "2015–16", "visas": 2100},
+          {"industry": "Professional Services", "year": "2016–17", "visas": 2200},
+          {"industry": "Professional Services", "year": "2017–18", "visas": 1900},
+          {"industry": "Professional Services", "year": "2018–19", "visas": 2050},
+          {"industry": "Professional Services", "year": "2019–20", "visas": 1600},
+          {"industry": "Professional Services", "year": "2020–21", "visas": 1200},
+          {"industry": "Professional Services", "year": "2021–22", "visas": 1500},
+          {"industry": "Professional Services", "year": "2022–23", "visas": 2300},
+          {"industry": "Professional Services", "year": "2023–24", "visas": 2600},
+          {"industry": "Professional Services", "year": "2024–25", "visas": 2800}
+        ]
+      },
+      "mark": {"type": "line", "point": {"filled": true, "size": 50}, "strokeWidth": 2, "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {"labelAngle": -35, "title": null, "labelFontSize": 10}
+        },
+        "y": {
+          "field": "visas",
+          "type": "quantitative",
+          "axis": {
+            "title": "Employer Sponsored Visas",
+            "labelExpr": "(datum.value/1000) + 'k'",
+            "gridColor": "#f0f0f0"
+          }
+        },
+        "color": {
+          "field": "industry",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Accommodation & Food", "Construction", "Education & Training", "Health Care", "Information Technology", "Professional Services"],
+            "range": ["#f97316", "#3b82f6", "#10b981", "#ec4899", "#8b5cf6", "#f59e0b"]
+          },
+          "legend": {"title": "Industry", "orient": "right", "offset": 20}
+        },
+        "tooltip": [
+          {"field": "industry", "title": "Industry"},
+          {"field": "year", "title": "Year"},
+          {"field": "visas", "title": "Visas Granted", "format": ","}
+        ]
       }
     },
-    "color": {
-      "field": "industry",
-      "type": "nominal",
-      "scale": {
-        "domain": ["Accommodation & Food", "Construction", "Education & Training", "Health Care", "Information Technology", "Professional Services"],
-        "range": ["#f97316", "#3b82f6", "#10b981", "#ec4899", "#8b5cf6", "#f59e0b"]
+    {
+      "data": {
+        "values": [
+          {"year": "2020–21", "visas": 5900, "label": "COVID — every sector collapsed"}
+        ]
       },
-      "legend": {"title": "Industry", "orient": "right"}
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#374151"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "visas", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
     },
-    "tooltip": [
-      {"field": "industry", "title": "Industry"},
-      {"field": "year", "title": "Year"},
-      {"field": "visas", "title": "Visas Granted", "format": ","}
-    ]
-  }
+    {
+      "data": {
+        "values": [
+          {"year": "2023–24", "visas": 6100, "label": "IT & Health lead the recovery"}
+        ]
+      },
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "fontStyle": "italic", "align": "center", "dy": -10, "color": "#374151"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "visas", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"year": "2015–16", "visas": 4700, "label": "Food & hospitality once topped the chart"}
+        ]
+      },
+      "mark": {"type": "text", "fontSize": 10, "fontStyle": "italic", "align": "left", "dx": 5, "dy": -10, "color": "#f97316"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "visas", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
 }

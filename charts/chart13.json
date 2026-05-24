@@ -171,11 +171,11 @@
           },
           "legend": {
             "title": null,
-            "orient": "top-right",
+            "orient": "right",
             "symbolType": "stroke",
             "symbolStrokeWidth": 3,
             "symbolSize": 200,
-            "offset": 12
+            "offset": 50
           }
         },
         "opacity": {
