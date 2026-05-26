@@ -1,90 +1,126 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 750,
-  "height": 400,
+  "width": 600,
+  "height": 320,
   "background": "#ffffff",
   "config": {"view": {"stroke": null}},
   "data": {
     "values": [
-      {"category": "Employer Sponsored", "group": "Female", "pct": 38},
-      {"category": "Employer Sponsored", "group": "Male", "pct": 62},
-      {"category": "State/Territory Nominated", "group": "Female", "pct": 45},
-      {"category": "State/Territory Nominated", "group": "Male", "pct": 55},
-      {"category": "Skilled Independent", "group": "Female", "pct": 41},
-      {"category": "Skilled Independent", "group": "Male", "pct": 59},
-      {"category": "Regional", "group": "Female", "pct": 50},
-      {"category": "Regional", "group": "Male", "pct": 50},
-      {"category": "Global Talent", "group": "Female", "pct": 33},
-      {"category": "Global Talent", "group": "Male", "pct": 67},
-      {"category": "Business Innovation", "group": "Female", "pct": 28},
-      {"category": "Business Innovation", "group": "Male", "pct": 72},
-      {"category": "Partner (Family)", "group": "Female", "pct": 62},
-      {"category": "Partner (Family)", "group": "Male", "pct": 38},
-      {"category": "Child", "group": "Female", "pct": 49},
-      {"category": "Child", "group": "Male", "pct": 51}
+      {"category": "Business Innovation", "female": 28, "male": 72, "female_dev": -22, "male_dev": 22},
+      {"category": "Global Talent",        "female": 33, "male": 67, "female_dev": -17, "male_dev": 17},
+      {"category": "Employer Sponsored",   "female": 38, "male": 62, "female_dev": -12, "male_dev": 12},
+      {"category": "Skilled Independent",  "female": 41, "male": 59, "female_dev": -9,  "male_dev": 9},
+      {"category": "State/Territory Nom.", "female": 45, "male": 55, "female_dev": -5,  "male_dev": 5},
+      {"category": "Child",                "female": 49, "male": 51, "female_dev": -1,  "male_dev": 1},
+      {"category": "Regional",             "female": 50, "male": 50, "female_dev": -0.3, "male_dev": 0.3},
+      {"category": "Partner (Family)",     "female": 62, "male": 38, "female_dev": 12,  "male_dev": -12}
     ]
   },
   "layer": [
     {
-      "mark": {"type": "line", "strokeWidth": 2, "color": "#e2e8f0"},
+      "mark": {"type": "bar", "height": 24},
       "encoding": {
         "y": {
           "field": "category",
           "type": "nominal",
-          "sort": ["Employer Sponsored", "State/Territory Nominated", "Skilled Independent", "Regional", "Global Talent", "Business Innovation", "Partner (Family)", "Child"],
-          "axis": {"title": null, "labelFontSize": 11}
+          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"],
+          "axis": {"title": null, "labelFontSize": 11, "labelFontWeight": "normal", "labelColor": "#374151"}
         },
         "x": {
-          "field": "pct",
+          "field": "female_dev",
           "type": "quantitative",
+          "scale": {"domain": [-25, 25]},
           "axis": {
-            "title": "Share (%)",
-            "gridColor": "#f0f0f0"
+            "title": null,
+            "labelExpr": "abs(datum.value) + '%'",
+            "gridColor": "#f3f4f6",
+            "labelFontSize": 10,
+            "labelColor": "#9ca3af"
           }
         },
-        "detail": {"field": "category"}
-      }
-    },
-    {
-      "mark": {"type": "point", "filled": true, "size": 120, "opacity": 1},
-      "encoding": {
-        "y": {
-          "field": "category",
-          "type": "nominal",
-          "sort": ["Employer Sponsored", "State/Territory Nominated", "Skilled Independent", "Regional", "Global Talent", "Business Innovation", "Partner (Family)", "Child"],
-          "axis": {"title": null, "labelFontSize": 11}
-        },
-        "x": {
-          "field": "pct",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "group",
-          "type": "nominal",
-          "scale": {
-            "domain": ["Female", "Male"],
-            "range": ["#ec4899", "#2563eb"]
-          },
-          "legend": {"title": "Gender", "orient": "top-right"}
+        "x2": {"value": 0},
+        "color": {"value": "#f9a8d4"},
+        "opacity": {
+          "condition": {"param": "hover", "empty": true, "value": 1},
+          "value": 0.3
         },
         "tooltip": [
           {"field": "category", "title": "Visa Category"},
-          {"field": "group", "title": "Gender"},
-          {"field": "pct", "title": "Share (%)", "format": ".0f"}
+          {"field": "female", "title": "Female %", "format": ".0f"},
+          {"field": "male",   "title": "Male %",   "format": ".0f"}
+        ]
+      },
+      "params": [{"name": "hover", "select": {"type": "point", "on": "mouseover", "fields": ["category"]}}]
+    },
+    {
+      "mark": {"type": "bar", "height": 24},
+      "encoding": {
+        "y": {
+          "field": "category",
+          "type": "nominal",
+          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
+        },
+        "x":  {"field": "male_dev",  "type": "quantitative"},
+        "x2": {"value": 0},
+        "color": {"value": "#93c5fd"},
+        "opacity": {
+          "condition": {"param": "hover", "empty": true, "value": 1},
+          "value": 0.3
+        },
+        "tooltip": [
+          {"field": "category", "title": "Visa Category"},
+          {"field": "female", "title": "Female %", "format": ".0f"},
+          {"field": "male",   "title": "Male %",   "format": ".0f"}
         ]
       }
     },
     {
-      "mark": {
-        "type": "rule",
-        "strokeDash": [4, 4],
-        "color": "#94a3b8",
-        "strokeWidth": 1
-      },
-      "data": {"values": [{"x": 50}]},
+      "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#d1d5db"},
+      "data": {"values": [{"x": 0}]},
+      "encoding": {"x": {"field": "x", "type": "quantitative"}}
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": -6, "fontSize": 9, "color": "#db2777", "fontWeight": "bold"},
       "encoding": {
-        "x": {"field": "x", "type": "quantitative"}
+        "y": {
+          "field": "category", "type": "nominal",
+          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
+        },
+        "x": {"field": "female_dev", "type": "quantitative"},
+        "text": {
+          "condition": {"test": "datum.female_dev < -3", "field": "female", "format": ".0f"},
+          "value": ""
+        }
       }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 9, "color": "#1d4ed8", "fontWeight": "bold"},
+      "encoding": {
+        "y": {
+          "field": "category", "type": "nominal",
+          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
+        },
+        "x": {"field": "male_dev", "type": "quantitative"},
+        "text": {
+          "condition": {"test": "datum.male_dev > 3", "field": "male", "format": ".0f"},
+          "value": ""
+        }
+      }
+    },
+    {
+      "mark": {"type": "rule", "strokeWidth": 1, "strokeDash": [3,3], "color": "#e5e7eb"},
+      "data": {"values": [{"x": -25}, {"x": 25}]},
+      "encoding": {"x": {"field": "x", "type": "quantitative"}}
+    },
+    {
+      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "500", "color": "#db2777"},
+      "data": {"values": [{"x": -13, "label": "← Female"}]},
+      "encoding": {"x": {"field": "x", "type": "quantitative"}, "text": {"field": "label"}}
+    },
+    {
+      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "500", "color": "#1d4ed8"},
+      "data": {"values": [{"x": 13, "label": "Male →"}]},
+      "encoding": {"x": {"field": "x", "type": "quantitative"}, "text": {"field": "label"}}
     }
   ]
 }
