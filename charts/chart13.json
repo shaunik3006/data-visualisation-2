@@ -6,10 +6,10 @@
 
   "config": {
     "view": { "stroke": null },
-    "font": "Georgia, serif",
+    "font": "Arial, sans-serif",
     "axis": {
-      "labelFont": "Georgia, serif",
-      "titleFont": "Georgia, serif",
+      "labelFont": "Inter, sans-serif",
+      "titleFont": "Inter, sans-serif",
       "labelFontSize": 11,
       "titleFontSize": 12,
       "gridColor": "#f1f5f9",
