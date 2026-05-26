@@ -1,4 +1,4 @@
-const embedOpts = { actions: false };
+const embedOpts = { actions: false, renderer: 'svg' };
 
 vegaEmbed('#chart1', 'charts/chart1.json', embedOpts);
 vegaEmbed('#chart2', 'charts/chart2.json', embedOpts);
