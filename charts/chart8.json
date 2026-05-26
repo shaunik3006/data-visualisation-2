@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 750,
-  "height": 500,
+  "width": 650,
+  "height": 450,
   "background": "#ffffff",
   "config": {"view": {"stroke": null}},
-  "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
   "layer": [
     {
       "data": {
@@ -12,50 +11,48 @@
         "format": {"type": "topojson", "feature": "countries"}
       },
       "transform": [{"filter": "datum.id === 36"}],
-      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#cbd5e1", "strokeWidth": 0.5}
+      "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
+      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#ffffff", "strokeWidth": 0.5}
     },
     {
       "data": {
-        "values": [
-          {"state": "New South Wales", "arrivals": 169990, "id": "1"},
-          {"state": "Victoria", "arrivals": 149490, "id": "2"},
-          {"state": "Queensland", "arrivals": 97370, "id": "3"},
-          {"state": "South Australia", "arrivals": 27160, "id": "4"},
-          {"state": "Western Australia", "arrivals": 65310, "id": "5"},
-          {"state": "Tasmania", "arrivals": 4750, "id": "6"},
-          {"state": "Northern Territory", "arrivals": 5250, "id": "7"},
-          {"state": "Australian Capital Territory", "arrivals": 9480, "id": "8"}
-        ]
+        "url": "charts/aus-states.json",
+        "format": {"type": "json", "property": "features"}
       },
       "transform": [
         {
-          "lookup": "state",
+          "lookup": "properties.STATE_NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson"
+              "values": [
+                {"state": "New South Wales", "arrivals": 169990},
+                {"state": "Victoria", "arrivals": 149490},
+                {"state": "Queensland", "arrivals": 97370},
+                {"state": "Western Australia", "arrivals": 65310},
+                {"state": "South Australia", "arrivals": 27160},
+                {"state": "Australian Capital Territory", "arrivals": 9480},
+                {"state": "Northern Territory", "arrivals": 5250},
+                {"state": "Tasmania", "arrivals": 4750}
+              ]
             },
-            "key": "properties.STATE_NAME",
-            "fields": ["type", "geometry", "properties"]
-          },
-          "as": ["type", "geometry", "properties"]
+            "key": "state",
+            "fields": ["arrivals", "state"]
+          }
         }
       ],
+      "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
       "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 1},
       "encoding": {
-        "shape": {
-          "field": "geometry",
-          "type": "geojson"
-        },
         "color": {
           "field": "arrivals",
           "type": "quantitative",
-          "scale": {"scheme": "blues"},
+          "scale": {"scheme": "blues", "domain": [4000, 170000]},
           "legend": {
             "title": "Arrivals 2024–25",
             "labelExpr": "(datum.value / 1000) + 'k'",
-            "orient": "bottom-right",
-            "direction": "horizontal",
-            "gradientLength": 200
+            "orient": "right",
+            "direction": "vertical",
+            "gradientLength": 150
           }
         },
         "tooltip": [

@@ -1,13 +1,5 @@
-/* ─────────────────────────────────────────
-   FONTS
-   Using DM Sans (clean modern sans) +
-   Fraunces (distinctive editorial serif)
-   ───────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap');
 
-/* ─────────────────────────────────────────
-   DESIGN TOKENS
-   ───────────────────────────────────────── */
 :root {
   --ink:        #0f0f0f;
   --ink-muted:  #555;
@@ -15,27 +7,21 @@
   --rule:       #e2e2e2;
   --bg:         #f8f7f4;
   --card:       #ffffff;
-  --accent:     #1a3a5c;      /* deep navy — headline accent */
-  --accent-mid: #2e6da4;      /* mid blue for tags/numbers */
+  --accent:     #1a3a5c;     
+  --accent-mid: #2e6da4;     
 
-  /* Layout */
   --max-w:      1080px;
-  --col-text:   600px;        /* body copy max-width → sightline */
+  --col-text:   600px;        
   --gutter:     2.5rem;
 
-  /* Type scale */
   --fs-eyebrow: 0.7rem;
   --fs-body:    0.875rem;
   --fs-h2:      1.9rem;
   --fs-h1:      4rem;
 
-  /* Rhythm */
   --section-gap: 5rem;
 }
 
-/* ─────────────────────────────────────────
-   RESET & BASE
-   ───────────────────────────────────────── */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -57,9 +43,6 @@ body {
   padding: 0 var(--gutter);
 }
 
-/* ─────────────────────────────────────────
-   HERO
-   ───────────────────────────────────────── */
 .hero {
   padding: 6rem 0 4rem;
   max-width: var(--max-w);
@@ -99,9 +82,6 @@ h1 {
   background: var(--rule);
 }
 
-/* ─────────────────────────────────────────
-   SECTION META (number + tag)
-   ───────────────────────────────────────── */
 .section-meta {
   display: flex;
   align-items: center;
@@ -125,9 +105,6 @@ h1 {
   color: var(--ink-faint);
 }
 
-/* ─────────────────────────────────────────
-   CHART SECTIONS
-   ───────────────────────────────────────── */
 .chart-section {
   background: var(--card);
   border-radius: 12px;
@@ -155,19 +132,11 @@ h1 {
   margin-bottom: 2.5rem;
 }
 
-/* ─────────────────────────────────────────
-   CHART CONTAINER
-   Charts sit flush — no card boxing.
-   Sightlines: left-edge aligns with text.
-   ───────────────────────────────────────── */
 .chart-wrap {
   width: 100%;
   min-height: 380px;
 }
 
-/* ─────────────────────────────────────────
-   FOOTER
-   ───────────────────────────────────────── */
 footer {
   margin-top: var(--section-gap);
   padding: 3rem 0 4rem;
@@ -198,9 +167,6 @@ footer {
   font-weight: 300;
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE
-   ───────────────────────────────────────── */
 @media (max-width: 700px) {
   :root {
     --gutter: 1.25rem;
