@@ -152,17 +152,17 @@ footer {
 .footer-label {
   display: block;
   font-size: 0.65rem;
-  font-weight: 500;
+  font-weight: 900;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: black;
   margin-bottom: 0.35rem;
 }
 
 .footer-sources,
 .footer-credit {
+    color: black;
   font-size: 0.78rem;
-  color: var(--ink-faint);
   line-height: 1.7;
   font-weight: 300;
 }

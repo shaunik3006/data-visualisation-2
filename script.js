@@ -13,3 +13,4 @@ vegaEmbed('#chart10', 'charts/chart10.json', embedOpts);
 vegaEmbed('#chart11', 'charts/chart11.json', embedOpts);
 vegaEmbed('#chart12', 'charts/chart12.json', embedOpts);
 vegaEmbed('#chart13', 'charts/chart13.json', embedOpts);
+vegaEmbed('#chart14', 'charts/chart14.json', embedOpts);

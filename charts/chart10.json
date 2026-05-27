@@ -13,7 +13,7 @@
       {"category": "State/Territory Nom.", "female": 45, "male": 55, "female_dev": -5,  "male_dev": 5},
       {"category": "Child",                "female": 49, "male": 51, "female_dev": -1,  "male_dev": 1},
       {"category": "Regional",             "female": 50, "male": 50, "female_dev": -0.3, "male_dev": 0.3},
-      {"category": "Partner (Family)",     "female": 62, "male": 38, "female_dev": 12,  "male_dev": -12}
+      {"category": "Partner (Family)",     "female": 62, "male": 38, "female_dev": -12, "male_dev": 12}
     ]
   },
   "layer": [
@@ -24,7 +24,7 @@
           "field": "category",
           "type": "nominal",
           "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"],
-          "axis": {"title": null, "labelFontSize": 11, "labelFontWeight": "normal", "labelColor": "#374151"}
+          "axis": {"title": null, "labelFontSize": 11, "labelFontWeight": "bold", "labelColor": "#111827"}
         },
         "x": {
           "field": "female_dev",
@@ -35,11 +35,12 @@
             "labelExpr": "abs(datum.value) + '%'",
             "gridColor": "#f3f4f6",
             "labelFontSize": 10,
-            "labelColor": "#9ca3af"
+            "labelFontWeight": "bold",
+            "labelColor": "#111827"
           }
         },
         "x2": {"value": 0},
-        "color": {"value": "#f9a8d4"},
+        "color": {"value": "#f472b6"},
         "opacity": {
           "condition": {"param": "hover", "empty": true, "value": 1},
           "value": 0.3
@@ -62,7 +63,7 @@
         },
         "x":  {"field": "male_dev",  "type": "quantitative"},
         "x2": {"value": 0},
-        "color": {"value": "#93c5fd"},
+        "color": {"value": "#60a5fa"},
         "opacity": {
           "condition": {"param": "hover", "empty": true, "value": 1},
           "value": 0.3
@@ -80,45 +81,34 @@
       "encoding": {"x": {"field": "x", "type": "quantitative"}}
     },
     {
-      "mark": {"type": "text", "align": "right", "dx": -6, "fontSize": 9, "color": "#db2777", "fontWeight": "bold"},
+      "mark": {"type": "text", "align": "right", "dx": -4, "fontSize": 10, "color": "#be185d", "fontWeight": "bold"},
       "encoding": {
         "y": {
           "field": "category", "type": "nominal",
           "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
         },
         "x": {"field": "female_dev", "type": "quantitative"},
-        "text": {
-          "condition": {"test": "datum.female_dev < -3", "field": "female", "format": ".0f"},
-          "value": ""
-        }
+        "text": {"field": "female", "format": ".0f"}
       }
     },
     {
-      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 9, "color": "#1d4ed8", "fontWeight": "bold"},
+      "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "color": "#1d4ed8", "fontWeight": "bold"},
       "encoding": {
         "y": {
           "field": "category", "type": "nominal",
           "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
         },
         "x": {"field": "male_dev", "type": "quantitative"},
-        "text": {
-          "condition": {"test": "datum.male_dev > 3", "field": "male", "format": ".0f"},
-          "value": ""
-        }
+        "text": {"field": "male", "format": ".0f"}
       }
     },
     {
-      "mark": {"type": "rule", "strokeWidth": 1, "strokeDash": [3,3], "color": "#e5e7eb"},
-      "data": {"values": [{"x": -25}, {"x": 25}]},
-      "encoding": {"x": {"field": "x", "type": "quantitative"}}
-    },
-    {
-      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "500", "color": "#db2777"},
+      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "bold", "color": "#be185d"},
       "data": {"values": [{"x": -13, "label": "← Female"}]},
       "encoding": {"x": {"field": "x", "type": "quantitative"}, "text": {"field": "label"}}
     },
     {
-      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "500", "color": "#1d4ed8"},
+      "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "bold", "color": "#1d4ed8"},
       "data": {"values": [{"x": 13, "label": "Male →"}]},
       "encoding": {"x": {"field": "x", "type": "quantitative"}, "text": {"field": "label"}}
     }
