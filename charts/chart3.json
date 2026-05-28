@@ -29,7 +29,6 @@
           {"year": "2022-23", "country": "India", "rank": 1},
           {"year": "2023-24", "country": "India", "rank": 1},
           {"year": "2024-25", "country": "India", "rank": 1},
-
           {"year": "2004-05", "country": "China", "rank": 2},
           {"year": "2005-06", "country": "China", "rank": 2},
           {"year": "2006-07", "country": "China", "rank": 2},
@@ -51,7 +50,6 @@
           {"year": "2022-23", "country": "China", "rank": 2},
           {"year": "2023-24", "country": "China", "rank": 2},
           {"year": "2024-25", "country": "China", "rank": 2},
-
           {"year": "2004-05", "country": "UK", "rank": 1},
           {"year": "2005-06", "country": "UK", "rank": 1},
           {"year": "2006-07", "country": "UK", "rank": 1},
@@ -73,7 +71,6 @@
           {"year": "2022-23", "country": "UK", "rank": 4},
           {"year": "2023-24", "country": "UK", "rank": 3},
           {"year": "2024-25", "country": "UK", "rank": 3},
-
           {"year": "2004-05", "country": "New Zealand", "rank": 3},
           {"year": "2005-06", "country": "New Zealand", "rank": 3},
           {"year": "2006-07", "country": "New Zealand", "rank": 4},
@@ -95,7 +92,6 @@
           {"year": "2022-23", "country": "New Zealand", "rank": 5},
           {"year": "2023-24", "country": "New Zealand", "rank": 4},
           {"year": "2024-25", "country": "New Zealand", "rank": 4},
-
           {"year": "2004-05", "country": "Philippines", "rank": 6},
           {"year": "2005-06", "country": "Philippines", "rank": 6},
           {"year": "2006-07", "country": "Philippines", "rank": 5},
@@ -117,7 +113,6 @@
           {"year": "2022-23", "country": "Philippines", "rank": 3},
           {"year": "2023-24", "country": "Philippines", "rank": 5},
           {"year": "2024-25", "country": "Philippines", "rank": 5},
-
           {"year": "2004-05", "country": "Nepal", "rank": 8},
           {"year": "2005-06", "country": "Nepal", "rank": 8},
           {"year": "2006-07", "country": "Nepal", "rank": 7},
@@ -139,7 +134,6 @@
           {"year": "2022-23", "country": "Nepal", "rank": 6},
           {"year": "2023-24", "country": "Nepal", "rank": 6},
           {"year": "2024-25", "country": "Nepal", "rank": 6},
-
           {"year": "2004-05", "country": "Vietnam", "rank": 7},
           {"year": "2005-06", "country": "Vietnam", "rank": 7},
           {"year": "2006-07", "country": "Vietnam", "rank": 6},
@@ -161,7 +155,6 @@
           {"year": "2022-23", "country": "Vietnam", "rank": 7},
           {"year": "2023-24", "country": "Vietnam", "rank": 7},
           {"year": "2024-25", "country": "Vietnam", "rank": 7},
-
           {"year": "2004-05", "country": "South Africa", "rank": 5},
           {"year": "2005-06", "country": "South Africa", "rank": 5},
           {"year": "2006-07", "country": "South Africa", "rank": 8},
@@ -185,22 +178,35 @@
           {"year": "2024-25", "country": "South Africa", "rank": 8}
         ]
       },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["country"],
+            "on": "mouseover",
+            "nearest": false
+          }
+        }
+      ],
       "mark": {"type": "line", "point": true, "strokeWidth": 2.5, "interpolate": "monotone"},
       "encoding": {
         "x": {
           "field": "year",
           "type": "ordinal",
-          "axis": {"labelAngle": -45, "title": null, "labelFontSize": 10}
+          "axis": {"labelAngle": -45, "title": "Year", "labelFontSize": 10, "labelFontWeight": "bold", "titlePadding": 10}
         },
         "y": {
           "field": "rank",
           "type": "quantitative",
           "sort": "ascending",
-            "scale": {"domain": [1, 8], "reverse": true},
-            "axis": {
+          "scale": {"domain": [1, 8], "reverse": true},
+          "axis": {
             "title": "Rank",
             "values": [1, 2, 3, 4, 5, 6, 7, 8],
-            "labelExpr": "'#' + datum.value"
+            "labelExpr": "'#' + datum.value",
+            "labelFontWeight": "bold",
+            "titlePadding": 10
           }
         },
         "color": {
@@ -212,10 +218,18 @@
           },
           "legend": {"title": "Country", "orient": "right"}
         },
+        "opacity": {
+          "condition": {"param": "hover", "empty": true, "value": 1},
+          "value": 0.1
+        },
+        "strokeWidth": {
+          "condition": {"param": "hover", "empty": true, "value": 2.5},
+          "value": 1
+        },
         "tooltip": [
-          {"field": "year", "title": "Year"},
+          {"field": "year",    "title": "Year"},
           {"field": "country", "title": "Country"},
-          {"field": "rank", "title": "Rank", "formatType": "number"}
+          {"field": "rank",    "title": "Rank"}
         ]
       }
     }

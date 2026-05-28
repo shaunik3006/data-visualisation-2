@@ -1,41 +1,113 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
+  "width": "container",
   "height": 450,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "layer": [
     {
       "data": {
         "values": [
-          {"year": "2004-05", "country": "India", "value": 21070},
-          {"year": "2024-25", "country": "India", "value": 74540},
-          {"year": "2004-05", "country": "China", "value": 28870},
-          {"year": "2024-25", "country": "China", "value": 69860},
-          {"year": "2004-05", "country": "UK", "value": 39870},
-          {"year": "2024-25", "country": "UK", "value": 40180},
-          {"year": "2004-05", "country": "New Zealand", "value": 32030},
-          {"year": "2024-25", "country": "New Zealand", "value": 35050},
-          {"year": "2004-05", "country": "Philippines", "value": 7900},
-          {"year": "2024-25", "country": "Philippines", "value": 25560},
-          {"year": "2004-05", "country": "Nepal", "value": 630},
-          {"year": "2024-25", "country": "Nepal", "value": 18480},
-          {"year": "2004-05", "country": "Vietnam", "value": 4280},
-          {"year": "2024-25", "country": "Vietnam", "value": 13950},
-          {"year": "2004-05", "country": "South Africa", "value": 7400},
-          {"year": "2024-25", "country": "South Africa", "value": 8620}
+          {
+            "year": "2004-05",
+            "country": "India",
+            "value": 21070
+          },
+          {
+            "year": "2024-25",
+            "country": "India",
+            "value": 74540
+          },
+          {
+            "year": "2004-05",
+            "country": "China",
+            "value": 28870
+          },
+          {
+            "year": "2024-25",
+            "country": "China",
+            "value": 69860
+          },
+          {
+            "year": "2004-05",
+            "country": "UK",
+            "value": 39870
+          },
+          {
+            "year": "2024-25",
+            "country": "UK",
+            "value": 40180
+          },
+          {
+            "year": "2004-05",
+            "country": "New Zealand",
+            "value": 32030
+          },
+          {
+            "year": "2024-25",
+            "country": "New Zealand",
+            "value": 35050
+          },
+          {
+            "year": "2004-05",
+            "country": "Philippines",
+            "value": 7900
+          },
+          {
+            "year": "2024-25",
+            "country": "Philippines",
+            "value": 25560
+          },
+          {
+            "year": "2004-05",
+            "country": "Nepal",
+            "value": 630
+          },
+          {
+            "year": "2024-25",
+            "country": "Nepal",
+            "value": 18480
+          },
+          {
+            "year": "2004-05",
+            "country": "Vietnam",
+            "value": 4280
+          },
+          {
+            "year": "2024-25",
+            "country": "Vietnam",
+            "value": 13950
+          },
+          {
+            "year": "2004-05",
+            "country": "South Africa",
+            "value": 7400
+          },
+          {
+            "year": "2024-25",
+            "country": "South Africa",
+            "value": 8620
+          }
         ]
       },
-      "mark": {"type": "line", "strokeWidth": 2.5},
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      },
       "encoding": {
         "x": {
           "field": "year",
           "type": "ordinal",
           "axis": {
-            "title": null,
-            "labelFontSize": 13,
+            "labelAngle": -45,
+            "title": "Year",
+            "labelFontSize": 10,
             "labelFontWeight": "bold",
-            "labelAngle": 0
+            "titlePadding": 10
           }
         },
         "y": {
@@ -43,6 +115,11 @@
           "type": "quantitative",
           "axis": {
             "title": "Migrant Arrivals",
+            "titleFontWeight": "bold",
+            "titleFontSize": 11,  
+            "labelFontWeight": "bold",
+            "labelFontSize": 11,
+            "titlePadding": 10,
             "labelExpr": "(datum.value/1000) + 'k'"
           }
         },
@@ -50,15 +127,46 @@
           "field": "country",
           "type": "nominal",
           "scale": {
-            "domain": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "South Africa"],
-            "range": ["#f97316", "#ef4444", "#3b82f6", "#10b981", "#8b5cf6", "#ec4899", "#14b8a6", "#f59e0b"]
+            "domain": [
+              "India",
+              "China",
+              "UK",
+              "New Zealand",
+              "Philippines",
+              "Nepal",
+              "Vietnam",
+              "South Africa"
+            ],
+            "range": [
+              "#f97316",
+              "#ef4444",
+              "#3b82f6",
+              "#10b981",
+              "#8b5cf6",
+              "#ec4899",
+              "#14b8a6",
+              "#f59e0b"
+            ]
           },
-          "legend": {"title": "Country", "orient": "right"}
+          "legend": {
+            "title": "Country",
+            "orient": "right"
+          }
         },
         "tooltip": [
-          {"field": "country", "title": "Country"},
-          {"field": "year", "title": "Year"},
-          {"field": "value", "title": "Arrivals", "format": ","}
+          {
+            "field": "country",
+            "title": "Country"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "value",
+            "title": "Arrivals",
+            "format": ","
+          }
         ]
       }
     },
@@ -83,9 +191,17 @@
         "color": "#111827"
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "value", "type": "quantitative"},
-        "text": {"field": "label"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
     },
     {
@@ -109,9 +225,17 @@
         "color": "#6b7280"
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "value", "type": "quantitative"},
-        "text": {"field": "sub"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "sub"
+        }
       }
     },
     {
@@ -133,9 +257,17 @@
         "color": "#3b82f6"
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "value", "type": "quantitative"},
-        "text": {"field": "label"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
     },
     {
@@ -157,9 +289,17 @@
         "color": "#ec4899"
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "value", "type": "quantitative"},
-        "text": {"field": "label"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
     }
   ]

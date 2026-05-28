@@ -139,7 +139,12 @@
       "field": "i",
       "type": "quantitative",
       "axis": {
-        "title": null,
+        "title": "Year",
+        "titleFontWeight": "bold",
+        "titleFontSize": 12,
+        "titlePadding": 10,
+        "labelFontWeight": "bold",
+        "labelFontSize": 11,
         "values": [0, 5, 10, 15, 20, 25, 30, 35, 40],
         "labelExpr": "[\"1984–85\",\"1989–90\",\"1994–95\",\"1999–00\",\"2004–05\",\"2009–10\",\"2014–15\",\"2019–20\",\"2024–25\"][indexof([0,5,10,15,20,25,30,35,40], datum.value)]",
         "labelAngle": -35,
@@ -152,6 +157,10 @@
       "stack": "zero",
       "axis": {
         "title": "Visa Grants",
+        "titleFontWeight": "bold",
+        "titleFontSize": 12,
+        "labelFontWeight": "bold",
+        "labelFontSize": 11,
         "labelExpr": "datum.value >= 0 ? (datum.value/1000) + 'k' : '-' + ((-datum.value)/1000) + 'k'",
         "gridColor": "#e5e7eb"
       }

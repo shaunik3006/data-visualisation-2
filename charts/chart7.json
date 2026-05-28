@@ -84,7 +84,10 @@
             "title": "Employer Sponsored Visas",
             "labelExpr": "(datum.value/1000) + 'k'",
             "gridColor": "#f0f0f0",
-            "labelFontWeight": "bold"
+            "labelFontWeight": "bold",
+            "labelFontSize": 11,
+            "titleFontWeight": "bold",
+            "titlePadding": 10
           }
         },
         "color": {

@@ -210,13 +210,13 @@
     "x": {
       "field": "year",
       "type": "ordinal",
-      "axis": {"labelAngle": -45, "title": null, "labelFontSize": 10}
+      "axis": {"labelAngle": -45, "title": "Year", "labelFontSize": 10, "labelFontWeight": "bold", "titlePadding": 10}
     },
     "y": {
       "field": "country",
       "type": "nominal",
       "sort": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "Sri Lanka", "Pakistan"],
-      "axis": {"title": null, "labelFontSize": 11}
+      "axis": {"title": "Country", "labelFontSize": 11, "titleFontWeight": "bold", "titlePadding": 10, "labelFontWeight": "bold"}
     },
     "color": {
       "field": "arrivals",
