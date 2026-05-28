@@ -227,7 +227,9 @@
         "labelExpr": "(datum.value/1000) + 'k'",
         "orient": "right",
         "direction": "vertical",
-        "gradientLength": 150
+        "gradientLength": 150,
+        "values": [0, 25000, 50000, 75000, 100000],
+        "labelExpr": "datum.value === 0 ? '0' : (datum.value/1000) + 'k'"
       }
     },
     "tooltip": [

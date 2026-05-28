@@ -1,29 +1,32 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 680,
+  "width": "container",
   "height": 400,
   "background": "#ffffff",
+  "padding": {"right": 40},
 
   "config": {
     "view": { "stroke": null },
     "font": "Arial, sans-serif",
     "axis": {
-      "labelFont": "Inter, sans-serif",
-      "titleFont": "Inter, sans-serif",
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
       "labelFontSize": 11,
       "titleFontSize": 12,
       "gridColor": "#f1f5f9",
       "gridWidth": 1,
       "domainColor": "#e2e8f0",
       "tickColor": "#e2e8f0",
-      "labelColor": "#64748b",
-      "titleColor": "#475569"
+      "labelColor": "#111827",
+      "titleColor": "#111827",
+      "labelFontWeight": "bold",
+      "titleFontWeight": "bold"
     },
     "legend": {
-      "labelFont": "Georgia, serif",
-      "titleFont": "Georgia, serif",
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
       "labelFontSize": 12,
-      "labelColor": "#475569"
+      "labelColor": "#111827"
     }
   },
 
@@ -75,6 +78,8 @@
         "labelExpr": "datum.value === 1 ? '<2' : datum.value === 20 ? '20+' : datum.value + ''",
         "labelFontSize": 11,
         "titleFontSize": 12,
+        "labelFontWeight": "bold",
+        "titleFontWeight": "bold",
         "grid": true
       },
       "scale": { "domain": [0.5, 21] }
@@ -86,31 +91,24 @@
       "axis": {
         "labelExpr": "datum.value + '%'",
         "labelFontSize": 11,
-        "titleFontSize": 12
+        "titleFontSize": 12,
+        "labelFontWeight": "bold",
+        "titleFontWeight": "bold"
       },
       "scale": { "domain": [0, 26] }
     }
   },
 
   "layer": [
-
     {
-      "mark": {
-        "type": "rule",
-        "color": "#e2e8f0",
-        "strokeWidth": 1,
-        "strokeDash": [3, 3]
-      },
-      "transform": [
-        { "filter": "datum.stream === 'Australian-born' && datum.x === 1" }
-      ],
+      "mark": { "type": "rule", "color": "#e2e8f0", "strokeWidth": 1, "strokeDash": [3, 3] },
+      "transform": [ { "filter": "datum.stream === 'Australian-born' && datum.x === 1" } ],
       "encoding": {
         "y":  { "datum": 4.81 },
         "x":  { "datum": 0.5 },
         "x2": { "datum": 21 }
       }
     },
-
     {
       "mark": { "type": "area", "interpolate": "monotone", "opacity": 0.06 },
       "transform": [ { "filter": "datum.stream === 'Family stream'" } ],
@@ -121,7 +119,6 @@
         "color": { "value": "#e67e22" }
       }
     },
-
     {
       "mark": { "type": "area", "interpolate": "monotone", "opacity": 0.06 },
       "transform": [ { "filter": "datum.stream === 'Skill stream'" } ],
@@ -132,15 +129,8 @@
         "color": { "value": "#2980b9" }
       }
     },
-
     {
-      "mark": {
-        "type": "line",
-        "strokeWidth": 2,
-        "interpolate": "monotone",
-        "strokeDash": [5, 4],
-        "opacity": 0.5
-      },
+      "mark": { "type": "line", "strokeWidth": 2, "interpolate": "monotone", "strokeDash": [5, 4], "opacity": 0.5 },
       "transform": [ { "filter": "datum.stream === 'Australian-born'" } ],
       "encoding": {
         "x":    { "field": "x",    "type": "quantitative" },
@@ -148,7 +138,6 @@
         "color": { "value": "#94a3b8" }
       }
     },
-
     {
       "params": [
         {
@@ -170,7 +159,7 @@
             "range":  ["#2980b9", "#e67e22"]
           },
           "legend": {
-            "title": null,
+            "title": "Stream",
             "orient": "right",
             "symbolType": "stroke",
             "symbolStrokeWidth": 3,
@@ -184,17 +173,11 @@
         }
       }
     },
-
     {
       "params": [
         {
           "name": "hover",
-          "select": {
-            "type": "point",
-            "on": "mouseover",
-            "fields": ["x"],
-            "nearest": true
-          }
+          "select": { "type": "point", "on": "mouseover", "fields": ["x"], "nearest": true }
         }
       ],
       "mark": { "type": "point", "filled": true, "size": 70, "strokeWidth": 1.5 },
@@ -222,7 +205,6 @@
         ]
       }
     },
-
     {
       "mark": { "type": "rule", "color": "#cbd5e1", "strokeWidth": 1 },
       "transform": [
@@ -234,7 +216,33 @@
         "y":  { "datum": 0 },
         "y2": { "datum": 26 }
       }
+    },
+    {
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": -8, "fontSize": 10, "fontStyle": "italic", "color": "#e67e22" },
+      "data": { "values": [ { "x": 1, "rate": 23.96, "label": "Family migrants: 24% unemployment" } ] },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative", "scale": { "domain": [0.5, 21] } },
+        "y": { "field": "rate", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
+    },
+    {
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": 14, "fontSize": 10, "fontStyle": "italic", "color": "#2980b9" },
+      "data": { "values": [ { "x": 1, "rate": 13.72, "label": "Skill migrants: 14% unemployment" } ] },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative", "scale": { "domain": [0.5, 21] } },
+        "y": { "field": "rate", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
+    },
+    {
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": -8, "fontSize": 10, "fontStyle": "italic", "color": "#64748b" },
+      "data": { "values": [ { "x": 8, "rate": 4.23, "label": "Streams converge ~8 years" } ] },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative", "scale": { "domain": [0.5, 21] } },
+        "y": { "field": "rate", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
     }
-
   ]
 }

@@ -31,7 +31,10 @@
           "type": "quantitative",
           "scale": {"domain": [-25, 25]},
           "axis": {
-            "title": null,
+            "title": "Deviation from 50/50 split (%)",
+            "titleFontSize": 11,
+            "titleFontWeight": "bold",
+            "titlePadding": 10,
             "labelExpr": "abs(datum.value) + '%'",
             "gridColor": "#f3f4f6",
             "labelFontSize": 10,
@@ -83,10 +86,7 @@
     {
       "mark": {"type": "text", "align": "right", "dx": -4, "fontSize": 10, "color": "#be185d", "fontWeight": "bold"},
       "encoding": {
-        "y": {
-          "field": "category", "type": "nominal",
-          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
-        },
+        "y": {"field": "category", "type": "nominal", "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]},
         "x": {"field": "female_dev", "type": "quantitative"},
         "text": {"field": "female", "format": ".0f"}
       }
@@ -94,10 +94,7 @@
     {
       "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "color": "#1d4ed8", "fontWeight": "bold"},
       "encoding": {
-        "y": {
-          "field": "category", "type": "nominal",
-          "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]
-        },
+        "y": {"field": "category", "type": "nominal", "sort": ["Business Innovation","Global Talent","Employer Sponsored","Skilled Independent","State/Territory Nom.","Child","Regional","Partner (Family)"]},
         "x": {"field": "male_dev", "type": "quantitative"},
         "text": {"field": "male", "format": ".0f"}
       }
@@ -111,6 +108,30 @@
       "mark": {"type": "text", "align": "center", "dy": -175, "fontSize": 10, "fontWeight": "bold", "color": "#1d4ed8"},
       "data": {"values": [{"x": 13, "label": "Male →"}]},
       "encoding": {"x": {"field": "x", "type": "quantitative"}, "text": {"field": "label"}}
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 10, "fontStyle": "italic", "color": "#1d4ed8"},
+      "data": {"values": [{"x": 22, "category": "Business Innovation", "label": "Most male-skewed"}]},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "category", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 10, "fontStyle": "italic", "color": "#be185d"},
+      "data": {"values": [{"x": 12, "category": "Partner (Family)", "label": "Only visa favouring women"}]},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "category", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "fontSize": 10, "fontStyle": "italic", "color": "#6b7280"},
+      "data": {"values": [{"x": 1, "category": "Regional", "label": "Perfect split"}]},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "category", "type": "nominal"}
+      }
     }
   ]
 }

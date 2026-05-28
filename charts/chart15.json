@@ -62,8 +62,7 @@
             "title": "Country",
             "orient": "right",
             "labelFontSize": 11,
-            "titleFontSize": 11,
-            "labelFontWeight": "bold"
+            "titleFontSize": 11
           }
         },
         "tooltip": [

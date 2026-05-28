@@ -59,7 +59,8 @@
           "axis": {
             "title": null,
             "labelFontSize": 11,
-            "labelColor": "#444"
+            "labelColor": "#444",
+            "labelFontWeight": "bold"
           }
         },
 
@@ -68,6 +69,8 @@
           "type": "quantitative",
           "axis": {
             "title": "Visa Grants",
+            "labelFontWeight": "bold",
+            "titleFontWeight": "bold",
             "grid": true,
             "gridColor": "#ececec",
             "labelColor": "#555",
@@ -88,7 +91,7 @@
             "range": ["#3b82f6", "#ef4444", "#10b981"]
           },
           "legend": {
-            "title": null,
+            "title": "Period",
             "orient": "right",
             "labelFontSize": 11,
             "labelColor": "#444",
@@ -131,7 +134,7 @@
           "type": "nominal",
           "scale": {
             "domain": ["Pre-COVID", "During COVID", "Post-COVID"],
-            "range": ["#3b82f6", "#ef4444", "#10b981"]
+            "range": ["#1d4ed8", "#b91c1c", "#047857"]
           }
         },
 

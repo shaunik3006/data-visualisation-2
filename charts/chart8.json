@@ -1,23 +1,49 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 650,
+  "width": "container",
   "height": 450,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "layer": [
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
-      "transform": [{"filter": "datum.id === 36"}],
-      "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
-      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#ffffff", "strokeWidth": 0.5}
+      "transform": [
+        {
+          "filter": "datum.id === 36"
+        }
+      ],
+      "projection": {
+        "type": "mercator",
+        "center": [
+          134,
+          -28
+        ],
+        "scale": 700
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f1f5f9",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.5
+      }
     },
     {
       "data": {
         "url": "charts/aus-states.json",
-        "format": {"type": "json", "property": "features"}
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
       },
       "transform": [
         {
@@ -25,39 +51,97 @@
           "from": {
             "data": {
               "values": [
-                {"state": "New South Wales", "arrivals": 169990},
-                {"state": "Victoria", "arrivals": 149490},
-                {"state": "Queensland", "arrivals": 97370},
-                {"state": "Western Australia", "arrivals": 65310},
-                {"state": "South Australia", "arrivals": 27160},
-                {"state": "Australian Capital Territory", "arrivals": 9480},
-                {"state": "Northern Territory", "arrivals": 5250},
-                {"state": "Tasmania", "arrivals": 4750}
+                {
+                  "state": "New South Wales",
+                  "arrivals": 169990
+                },
+                {
+                  "state": "Victoria",
+                  "arrivals": 149490
+                },
+                {
+                  "state": "Queensland",
+                  "arrivals": 97370
+                },
+                {
+                  "state": "Western Australia",
+                  "arrivals": 65310
+                },
+                {
+                  "state": "South Australia",
+                  "arrivals": 27160
+                },
+                {
+                  "state": "Australian Capital Territory",
+                  "arrivals": 9480
+                },
+                {
+                  "state": "Northern Territory",
+                  "arrivals": 5250
+                },
+                {
+                  "state": "Tasmania",
+                  "arrivals": 4750
+                }
               ]
             },
             "key": "state",
-            "fields": ["arrivals", "state"]
+            "fields": [
+              "arrivals",
+              "state"
+            ]
           }
         }
       ],
-      "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
-      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 1},
+      "projection": {
+        "type": "mercator",
+        "center": [
+          134,
+          -28
+        ],
+        "scale": 700
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 1
+      },
       "encoding": {
         "color": {
           "field": "arrivals",
           "type": "quantitative",
-          "scale": {"scheme": "blues", "domain": [4000, 170000]},
+          "scale": {
+            "scheme": "blues",
+            "domain": [
+              4000,
+              170000
+            ]
+          },
           "legend": {
             "title": "Arrivals 2024–25",
             "labelExpr": "(datum.value / 1000) + 'k'",
-            "orient": "right",
+            "orient": "bottom-right",
             "direction": "vertical",
-            "gradientLength": 150
+            "gradientLength": 120,
+            "values": [
+              0,
+              50000,
+              100000,
+              150000
+            ],
+            "labelExpr": "datum.value === 0 ? '0' : (datum.value/1000) + 'k'"
           }
         },
         "tooltip": [
-          {"field": "state", "title": "State"},
-          {"field": "arrivals", "title": "Arrivals", "format": ","}
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "arrivals",
+            "title": "Arrivals",
+            "format": ","
+          }
         ]
       }
     }
