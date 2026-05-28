@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 350,
+  "background": "#ffffff",
+  "config": {"view": {"stroke": null}},
+  "data": {
+    "values": [
+      {"year": "2004-05", "country": "UK", "arrivals": 39870},
+      {"year": "2004-05", "country": "China", "arrivals": 28870},
+      {"year": "2004-05", "country": "New Zealand", "arrivals": 32030},
+      {"year": "2004-05", "country": "India", "arrivals": 21070},
+      {"year": "2004-05", "country": "Others", "arrivals": 33160},
+      {"year": "2008-09", "country": "India", "arrivals": 68350},
+      {"year": "2008-09", "country": "China", "arrivals": 48540},
+      {"year": "2008-09", "country": "UK", "arrivals": 48910},
+      {"year": "2008-09", "country": "New Zealand", "arrivals": 38090},
+      {"year": "2008-09", "country": "Others", "arrivals": 48110},
+      {"year": "2012-13", "country": "China", "arrivals": 46560},
+      {"year": "2012-13", "country": "India", "arrivals": 35280},
+      {"year": "2012-13", "country": "UK", "arrivals": 46250},
+      {"year": "2012-13", "country": "New Zealand", "arrivals": 41500},
+      {"year": "2012-13", "country": "Others", "arrivals": 56410},
+      {"year": "2016-17", "country": "India", "arrivals": 60310},
+      {"year": "2016-17", "country": "China", "arrivals": 77760},
+      {"year": "2016-17", "country": "UK", "arrivals": 33080},
+      {"year": "2016-17", "country": "New Zealand", "arrivals": 22660},
+      {"year": "2016-17", "country": "Others", "arrivals": 66190},
+      {"year": "2020-21", "country": "India", "arrivals": 11190},
+      {"year": "2020-21", "country": "China", "arrivals": 9260},
+      {"year": "2020-21", "country": "New Zealand", "arrivals": 12000},
+      {"year": "2020-21", "country": "UK", "arrivals": 9850},
+      {"year": "2020-21", "country": "Others", "arrivals": 15700},
+      {"year": "2024-25", "country": "India", "arrivals": 74540},
+      {"year": "2024-25", "country": "China", "arrivals": 69860},
+      {"year": "2024-25", "country": "UK", "arrivals": 40180},
+      {"year": "2024-25", "country": "New Zealand", "arrivals": 35050},
+      {"year": "2024-25", "country": "Others", "arrivals": 81370}
+    ]
+  },
+  "transform": [{"filter": "datum.year == yearSelect"}],
+  "params": [{"name": "yearSelect", "value": "2024-25"}],
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 90,
+        "outerRadius": 150,
+        "padAngle": 0.02,
+        "cornerRadius": 3
+      },
+      "encoding": {
+        "theta": {"field": "arrivals", "type": "quantitative", "stack": true},
+        "color": {
+          "field": "country",
+          "type": "nominal",
+          "scale": {
+            "domain": ["India", "China", "UK", "New Zealand", "Others"],
+            "range": ["#f97316", "#ef4444", "#3b82f6", "#10b981", "#cbd5e1"]
+          },
+          "legend": {
+            "title": "Country",
+            "orient": "right",
+            "labelFontSize": 11,
+            "titleFontSize": 11,
+            "labelFontWeight": "bold"
+          }
+        },
+        "tooltip": [
+          {"field": "country", "title": "Country"},
+          {"field": "arrivals", "title": "Arrivals", "format": ","},
+          {"field": "year", "title": "Year"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "300",
+        "color": "#999",
+        "dy": -12,
+        "align": "center"
+      },
+      "data": {"values": [{"label": "Arrivals in", "fontcolor": "#black"}]},
+      "encoding": {"text": {"field": "label"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 18,
+        "fontWeight": "700",
+        "color": "#0f0f0f",
+        "dy": 12,
+        "align": "center",
+        "font": "Fraunces"
+      },
+      "transform": [{"aggregate": [], "groupby": ["year"]}],
+      "encoding": {
+        "text": {"field": "year"}
+      }
+    }
+  ]
+}

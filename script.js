@@ -14,3 +14,9 @@ vegaEmbed('#chart11', 'charts/chart11.json', embedOpts);
 vegaEmbed('#chart12', 'charts/chart12.json', embedOpts);
 vegaEmbed('#chart13', 'charts/chart13.json', embedOpts);
 vegaEmbed('#chart14', 'charts/chart14.json', embedOpts);
+vegaEmbed('#chart15', 'charts/chart15.json', embedOpts).then(result => {
+    result.view.signal('yearSelect', '2024-25').run();
+    document.getElementById('chart15-select').addEventListener('change', function () {
+        result.view.signal('yearSelect', this.value).run();
+    });
+});
