@@ -3,239 +3,1034 @@
   "width": 750,
   "height": 350,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "data": {
     "values": [
-      {"year": "2004-05", "country": "India", "arrivals": 21070},
-      {"year": "2005-06", "country": "India", "arrivals": 27770},
-      {"year": "2006-07", "country": "India", "arrivals": 43660},
-      {"year": "2007-08", "country": "India", "arrivals": 56810},
-      {"year": "2008-09", "country": "India", "arrivals": 68350},
-      {"year": "2009-10", "country": "India", "arrivals": 36610},
-      {"year": "2010-11", "country": "India", "arrivals": 23760},
-      {"year": "2011-12", "country": "India", "arrivals": 30390},
-      {"year": "2012-13", "country": "India", "arrivals": 35280},
-      {"year": "2013-14", "country": "India", "arrivals": 45520},
-      {"year": "2014-15", "country": "India", "arrivals": 49810},
-      {"year": "2015-16", "country": "India", "arrivals": 52020},
-      {"year": "2016-17", "country": "India", "arrivals": 60310},
-      {"year": "2017-18", "country": "India", "arrivals": 67440},
-      {"year": "2018-19", "country": "India", "arrivals": 86350},
-      {"year": "2019-20", "country": "India", "arrivals": 78830},
-      {"year": "2020-21", "country": "India", "arrivals": 11190},
-      {"year": "2021-22", "country": "India", "arrivals": 64290},
-      {"year": "2022-23", "country": "India", "arrivals": 108100},
-      {"year": "2023-24", "country": "India", "arrivals": 85920},
-      {"year": "2024-25", "country": "India", "arrivals": 74540},
-
-      {"year": "2004-05", "country": "China", "arrivals": 28870},
-      {"year": "2005-06", "country": "China", "arrivals": 30370},
-      {"year": "2006-07", "country": "China", "arrivals": 39540},
-      {"year": "2007-08", "country": "China", "arrivals": 49200},
-      {"year": "2008-09", "country": "China", "arrivals": 48540},
-      {"year": "2009-10", "country": "China", "arrivals": 49020},
-      {"year": "2010-11", "country": "China", "arrivals": 41210},
-      {"year": "2011-12", "country": "China", "arrivals": 40150},
-      {"year": "2012-13", "country": "China", "arrivals": 46560},
-      {"year": "2013-14", "country": "China", "arrivals": 53130},
-      {"year": "2014-15", "country": "China", "arrivals": 62280},
-      {"year": "2015-16", "country": "China", "arrivals": 70190},
-      {"year": "2016-17", "country": "China", "arrivals": 77760},
-      {"year": "2017-18", "country": "China", "arrivals": 82320},
-      {"year": "2018-19", "country": "China", "arrivals": 71810},
-      {"year": "2019-20", "country": "China", "arrivals": 60150},
-      {"year": "2020-21", "country": "China", "arrivals": 9260},
-      {"year": "2021-22", "country": "China", "arrivals": 44280},
-      {"year": "2022-23", "country": "China", "arrivals": 82220},
-      {"year": "2023-24", "country": "China", "arrivals": 74400},
-      {"year": "2024-25", "country": "China", "arrivals": 69860},
-
-      {"year": "2004-05", "country": "UK", "arrivals": 39870},
-      {"year": "2005-06", "country": "UK", "arrivals": 45530},
-      {"year": "2006-07", "country": "UK", "arrivals": 48650},
-      {"year": "2007-08", "country": "UK", "arrivals": 53330},
-      {"year": "2008-09", "country": "UK", "arrivals": 48910},
-      {"year": "2009-10", "country": "UK", "arrivals": 42100},
-      {"year": "2010-11", "country": "UK", "arrivals": 45750},
-      {"year": "2011-12", "country": "UK", "arrivals": 50610},
-      {"year": "2012-13", "country": "UK", "arrivals": 46250},
-      {"year": "2013-14", "country": "UK", "arrivals": 37190},
-      {"year": "2014-15", "country": "UK", "arrivals": 33920},
-      {"year": "2015-16", "country": "UK", "arrivals": 32790},
-      {"year": "2016-17", "country": "UK", "arrivals": 33080},
-      {"year": "2017-18", "country": "UK", "arrivals": 29740},
-      {"year": "2018-19", "country": "UK", "arrivals": 29300},
-      {"year": "2019-20", "country": "UK", "arrivals": 27670},
-      {"year": "2020-21", "country": "UK", "arrivals": 9850},
-      {"year": "2021-22", "country": "UK", "arrivals": 17360},
-      {"year": "2022-23", "country": "UK", "arrivals": 31630},
-      {"year": "2023-24", "country": "UK", "arrivals": 37540},
-      {"year": "2024-25", "country": "UK", "arrivals": 40180},
-
-      {"year": "2004-05", "country": "New Zealand", "arrivals": 32030},
-      {"year": "2005-06", "country": "New Zealand", "arrivals": 32770},
-      {"year": "2006-07", "country": "New Zealand", "arrivals": 36300},
-      {"year": "2007-08", "country": "New Zealand", "arrivals": 42070},
-      {"year": "2008-09", "country": "New Zealand", "arrivals": 38090},
-      {"year": "2009-10", "country": "New Zealand", "arrivals": 31580},
-      {"year": "2010-11", "country": "New Zealand", "arrivals": 43430},
-      {"year": "2011-12", "country": "New Zealand", "arrivals": 48220},
-      {"year": "2012-13", "country": "New Zealand", "arrivals": 41500},
-      {"year": "2013-14", "country": "New Zealand", "arrivals": 28440},
-      {"year": "2014-15", "country": "New Zealand", "arrivals": 23300},
-      {"year": "2015-16", "country": "New Zealand", "arrivals": 24220},
-      {"year": "2016-17", "country": "New Zealand", "arrivals": 22660},
-      {"year": "2017-18", "country": "New Zealand", "arrivals": 21270},
-      {"year": "2018-19", "country": "New Zealand", "arrivals": 20960},
-      {"year": "2019-20", "country": "New Zealand", "arrivals": 15640},
-      {"year": "2020-21", "country": "New Zealand", "arrivals": 12000},
-      {"year": "2021-22", "country": "New Zealand", "arrivals": 16270},
-      {"year": "2022-23", "country": "New Zealand", "arrivals": 27880},
-      {"year": "2023-24", "country": "New Zealand", "arrivals": 33590},
-      {"year": "2024-25", "country": "New Zealand", "arrivals": 35050},
-
-      {"year": "2004-05", "country": "Philippines", "arrivals": 7900},
-      {"year": "2005-06", "country": "Philippines", "arrivals": 10140},
-      {"year": "2006-07", "country": "Philippines", "arrivals": 13150},
-      {"year": "2007-08", "country": "Philippines", "arrivals": 15120},
-      {"year": "2008-09", "country": "Philippines", "arrivals": 15560},
-      {"year": "2009-10", "country": "Philippines", "arrivals": 12520},
-      {"year": "2010-11", "country": "Philippines", "arrivals": 13240},
-      {"year": "2011-12", "country": "Philippines", "arrivals": 16910},
-      {"year": "2012-13", "country": "Philippines", "arrivals": 17010},
-      {"year": "2013-14", "country": "Philippines", "arrivals": 15890},
-      {"year": "2014-15", "country": "Philippines", "arrivals": 15780},
-      {"year": "2015-16", "country": "Philippines", "arrivals": 16430},
-      {"year": "2016-17", "country": "Philippines", "arrivals": 17120},
-      {"year": "2017-18", "country": "Philippines", "arrivals": 16370},
-      {"year": "2018-19", "country": "Philippines", "arrivals": 22780},
-      {"year": "2019-20", "country": "Philippines", "arrivals": 19460},
-      {"year": "2020-21", "country": "Philippines", "arrivals": 3910},
-      {"year": "2021-22", "country": "Philippines", "arrivals": 17330},
-      {"year": "2022-23", "country": "Philippines", "arrivals": 47120},
-      {"year": "2023-24", "country": "Philippines", "arrivals": 36120},
-      {"year": "2024-25", "country": "Philippines", "arrivals": 25560},
-
-      {"year": "2004-05", "country": "Nepal", "arrivals": 630},
-      {"year": "2005-06", "country": "Nepal", "arrivals": 1160},
-      {"year": "2006-07", "country": "Nepal", "arrivals": 4300},
-      {"year": "2007-08", "country": "Nepal", "arrivals": 8110},
-      {"year": "2008-09", "country": "Nepal", "arrivals": 11610},
-      {"year": "2009-10", "country": "Nepal", "arrivals": 3370},
-      {"year": "2010-11", "country": "Nepal", "arrivals": 1760},
-      {"year": "2011-12", "country": "Nepal", "arrivals": 2790},
-      {"year": "2012-13", "country": "Nepal", "arrivals": 3980},
-      {"year": "2013-14", "country": "Nepal", "arrivals": 8140},
-      {"year": "2014-15", "country": "Nepal", "arrivals": 7270},
-      {"year": "2015-16", "country": "Nepal", "arrivals": 8800},
-      {"year": "2016-17", "country": "Nepal", "arrivals": 15800},
-      {"year": "2017-18", "country": "Nepal", "arrivals": 22070},
-      {"year": "2018-19", "country": "Nepal", "arrivals": 25470},
-      {"year": "2019-20", "country": "Nepal", "arrivals": 15910},
-      {"year": "2020-21", "country": "Nepal", "arrivals": 540},
-      {"year": "2021-22", "country": "Nepal", "arrivals": 23610},
-      {"year": "2022-23", "country": "Nepal", "arrivals": 29660},
-      {"year": "2023-24", "country": "Nepal", "arrivals": 20070},
-      {"year": "2024-25", "country": "Nepal", "arrivals": 18480},
-
-      {"year": "2004-05", "country": "Vietnam", "arrivals": 4280},
-      {"year": "2005-06", "country": "Vietnam", "arrivals": 5720},
-      {"year": "2006-07", "country": "Vietnam", "arrivals": 7370},
-      {"year": "2007-08", "country": "Vietnam", "arrivals": 9720},
-      {"year": "2008-09", "country": "Vietnam", "arrivals": 11370},
-      {"year": "2009-10", "country": "Vietnam", "arrivals": 9630},
-      {"year": "2010-11", "country": "Vietnam", "arrivals": 8240},
-      {"year": "2011-12", "country": "Vietnam", "arrivals": 8300},
-      {"year": "2012-13", "country": "Vietnam", "arrivals": 11210},
-      {"year": "2013-14", "country": "Vietnam", "arrivals": 12260},
-      {"year": "2014-15", "country": "Vietnam", "arrivals": 10720},
-      {"year": "2015-16", "country": "Vietnam", "arrivals": 11440},
-      {"year": "2016-17", "country": "Vietnam", "arrivals": 11920},
-      {"year": "2017-18", "country": "Vietnam", "arrivals": 11440},
-      {"year": "2018-19", "country": "Vietnam", "arrivals": 12360},
-      {"year": "2019-20", "country": "Vietnam", "arrivals": 13180},
-      {"year": "2020-21", "country": "Vietnam", "arrivals": 2700},
-      {"year": "2021-22", "country": "Vietnam", "arrivals": 12640},
-      {"year": "2022-23", "country": "Vietnam", "arrivals": 22210},
-      {"year": "2023-24", "country": "Vietnam", "arrivals": 23840},
-      {"year": "2024-25", "country": "Vietnam", "arrivals": 13950},
-
-      {"year": "2004-05", "country": "Sri Lanka", "arrivals": 4110},
-      {"year": "2005-06", "country": "Sri Lanka", "arrivals": 4990},
-      {"year": "2006-07", "country": "Sri Lanka", "arrivals": 6430},
-      {"year": "2007-08", "country": "Sri Lanka", "arrivals": 7900},
-      {"year": "2008-09", "country": "Sri Lanka", "arrivals": 7840},
-      {"year": "2009-10", "country": "Sri Lanka", "arrivals": 6230},
-      {"year": "2010-11", "country": "Sri Lanka", "arrivals": 5240},
-      {"year": "2011-12", "country": "Sri Lanka", "arrivals": 6020},
-      {"year": "2012-13", "country": "Sri Lanka", "arrivals": 6630},
-      {"year": "2013-14", "country": "Sri Lanka", "arrivals": 5680},
-      {"year": "2014-15", "country": "Sri Lanka", "arrivals": 5910},
-      {"year": "2015-16", "country": "Sri Lanka", "arrivals": 6240},
-      {"year": "2016-17", "country": "Sri Lanka", "arrivals": 7330},
-      {"year": "2017-18", "country": "Sri Lanka", "arrivals": 7500},
-      {"year": "2018-19", "country": "Sri Lanka", "arrivals": 9070},
-      {"year": "2019-20", "country": "Sri Lanka", "arrivals": 9370},
-      {"year": "2020-21", "country": "Sri Lanka", "arrivals": 1580},
-      {"year": "2021-22", "country": "Sri Lanka", "arrivals": 8150},
-      {"year": "2022-23", "country": "Sri Lanka", "arrivals": 15430},
-      {"year": "2023-24", "country": "Sri Lanka", "arrivals": 16580},
-      {"year": "2024-25", "country": "Sri Lanka", "arrivals": 14710},
-
-      {"year": "2004-05", "country": "Pakistan", "arrivals": 2170},
-      {"year": "2005-06", "country": "Pakistan", "arrivals": 2570},
-      {"year": "2006-07", "country": "Pakistan", "arrivals": 3570},
-      {"year": "2007-08", "country": "Pakistan", "arrivals": 3860},
-      {"year": "2008-09", "country": "Pakistan", "arrivals": 4320},
-      {"year": "2009-10", "country": "Pakistan", "arrivals": 4430},
-      {"year": "2010-11", "country": "Pakistan", "arrivals": 4860},
-      {"year": "2011-12", "country": "Pakistan", "arrivals": 6190},
-      {"year": "2012-13", "country": "Pakistan", "arrivals": 7320},
-      {"year": "2013-14", "country": "Pakistan", "arrivals": 8240},
-      {"year": "2014-15", "country": "Pakistan", "arrivals": 8570},
-      {"year": "2015-16", "country": "Pakistan", "arrivals": 8220},
-      {"year": "2016-17", "country": "Pakistan", "arrivals": 8730},
-      {"year": "2017-18", "country": "Pakistan", "arrivals": 9650},
-      {"year": "2018-19", "country": "Pakistan", "arrivals": 9430},
-      {"year": "2019-20", "country": "Pakistan", "arrivals": 8900},
-      {"year": "2020-21", "country": "Pakistan", "arrivals": 2210},
-      {"year": "2021-22", "country": "Pakistan", "arrivals": 9500},
-      {"year": "2022-23", "country": "Pakistan", "arrivals": 19150},
-      {"year": "2023-24", "country": "Pakistan", "arrivals": 16060},
-      {"year": "2024-25", "country": "Pakistan", "arrivals": 11440}
+      {
+        "year": "2004-05",
+        "country": "India",
+        "arrivals": 21070
+      },
+      {
+        "year": "2005-06",
+        "country": "India",
+        "arrivals": 27770
+      },
+      {
+        "year": "2006-07",
+        "country": "India",
+        "arrivals": 43660
+      },
+      {
+        "year": "2007-08",
+        "country": "India",
+        "arrivals": 56810
+      },
+      {
+        "year": "2008-09",
+        "country": "India",
+        "arrivals": 68350
+      },
+      {
+        "year": "2009-10",
+        "country": "India",
+        "arrivals": 36610
+      },
+      {
+        "year": "2010-11",
+        "country": "India",
+        "arrivals": 23760
+      },
+      {
+        "year": "2011-12",
+        "country": "India",
+        "arrivals": 30390
+      },
+      {
+        "year": "2012-13",
+        "country": "India",
+        "arrivals": 35280
+      },
+      {
+        "year": "2013-14",
+        "country": "India",
+        "arrivals": 45520
+      },
+      {
+        "year": "2014-15",
+        "country": "India",
+        "arrivals": 49810
+      },
+      {
+        "year": "2015-16",
+        "country": "India",
+        "arrivals": 52020
+      },
+      {
+        "year": "2016-17",
+        "country": "India",
+        "arrivals": 60310
+      },
+      {
+        "year": "2017-18",
+        "country": "India",
+        "arrivals": 67440
+      },
+      {
+        "year": "2018-19",
+        "country": "India",
+        "arrivals": 86350
+      },
+      {
+        "year": "2019-20",
+        "country": "India",
+        "arrivals": 78830
+      },
+      {
+        "year": "2020-21",
+        "country": "India",
+        "arrivals": 11190
+      },
+      {
+        "year": "2021-22",
+        "country": "India",
+        "arrivals": 64290
+      },
+      {
+        "year": "2022-23",
+        "country": "India",
+        "arrivals": 108100
+      },
+      {
+        "year": "2023-24",
+        "country": "India",
+        "arrivals": 85920
+      },
+      {
+        "year": "2024-25",
+        "country": "India",
+        "arrivals": 74540
+      },
+      {
+        "year": "2004-05",
+        "country": "China",
+        "arrivals": 28870
+      },
+      {
+        "year": "2005-06",
+        "country": "China",
+        "arrivals": 30370
+      },
+      {
+        "year": "2006-07",
+        "country": "China",
+        "arrivals": 39540
+      },
+      {
+        "year": "2007-08",
+        "country": "China",
+        "arrivals": 49200
+      },
+      {
+        "year": "2008-09",
+        "country": "China",
+        "arrivals": 48540
+      },
+      {
+        "year": "2009-10",
+        "country": "China",
+        "arrivals": 49020
+      },
+      {
+        "year": "2010-11",
+        "country": "China",
+        "arrivals": 41210
+      },
+      {
+        "year": "2011-12",
+        "country": "China",
+        "arrivals": 40150
+      },
+      {
+        "year": "2012-13",
+        "country": "China",
+        "arrivals": 46560
+      },
+      {
+        "year": "2013-14",
+        "country": "China",
+        "arrivals": 53130
+      },
+      {
+        "year": "2014-15",
+        "country": "China",
+        "arrivals": 62280
+      },
+      {
+        "year": "2015-16",
+        "country": "China",
+        "arrivals": 70190
+      },
+      {
+        "year": "2016-17",
+        "country": "China",
+        "arrivals": 77760
+      },
+      {
+        "year": "2017-18",
+        "country": "China",
+        "arrivals": 82320
+      },
+      {
+        "year": "2018-19",
+        "country": "China",
+        "arrivals": 71810
+      },
+      {
+        "year": "2019-20",
+        "country": "China",
+        "arrivals": 60150
+      },
+      {
+        "year": "2020-21",
+        "country": "China",
+        "arrivals": 9260
+      },
+      {
+        "year": "2021-22",
+        "country": "China",
+        "arrivals": 44280
+      },
+      {
+        "year": "2022-23",
+        "country": "China",
+        "arrivals": 82220
+      },
+      {
+        "year": "2023-24",
+        "country": "China",
+        "arrivals": 74400
+      },
+      {
+        "year": "2024-25",
+        "country": "China",
+        "arrivals": 69860
+      },
+      {
+        "year": "2004-05",
+        "country": "UK",
+        "arrivals": 39870
+      },
+      {
+        "year": "2005-06",
+        "country": "UK",
+        "arrivals": 45530
+      },
+      {
+        "year": "2006-07",
+        "country": "UK",
+        "arrivals": 48650
+      },
+      {
+        "year": "2007-08",
+        "country": "UK",
+        "arrivals": 53330
+      },
+      {
+        "year": "2008-09",
+        "country": "UK",
+        "arrivals": 48910
+      },
+      {
+        "year": "2009-10",
+        "country": "UK",
+        "arrivals": 42100
+      },
+      {
+        "year": "2010-11",
+        "country": "UK",
+        "arrivals": 45750
+      },
+      {
+        "year": "2011-12",
+        "country": "UK",
+        "arrivals": 50610
+      },
+      {
+        "year": "2012-13",
+        "country": "UK",
+        "arrivals": 46250
+      },
+      {
+        "year": "2013-14",
+        "country": "UK",
+        "arrivals": 37190
+      },
+      {
+        "year": "2014-15",
+        "country": "UK",
+        "arrivals": 33920
+      },
+      {
+        "year": "2015-16",
+        "country": "UK",
+        "arrivals": 32790
+      },
+      {
+        "year": "2016-17",
+        "country": "UK",
+        "arrivals": 33080
+      },
+      {
+        "year": "2017-18",
+        "country": "UK",
+        "arrivals": 29740
+      },
+      {
+        "year": "2018-19",
+        "country": "UK",
+        "arrivals": 29300
+      },
+      {
+        "year": "2019-20",
+        "country": "UK",
+        "arrivals": 27670
+      },
+      {
+        "year": "2020-21",
+        "country": "UK",
+        "arrivals": 9850
+      },
+      {
+        "year": "2021-22",
+        "country": "UK",
+        "arrivals": 17360
+      },
+      {
+        "year": "2022-23",
+        "country": "UK",
+        "arrivals": 31630
+      },
+      {
+        "year": "2023-24",
+        "country": "UK",
+        "arrivals": 37540
+      },
+      {
+        "year": "2024-25",
+        "country": "UK",
+        "arrivals": 40180
+      },
+      {
+        "year": "2004-05",
+        "country": "New Zealand",
+        "arrivals": 32030
+      },
+      {
+        "year": "2005-06",
+        "country": "New Zealand",
+        "arrivals": 32770
+      },
+      {
+        "year": "2006-07",
+        "country": "New Zealand",
+        "arrivals": 36300
+      },
+      {
+        "year": "2007-08",
+        "country": "New Zealand",
+        "arrivals": 42070
+      },
+      {
+        "year": "2008-09",
+        "country": "New Zealand",
+        "arrivals": 38090
+      },
+      {
+        "year": "2009-10",
+        "country": "New Zealand",
+        "arrivals": 31580
+      },
+      {
+        "year": "2010-11",
+        "country": "New Zealand",
+        "arrivals": 43430
+      },
+      {
+        "year": "2011-12",
+        "country": "New Zealand",
+        "arrivals": 48220
+      },
+      {
+        "year": "2012-13",
+        "country": "New Zealand",
+        "arrivals": 41500
+      },
+      {
+        "year": "2013-14",
+        "country": "New Zealand",
+        "arrivals": 28440
+      },
+      {
+        "year": "2014-15",
+        "country": "New Zealand",
+        "arrivals": 23300
+      },
+      {
+        "year": "2015-16",
+        "country": "New Zealand",
+        "arrivals": 24220
+      },
+      {
+        "year": "2016-17",
+        "country": "New Zealand",
+        "arrivals": 22660
+      },
+      {
+        "year": "2017-18",
+        "country": "New Zealand",
+        "arrivals": 21270
+      },
+      {
+        "year": "2018-19",
+        "country": "New Zealand",
+        "arrivals": 20960
+      },
+      {
+        "year": "2019-20",
+        "country": "New Zealand",
+        "arrivals": 15640
+      },
+      {
+        "year": "2020-21",
+        "country": "New Zealand",
+        "arrivals": 12000
+      },
+      {
+        "year": "2021-22",
+        "country": "New Zealand",
+        "arrivals": 16270
+      },
+      {
+        "year": "2022-23",
+        "country": "New Zealand",
+        "arrivals": 27880
+      },
+      {
+        "year": "2023-24",
+        "country": "New Zealand",
+        "arrivals": 33590
+      },
+      {
+        "year": "2024-25",
+        "country": "New Zealand",
+        "arrivals": 35050
+      },
+      {
+        "year": "2004-05",
+        "country": "Philippines",
+        "arrivals": 7900
+      },
+      {
+        "year": "2005-06",
+        "country": "Philippines",
+        "arrivals": 10140
+      },
+      {
+        "year": "2006-07",
+        "country": "Philippines",
+        "arrivals": 13150
+      },
+      {
+        "year": "2007-08",
+        "country": "Philippines",
+        "arrivals": 15120
+      },
+      {
+        "year": "2008-09",
+        "country": "Philippines",
+        "arrivals": 15560
+      },
+      {
+        "year": "2009-10",
+        "country": "Philippines",
+        "arrivals": 12520
+      },
+      {
+        "year": "2010-11",
+        "country": "Philippines",
+        "arrivals": 13240
+      },
+      {
+        "year": "2011-12",
+        "country": "Philippines",
+        "arrivals": 16910
+      },
+      {
+        "year": "2012-13",
+        "country": "Philippines",
+        "arrivals": 17010
+      },
+      {
+        "year": "2013-14",
+        "country": "Philippines",
+        "arrivals": 15890
+      },
+      {
+        "year": "2014-15",
+        "country": "Philippines",
+        "arrivals": 15780
+      },
+      {
+        "year": "2015-16",
+        "country": "Philippines",
+        "arrivals": 16430
+      },
+      {
+        "year": "2016-17",
+        "country": "Philippines",
+        "arrivals": 17120
+      },
+      {
+        "year": "2017-18",
+        "country": "Philippines",
+        "arrivals": 16370
+      },
+      {
+        "year": "2018-19",
+        "country": "Philippines",
+        "arrivals": 22780
+      },
+      {
+        "year": "2019-20",
+        "country": "Philippines",
+        "arrivals": 19460
+      },
+      {
+        "year": "2020-21",
+        "country": "Philippines",
+        "arrivals": 3910
+      },
+      {
+        "year": "2021-22",
+        "country": "Philippines",
+        "arrivals": 17330
+      },
+      {
+        "year": "2022-23",
+        "country": "Philippines",
+        "arrivals": 47120
+      },
+      {
+        "year": "2023-24",
+        "country": "Philippines",
+        "arrivals": 36120
+      },
+      {
+        "year": "2024-25",
+        "country": "Philippines",
+        "arrivals": 25560
+      },
+      {
+        "year": "2004-05",
+        "country": "Nepal",
+        "arrivals": 630
+      },
+      {
+        "year": "2005-06",
+        "country": "Nepal",
+        "arrivals": 1160
+      },
+      {
+        "year": "2006-07",
+        "country": "Nepal",
+        "arrivals": 4300
+      },
+      {
+        "year": "2007-08",
+        "country": "Nepal",
+        "arrivals": 8110
+      },
+      {
+        "year": "2008-09",
+        "country": "Nepal",
+        "arrivals": 11610
+      },
+      {
+        "year": "2009-10",
+        "country": "Nepal",
+        "arrivals": 3370
+      },
+      {
+        "year": "2010-11",
+        "country": "Nepal",
+        "arrivals": 1760
+      },
+      {
+        "year": "2011-12",
+        "country": "Nepal",
+        "arrivals": 2790
+      },
+      {
+        "year": "2012-13",
+        "country": "Nepal",
+        "arrivals": 3980
+      },
+      {
+        "year": "2013-14",
+        "country": "Nepal",
+        "arrivals": 8140
+      },
+      {
+        "year": "2014-15",
+        "country": "Nepal",
+        "arrivals": 7270
+      },
+      {
+        "year": "2015-16",
+        "country": "Nepal",
+        "arrivals": 8800
+      },
+      {
+        "year": "2016-17",
+        "country": "Nepal",
+        "arrivals": 15800
+      },
+      {
+        "year": "2017-18",
+        "country": "Nepal",
+        "arrivals": 22070
+      },
+      {
+        "year": "2018-19",
+        "country": "Nepal",
+        "arrivals": 25470
+      },
+      {
+        "year": "2019-20",
+        "country": "Nepal",
+        "arrivals": 15910
+      },
+      {
+        "year": "2020-21",
+        "country": "Nepal",
+        "arrivals": 540
+      },
+      {
+        "year": "2021-22",
+        "country": "Nepal",
+        "arrivals": 23610
+      },
+      {
+        "year": "2022-23",
+        "country": "Nepal",
+        "arrivals": 29660
+      },
+      {
+        "year": "2023-24",
+        "country": "Nepal",
+        "arrivals": 20070
+      },
+      {
+        "year": "2024-25",
+        "country": "Nepal",
+        "arrivals": 18480
+      },
+      {
+        "year": "2004-05",
+        "country": "Vietnam",
+        "arrivals": 4280
+      },
+      {
+        "year": "2005-06",
+        "country": "Vietnam",
+        "arrivals": 5720
+      },
+      {
+        "year": "2006-07",
+        "country": "Vietnam",
+        "arrivals": 7370
+      },
+      {
+        "year": "2007-08",
+        "country": "Vietnam",
+        "arrivals": 9720
+      },
+      {
+        "year": "2008-09",
+        "country": "Vietnam",
+        "arrivals": 11370
+      },
+      {
+        "year": "2009-10",
+        "country": "Vietnam",
+        "arrivals": 9630
+      },
+      {
+        "year": "2010-11",
+        "country": "Vietnam",
+        "arrivals": 8240
+      },
+      {
+        "year": "2011-12",
+        "country": "Vietnam",
+        "arrivals": 8300
+      },
+      {
+        "year": "2012-13",
+        "country": "Vietnam",
+        "arrivals": 11210
+      },
+      {
+        "year": "2013-14",
+        "country": "Vietnam",
+        "arrivals": 12260
+      },
+      {
+        "year": "2014-15",
+        "country": "Vietnam",
+        "arrivals": 10720
+      },
+      {
+        "year": "2015-16",
+        "country": "Vietnam",
+        "arrivals": 11440
+      },
+      {
+        "year": "2016-17",
+        "country": "Vietnam",
+        "arrivals": 11920
+      },
+      {
+        "year": "2017-18",
+        "country": "Vietnam",
+        "arrivals": 11440
+      },
+      {
+        "year": "2018-19",
+        "country": "Vietnam",
+        "arrivals": 12360
+      },
+      {
+        "year": "2019-20",
+        "country": "Vietnam",
+        "arrivals": 13180
+      },
+      {
+        "year": "2020-21",
+        "country": "Vietnam",
+        "arrivals": 2700
+      },
+      {
+        "year": "2021-22",
+        "country": "Vietnam",
+        "arrivals": 12640
+      },
+      {
+        "year": "2022-23",
+        "country": "Vietnam",
+        "arrivals": 22210
+      },
+      {
+        "year": "2023-24",
+        "country": "Vietnam",
+        "arrivals": 23840
+      },
+      {
+        "year": "2024-25",
+        "country": "Vietnam",
+        "arrivals": 13950
+      },
+      {
+        "year": "2004-05",
+        "country": "Sri Lanka",
+        "arrivals": 4110
+      },
+      {
+        "year": "2005-06",
+        "country": "Sri Lanka",
+        "arrivals": 4990
+      },
+      {
+        "year": "2006-07",
+        "country": "Sri Lanka",
+        "arrivals": 6430
+      },
+      {
+        "year": "2007-08",
+        "country": "Sri Lanka",
+        "arrivals": 7900
+      },
+      {
+        "year": "2008-09",
+        "country": "Sri Lanka",
+        "arrivals": 7840
+      },
+      {
+        "year": "2009-10",
+        "country": "Sri Lanka",
+        "arrivals": 6230
+      },
+      {
+        "year": "2010-11",
+        "country": "Sri Lanka",
+        "arrivals": 5240
+      },
+      {
+        "year": "2011-12",
+        "country": "Sri Lanka",
+        "arrivals": 6020
+      },
+      {
+        "year": "2012-13",
+        "country": "Sri Lanka",
+        "arrivals": 6630
+      },
+      {
+        "year": "2013-14",
+        "country": "Sri Lanka",
+        "arrivals": 5680
+      },
+      {
+        "year": "2014-15",
+        "country": "Sri Lanka",
+        "arrivals": 5910
+      },
+      {
+        "year": "2015-16",
+        "country": "Sri Lanka",
+        "arrivals": 6240
+      },
+      {
+        "year": "2016-17",
+        "country": "Sri Lanka",
+        "arrivals": 7330
+      },
+      {
+        "year": "2017-18",
+        "country": "Sri Lanka",
+        "arrivals": 7500
+      },
+      {
+        "year": "2018-19",
+        "country": "Sri Lanka",
+        "arrivals": 9070
+      },
+      {
+        "year": "2019-20",
+        "country": "Sri Lanka",
+        "arrivals": 9370
+      },
+      {
+        "year": "2020-21",
+        "country": "Sri Lanka",
+        "arrivals": 1580
+      },
+      {
+        "year": "2021-22",
+        "country": "Sri Lanka",
+        "arrivals": 8150
+      },
+      {
+        "year": "2022-23",
+        "country": "Sri Lanka",
+        "arrivals": 15430
+      },
+      {
+        "year": "2023-24",
+        "country": "Sri Lanka",
+        "arrivals": 16580
+      },
+      {
+        "year": "2024-25",
+        "country": "Sri Lanka",
+        "arrivals": 14710
+      },
+      {
+        "year": "2004-05",
+        "country": "Pakistan",
+        "arrivals": 2170
+      },
+      {
+        "year": "2005-06",
+        "country": "Pakistan",
+        "arrivals": 2570
+      },
+      {
+        "year": "2006-07",
+        "country": "Pakistan",
+        "arrivals": 3570
+      },
+      {
+        "year": "2007-08",
+        "country": "Pakistan",
+        "arrivals": 3860
+      },
+      {
+        "year": "2008-09",
+        "country": "Pakistan",
+        "arrivals": 4320
+      },
+      {
+        "year": "2009-10",
+        "country": "Pakistan",
+        "arrivals": 4430
+      },
+      {
+        "year": "2010-11",
+        "country": "Pakistan",
+        "arrivals": 4860
+      },
+      {
+        "year": "2011-12",
+        "country": "Pakistan",
+        "arrivals": 6190
+      },
+      {
+        "year": "2012-13",
+        "country": "Pakistan",
+        "arrivals": 7320
+      },
+      {
+        "year": "2013-14",
+        "country": "Pakistan",
+        "arrivals": 8240
+      },
+      {
+        "year": "2014-15",
+        "country": "Pakistan",
+        "arrivals": 8570
+      },
+      {
+        "year": "2015-16",
+        "country": "Pakistan",
+        "arrivals": 8220
+      },
+      {
+        "year": "2016-17",
+        "country": "Pakistan",
+        "arrivals": 8730
+      },
+      {
+        "year": "2017-18",
+        "country": "Pakistan",
+        "arrivals": 9650
+      },
+      {
+        "year": "2018-19",
+        "country": "Pakistan",
+        "arrivals": 9430
+      },
+      {
+        "year": "2019-20",
+        "country": "Pakistan",
+        "arrivals": 8900
+      },
+      {
+        "year": "2020-21",
+        "country": "Pakistan",
+        "arrivals": 2210
+      },
+      {
+        "year": "2021-22",
+        "country": "Pakistan",
+        "arrivals": 9500
+      },
+      {
+        "year": "2022-23",
+        "country": "Pakistan",
+        "arrivals": 19150
+      },
+      {
+        "year": "2023-24",
+        "country": "Pakistan",
+        "arrivals": 16060
+      },
+      {
+        "year": "2024-25",
+        "country": "Pakistan",
+        "arrivals": 11440
+      }
     ]
   },
-  "mark": {"type": "rect", "cornerRadius": 2},
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 2
+  },
   "encoding": {
     "x": {
       "field": "year",
       "type": "ordinal",
-      "axis": {"labelAngle": -45, "title": "Year", "labelFontSize": 10, "labelFontWeight": "bold", "titlePadding": 10}
+      "axis": {
+        "labelAngle": -45,
+        "title": "Year",
+        "labelFontSize": 10,
+        "labelFontWeight": "bold",
+        "titlePadding": 10
+      }
     },
     "y": {
       "field": "country",
       "type": "nominal",
-      "sort": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "Sri Lanka", "Pakistan"],
-      "axis": {"title": "Country", "labelFontSize": 11, "titleFontWeight": "bold", "titlePadding": 10, "labelFontWeight": "bold"}
+      "sort": [
+        "India",
+        "China",
+        "UK",
+        "New Zealand",
+        "Philippines",
+        "Nepal",
+        "Vietnam",
+        "Sri Lanka",
+        "Pakistan"
+      ],
+      "axis": {
+        "title": "Country",
+        "labelFontSize": 11,
+        "titleFontWeight": "bold",
+        "titlePadding": 10,
+        "labelFontWeight": "bold"
+      }
     },
     "color": {
       "field": "arrivals",
       "type": "quantitative",
-      "scale": {"scheme": "blues"},
-     "legend": {
+      "scale": {
+        "scheme": "blues"
+      },
+      "legend": {
         "title": "Arrivals",
         "labelExpr": "(datum.value/1000) + 'k'",
         "orient": "right",
         "direction": "vertical",
         "gradientLength": 150,
-        "values": [0, 25000, 50000, 75000, 100000],
+        "values": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000
+        ],
         "labelExpr": "datum.value === 0 ? '0' : (datum.value/1000) + 'k'"
       }
     },
     "tooltip": [
-      {"field": "country", "title": "Country"},
-      {"field": "year", "title": "Year"},
-      {"field": "arrivals", "title": "Arrivals", "format": ","}
+      {
+        "field": "country",
+        "title": "Country"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "arrivals",
+        "title": "Arrivals",
+        "format": ","
+      }
     ]
   }
 }

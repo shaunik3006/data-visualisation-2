@@ -3,179 +3,855 @@
   "width": 750,
   "height": 400,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "layer": [
     {
       "data": {
         "values": [
-          {"year": "2004-05", "country": "India", "rank": 4},
-          {"year": "2005-06", "country": "India", "rank": 4},
-          {"year": "2006-07", "country": "India", "rank": 3},
-          {"year": "2007-08", "country": "India", "rank": 2},
-          {"year": "2008-09", "country": "India", "rank": 1},
-          {"year": "2009-10", "country": "India", "rank": 2},
-          {"year": "2010-11", "country": "India", "rank": 4},
-          {"year": "2011-12", "country": "India", "rank": 3},
-          {"year": "2012-13", "country": "India", "rank": 3},
-          {"year": "2013-14", "country": "India", "rank": 2},
-          {"year": "2014-15", "country": "India", "rank": 2},
-          {"year": "2015-16", "country": "India", "rank": 2},
-          {"year": "2016-17", "country": "India", "rank": 2},
-          {"year": "2017-18", "country": "India", "rank": 2},
-          {"year": "2018-19", "country": "India", "rank": 1},
-          {"year": "2019-20", "country": "India", "rank": 1},
-          {"year": "2020-21", "country": "India", "rank": 2},
-          {"year": "2021-22", "country": "India", "rank": 1},
-          {"year": "2022-23", "country": "India", "rank": 1},
-          {"year": "2023-24", "country": "India", "rank": 1},
-          {"year": "2024-25", "country": "India", "rank": 1},
-          {"year": "2004-05", "country": "China", "rank": 2},
-          {"year": "2005-06", "country": "China", "rank": 2},
-          {"year": "2006-07", "country": "China", "rank": 2},
-          {"year": "2007-08", "country": "China", "rank": 3},
-          {"year": "2008-09", "country": "China", "rank": 2},
-          {"year": "2009-10", "country": "China", "rank": 1},
-          {"year": "2010-11", "country": "China", "rank": 2},
-          {"year": "2011-12", "country": "China", "rank": 2},
-          {"year": "2012-13", "country": "China", "rank": 2},
-          {"year": "2013-14", "country": "China", "rank": 1},
-          {"year": "2014-15", "country": "China", "rank": 1},
-          {"year": "2015-16", "country": "China", "rank": 1},
-          {"year": "2016-17", "country": "China", "rank": 1},
-          {"year": "2017-18", "country": "China", "rank": 1},
-          {"year": "2018-19", "country": "China", "rank": 2},
-          {"year": "2019-20", "country": "China", "rank": 2},
-          {"year": "2020-21", "country": "China", "rank": 3},
-          {"year": "2021-22", "country": "China", "rank": 2},
-          {"year": "2022-23", "country": "China", "rank": 2},
-          {"year": "2023-24", "country": "China", "rank": 2},
-          {"year": "2024-25", "country": "China", "rank": 2},
-          {"year": "2004-05", "country": "UK", "rank": 1},
-          {"year": "2005-06", "country": "UK", "rank": 1},
-          {"year": "2006-07", "country": "UK", "rank": 1},
-          {"year": "2007-08", "country": "UK", "rank": 1},
-          {"year": "2008-09", "country": "UK", "rank": 3},
-          {"year": "2009-10", "country": "UK", "rank": 3},
-          {"year": "2010-11", "country": "UK", "rank": 1},
-          {"year": "2011-12", "country": "UK", "rank": 1},
-          {"year": "2012-13", "country": "UK", "rank": 1},
-          {"year": "2013-14", "country": "UK", "rank": 3},
-          {"year": "2014-15", "country": "UK", "rank": 3},
-          {"year": "2015-16", "country": "UK", "rank": 3},
-          {"year": "2016-17", "country": "UK", "rank": 3},
-          {"year": "2017-18", "country": "UK", "rank": 3},
-          {"year": "2018-19", "country": "UK", "rank": 4},
-          {"year": "2019-20", "country": "UK", "rank": 3},
-          {"year": "2020-21", "country": "UK", "rank": 1},
-          {"year": "2021-22", "country": "UK", "rank": 4},
-          {"year": "2022-23", "country": "UK", "rank": 4},
-          {"year": "2023-24", "country": "UK", "rank": 3},
-          {"year": "2024-25", "country": "UK", "rank": 3},
-          {"year": "2004-05", "country": "New Zealand", "rank": 3},
-          {"year": "2005-06", "country": "New Zealand", "rank": 3},
-          {"year": "2006-07", "country": "New Zealand", "rank": 4},
-          {"year": "2007-08", "country": "New Zealand", "rank": 4},
-          {"year": "2008-09", "country": "New Zealand", "rank": 4},
-          {"year": "2009-10", "country": "New Zealand", "rank": 4},
-          {"year": "2010-11", "country": "New Zealand", "rank": 3},
-          {"year": "2011-12", "country": "New Zealand", "rank": 4},
-          {"year": "2012-13", "country": "New Zealand", "rank": 4},
-          {"year": "2013-14", "country": "New Zealand", "rank": 4},
-          {"year": "2014-15", "country": "New Zealand", "rank": 4},
-          {"year": "2015-16", "country": "New Zealand", "rank": 4},
-          {"year": "2016-17", "country": "New Zealand", "rank": 4},
-          {"year": "2017-18", "country": "New Zealand", "rank": 4},
-          {"year": "2018-19", "country": "New Zealand", "rank": 5},
-          {"year": "2019-20", "country": "New Zealand", "rank": 4},
-          {"year": "2020-21", "country": "New Zealand", "rank": 4},
-          {"year": "2021-22", "country": "New Zealand", "rank": 5},
-          {"year": "2022-23", "country": "New Zealand", "rank": 5},
-          {"year": "2023-24", "country": "New Zealand", "rank": 4},
-          {"year": "2024-25", "country": "New Zealand", "rank": 4},
-          {"year": "2004-05", "country": "Philippines", "rank": 6},
-          {"year": "2005-06", "country": "Philippines", "rank": 6},
-          {"year": "2006-07", "country": "Philippines", "rank": 5},
-          {"year": "2007-08", "country": "Philippines", "rank": 5},
-          {"year": "2008-09", "country": "Philippines", "rank": 5},
-          {"year": "2009-10", "country": "Philippines", "rank": 5},
-          {"year": "2010-11", "country": "Philippines", "rank": 5},
-          {"year": "2011-12", "country": "Philippines", "rank": 5},
-          {"year": "2012-13", "country": "Philippines", "rank": 5},
-          {"year": "2013-14", "country": "Philippines", "rank": 5},
-          {"year": "2014-15", "country": "Philippines", "rank": 5},
-          {"year": "2015-16", "country": "Philippines", "rank": 5},
-          {"year": "2016-17", "country": "Philippines", "rank": 5},
-          {"year": "2017-18", "country": "Philippines", "rank": 5},
-          {"year": "2018-19", "country": "Philippines", "rank": 3},
-          {"year": "2019-20", "country": "Philippines", "rank": 5},
-          {"year": "2020-21", "country": "Philippines", "rank": 5},
-          {"year": "2021-22", "country": "Philippines", "rank": 3},
-          {"year": "2022-23", "country": "Philippines", "rank": 3},
-          {"year": "2023-24", "country": "Philippines", "rank": 5},
-          {"year": "2024-25", "country": "Philippines", "rank": 5},
-          {"year": "2004-05", "country": "Nepal", "rank": 8},
-          {"year": "2005-06", "country": "Nepal", "rank": 8},
-          {"year": "2006-07", "country": "Nepal", "rank": 7},
-          {"year": "2007-08", "country": "Nepal", "rank": 7},
-          {"year": "2008-09", "country": "Nepal", "rank": 6},
-          {"year": "2009-10", "country": "Nepal", "rank": 8},
-          {"year": "2010-11", "country": "Nepal", "rank": 8},
-          {"year": "2011-12", "country": "Nepal", "rank": 8},
-          {"year": "2012-13", "country": "Nepal", "rank": 8},
-          {"year": "2013-14", "country": "Nepal", "rank": 6},
-          {"year": "2014-15", "country": "Nepal", "rank": 7},
-          {"year": "2015-16", "country": "Nepal", "rank": 7},
-          {"year": "2016-17", "country": "Nepal", "rank": 6},
-          {"year": "2017-18", "country": "Nepal", "rank": 6},
-          {"year": "2018-19", "country": "Nepal", "rank": 6},
-          {"year": "2019-20", "country": "Nepal", "rank": 6},
-          {"year": "2020-21", "country": "Nepal", "rank": 7},
-          {"year": "2021-22", "country": "Nepal", "rank": 6},
-          {"year": "2022-23", "country": "Nepal", "rank": 6},
-          {"year": "2023-24", "country": "Nepal", "rank": 6},
-          {"year": "2024-25", "country": "Nepal", "rank": 6},
-          {"year": "2004-05", "country": "Vietnam", "rank": 7},
-          {"year": "2005-06", "country": "Vietnam", "rank": 7},
-          {"year": "2006-07", "country": "Vietnam", "rank": 6},
-          {"year": "2007-08", "country": "Vietnam", "rank": 6},
-          {"year": "2008-09", "country": "Vietnam", "rank": 7},
-          {"year": "2009-10", "country": "Vietnam", "rank": 6},
-          {"year": "2010-11", "country": "Vietnam", "rank": 6},
-          {"year": "2011-12", "country": "Vietnam", "rank": 6},
-          {"year": "2012-13", "country": "Vietnam", "rank": 6},
-          {"year": "2013-14", "country": "Vietnam", "rank": 7},
-          {"year": "2014-15", "country": "Vietnam", "rank": 6},
-          {"year": "2015-16", "country": "Vietnam", "rank": 6},
-          {"year": "2016-17", "country": "Vietnam", "rank": 7},
-          {"year": "2017-18", "country": "Vietnam", "rank": 7},
-          {"year": "2018-19", "country": "Vietnam", "rank": 7},
-          {"year": "2019-20", "country": "Vietnam", "rank": 7},
-          {"year": "2020-21", "country": "Vietnam", "rank": 6},
-          {"year": "2021-22", "country": "Vietnam", "rank": 7},
-          {"year": "2022-23", "country": "Vietnam", "rank": 7},
-          {"year": "2023-24", "country": "Vietnam", "rank": 7},
-          {"year": "2024-25", "country": "Vietnam", "rank": 7},
-          {"year": "2004-05", "country": "South Africa", "rank": 5},
-          {"year": "2005-06", "country": "South Africa", "rank": 5},
-          {"year": "2006-07", "country": "South Africa", "rank": 8},
-          {"year": "2007-08", "country": "South Africa", "rank": 8},
-          {"year": "2008-09", "country": "South Africa", "rank": 8},
-          {"year": "2009-10", "country": "South Africa", "rank": 7},
-          {"year": "2010-11", "country": "South Africa", "rank": 7},
-          {"year": "2011-12", "country": "South Africa", "rank": 7},
-          {"year": "2012-13", "country": "South Africa", "rank": 7},
-          {"year": "2013-14", "country": "South Africa", "rank": 8},
-          {"year": "2014-15", "country": "South Africa", "rank": 8},
-          {"year": "2015-16", "country": "South Africa", "rank": 8},
-          {"year": "2016-17", "country": "South Africa", "rank": 8},
-          {"year": "2017-18", "country": "South Africa", "rank": 8},
-          {"year": "2018-19", "country": "South Africa", "rank": 8},
-          {"year": "2019-20", "country": "South Africa", "rank": 8},
-          {"year": "2020-21", "country": "South Africa", "rank": 8},
-          {"year": "2021-22", "country": "South Africa", "rank": 8},
-          {"year": "2022-23", "country": "South Africa", "rank": 8},
-          {"year": "2023-24", "country": "South Africa", "rank": 8},
-          {"year": "2024-25", "country": "South Africa", "rank": 8}
+          {
+            "year": "2004-05",
+            "country": "India",
+            "rank": 4
+          },
+          {
+            "year": "2005-06",
+            "country": "India",
+            "rank": 4
+          },
+          {
+            "year": "2006-07",
+            "country": "India",
+            "rank": 3
+          },
+          {
+            "year": "2007-08",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2008-09",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2009-10",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2010-11",
+            "country": "India",
+            "rank": 4
+          },
+          {
+            "year": "2011-12",
+            "country": "India",
+            "rank": 3
+          },
+          {
+            "year": "2012-13",
+            "country": "India",
+            "rank": 3
+          },
+          {
+            "year": "2013-14",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2014-15",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2015-16",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2016-17",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2017-18",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2018-19",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2019-20",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2020-21",
+            "country": "India",
+            "rank": 2
+          },
+          {
+            "year": "2021-22",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2022-23",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2023-24",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2024-25",
+            "country": "India",
+            "rank": 1
+          },
+          {
+            "year": "2004-05",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2005-06",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2006-07",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2007-08",
+            "country": "China",
+            "rank": 3
+          },
+          {
+            "year": "2008-09",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2009-10",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2010-11",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2011-12",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2012-13",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2013-14",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2014-15",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2015-16",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2016-17",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2017-18",
+            "country": "China",
+            "rank": 1
+          },
+          {
+            "year": "2018-19",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2019-20",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2020-21",
+            "country": "China",
+            "rank": 3
+          },
+          {
+            "year": "2021-22",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2022-23",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2023-24",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2024-25",
+            "country": "China",
+            "rank": 2
+          },
+          {
+            "year": "2004-05",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2005-06",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2006-07",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2007-08",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2008-09",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2009-10",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2010-11",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2011-12",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2012-13",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2013-14",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2014-15",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2015-16",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2016-17",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2017-18",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2018-19",
+            "country": "UK",
+            "rank": 4
+          },
+          {
+            "year": "2019-20",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2020-21",
+            "country": "UK",
+            "rank": 1
+          },
+          {
+            "year": "2021-22",
+            "country": "UK",
+            "rank": 4
+          },
+          {
+            "year": "2022-23",
+            "country": "UK",
+            "rank": 4
+          },
+          {
+            "year": "2023-24",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2024-25",
+            "country": "UK",
+            "rank": 3
+          },
+          {
+            "year": "2004-05",
+            "country": "New Zealand",
+            "rank": 3
+          },
+          {
+            "year": "2005-06",
+            "country": "New Zealand",
+            "rank": 3
+          },
+          {
+            "year": "2006-07",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2007-08",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2008-09",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2009-10",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2010-11",
+            "country": "New Zealand",
+            "rank": 3
+          },
+          {
+            "year": "2011-12",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2012-13",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2013-14",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2014-15",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2015-16",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2016-17",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2017-18",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2018-19",
+            "country": "New Zealand",
+            "rank": 5
+          },
+          {
+            "year": "2019-20",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2020-21",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2021-22",
+            "country": "New Zealand",
+            "rank": 5
+          },
+          {
+            "year": "2022-23",
+            "country": "New Zealand",
+            "rank": 5
+          },
+          {
+            "year": "2023-24",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2024-25",
+            "country": "New Zealand",
+            "rank": 4
+          },
+          {
+            "year": "2004-05",
+            "country": "Philippines",
+            "rank": 6
+          },
+          {
+            "year": "2005-06",
+            "country": "Philippines",
+            "rank": 6
+          },
+          {
+            "year": "2006-07",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2007-08",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2008-09",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2009-10",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2010-11",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2011-12",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2012-13",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2013-14",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2014-15",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2015-16",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2016-17",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2017-18",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2018-19",
+            "country": "Philippines",
+            "rank": 3
+          },
+          {
+            "year": "2019-20",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2020-21",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2021-22",
+            "country": "Philippines",
+            "rank": 3
+          },
+          {
+            "year": "2022-23",
+            "country": "Philippines",
+            "rank": 3
+          },
+          {
+            "year": "2023-24",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2024-25",
+            "country": "Philippines",
+            "rank": 5
+          },
+          {
+            "year": "2004-05",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2005-06",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2006-07",
+            "country": "Nepal",
+            "rank": 7
+          },
+          {
+            "year": "2007-08",
+            "country": "Nepal",
+            "rank": 7
+          },
+          {
+            "year": "2008-09",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2009-10",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2010-11",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2011-12",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2012-13",
+            "country": "Nepal",
+            "rank": 8
+          },
+          {
+            "year": "2013-14",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2014-15",
+            "country": "Nepal",
+            "rank": 7
+          },
+          {
+            "year": "2015-16",
+            "country": "Nepal",
+            "rank": 7
+          },
+          {
+            "year": "2016-17",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2017-18",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2018-19",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2019-20",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2020-21",
+            "country": "Nepal",
+            "rank": 7
+          },
+          {
+            "year": "2021-22",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2022-23",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2023-24",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2024-25",
+            "country": "Nepal",
+            "rank": 6
+          },
+          {
+            "year": "2004-05",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2005-06",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2006-07",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2007-08",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2008-09",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2009-10",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2010-11",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2011-12",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2012-13",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2013-14",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2014-15",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2015-16",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2016-17",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2017-18",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2018-19",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2019-20",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2020-21",
+            "country": "Vietnam",
+            "rank": 6
+          },
+          {
+            "year": "2021-22",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2022-23",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2023-24",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2024-25",
+            "country": "Vietnam",
+            "rank": 7
+          },
+          {
+            "year": "2004-05",
+            "country": "South Africa",
+            "rank": 5
+          },
+          {
+            "year": "2005-06",
+            "country": "South Africa",
+            "rank": 5
+          },
+          {
+            "year": "2006-07",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2007-08",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2008-09",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2009-10",
+            "country": "South Africa",
+            "rank": 7
+          },
+          {
+            "year": "2010-11",
+            "country": "South Africa",
+            "rank": 7
+          },
+          {
+            "year": "2011-12",
+            "country": "South Africa",
+            "rank": 7
+          },
+          {
+            "year": "2012-13",
+            "country": "South Africa",
+            "rank": 7
+          },
+          {
+            "year": "2013-14",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2014-15",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2015-16",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2016-17",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2017-18",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2018-19",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2019-20",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2020-21",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2021-22",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2022-23",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2023-24",
+            "country": "South Africa",
+            "rank": 8
+          },
+          {
+            "year": "2024-25",
+            "country": "South Africa",
+            "rank": 8
+          }
         ]
       },
       "params": [
@@ -183,27 +859,55 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["country"],
+            "fields": [
+              "country"
+            ],
             "on": "mouseover",
             "nearest": false
           }
         }
       ],
-      "mark": {"type": "line", "point": true, "strokeWidth": 2.5, "interpolate": "monotone"},
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 2.5,
+        "interpolate": "monotone"
+      },
       "encoding": {
         "x": {
           "field": "year",
           "type": "ordinal",
-          "axis": {"labelAngle": -45, "title": "Year", "labelFontSize": 10, "labelFontWeight": "bold", "titlePadding": 10}
+          "axis": {
+            "labelAngle": -45,
+            "title": "Year",
+            "labelFontSize": 10,
+            "labelFontWeight": "bold",
+            "titlePadding": 10
+          }
         },
         "y": {
           "field": "rank",
           "type": "quantitative",
           "sort": "ascending",
-          "scale": {"domain": [1, 8], "reverse": true},
+          "scale": {
+            "domain": [
+              1,
+              8
+            ],
+            "reverse": true
+          },
           "axis": {
             "title": "Rank",
-            "values": [1, 2, 3, 4, 5, 6, 7, 8],
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
             "labelExpr": "'#' + datum.value",
             "labelFontWeight": "bold",
             "titlePadding": 10
@@ -213,23 +917,61 @@
           "field": "country",
           "type": "nominal",
           "scale": {
-            "domain": ["India", "China", "UK", "New Zealand", "Philippines", "Nepal", "Vietnam", "South Africa"],
-            "range": ["#f97316", "#ef4444", "#3b82f6", "#10b981", "#8b5cf6", "#ec4899", "#14b8a6", "#f59e0b"]
+            "domain": [
+              "India",
+              "China",
+              "UK",
+              "New Zealand",
+              "Philippines",
+              "Nepal",
+              "Vietnam",
+              "South Africa"
+            ],
+            "range": [
+              "#f97316",
+              "#ef4444",
+              "#3b82f6",
+              "#10b981",
+              "#8b5cf6",
+              "#ec4899",
+              "#14b8a6",
+              "#f59e0b"
+            ]
           },
-          "legend": {"title": "Country", "orient": "right"}
+          "legend": {
+            "title": "Country",
+            "orient": "right"
+          }
         },
         "opacity": {
-          "condition": {"param": "hover", "empty": true, "value": 1},
+          "condition": {
+            "param": "hover",
+            "empty": true,
+            "value": 1
+          },
           "value": 0.1
         },
         "strokeWidth": {
-          "condition": {"param": "hover", "empty": true, "value": 2.5},
+          "condition": {
+            "param": "hover",
+            "empty": true,
+            "value": 2.5
+          },
           "value": 1
         },
         "tooltip": [
-          {"field": "year",    "title": "Year"},
-          {"field": "country", "title": "Country"},
-          {"field": "rank",    "title": "Rank"}
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "country",
+            "title": "Country"
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          }
         ]
       }
     }

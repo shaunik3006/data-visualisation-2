@@ -3,44 +3,163 @@
   "width": 750,
   "height": 400,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
-  "projection": {"type": "naturalEarth1", "rotate": [-10, 0, 0]},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1",
+    "rotate": [
+      -10,
+      0,
+      0
+    ]
+  },
   "layer": [
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
-      "transform": [{"filter": "datum.id !== 10"}],
-      "mark": {"type": "geoshape", "fill": "#f1f5f9", "stroke": "#cbd5e1", "strokeWidth": 0.5}
+      "transform": [
+        {
+          "filter": "datum.id !== 10"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f1f5f9",
+        "stroke": "#cbd5e1",
+        "strokeWidth": 0.5
+      }
     },
     {
       "data": {
         "values": [
-          {"country": "India", "arrivals": 74540, "id": 356},
-          {"country": "China", "arrivals": 69860, "id": 156},
-          {"country": "UK", "arrivals": 40180, "id": 826},
-          {"country": "New Zealand", "arrivals": 35050, "id": 554},
-          {"country": "Philippines", "arrivals": 25560, "id": 608},
-          {"country": "Nepal", "arrivals": 18480, "id": 524},
-          {"country": "Vietnam", "arrivals": 13950, "id": 704},
-          {"country": "South Africa", "arrivals": 8620, "id": 710},
-          {"country": "Malaysia", "arrivals": 6490, "id": 458},
-          {"country": "South Korea", "arrivals": 8450, "id": 410},
-          {"country": "USA", "arrivals": 7580, "id": 840},
-          {"country": "Indonesia", "arrivals": 13340, "id": 360},
-          {"country": "Sri Lanka", "arrivals": 14710, "id": 144},
-          {"country": "Pakistan", "arrivals": 11440, "id": 586},
-          {"country": "Thailand", "arrivals": 5870, "id": 764},
-          {"country": "Bangladesh", "arrivals": 5200, "id": 50},
-          {"country": "Ireland", "arrivals": 4800, "id": 372},
-          {"country": "Germany", "arrivals": 3500, "id": 276},
-          {"country": "Canada", "arrivals": 3200, "id": 124},
-          {"country": "Zimbabwe", "arrivals": 2800, "id": 716},
-          {"country": "Fiji", "arrivals": 2100, "id": 242},
-          {"country": "Japan", "arrivals": 4200, "id": 392},
-          {"country": "Colombia", "arrivals": 2500, "id": 170},
-          {"country": "Brazil", "arrivals": 2300, "id": 76}
+          {
+            "country": "India",
+            "arrivals": 74540,
+            "id": 356
+          },
+          {
+            "country": "China",
+            "arrivals": 69860,
+            "id": 156
+          },
+          {
+            "country": "UK",
+            "arrivals": 40180,
+            "id": 826
+          },
+          {
+            "country": "New Zealand",
+            "arrivals": 35050,
+            "id": 554
+          },
+          {
+            "country": "Philippines",
+            "arrivals": 25560,
+            "id": 608
+          },
+          {
+            "country": "Nepal",
+            "arrivals": 18480,
+            "id": 524
+          },
+          {
+            "country": "Vietnam",
+            "arrivals": 13950,
+            "id": 704
+          },
+          {
+            "country": "South Africa",
+            "arrivals": 8620,
+            "id": 710
+          },
+          {
+            "country": "Malaysia",
+            "arrivals": 6490,
+            "id": 458
+          },
+          {
+            "country": "South Korea",
+            "arrivals": 8450,
+            "id": 410
+          },
+          {
+            "country": "USA",
+            "arrivals": 7580,
+            "id": 840
+          },
+          {
+            "country": "Indonesia",
+            "arrivals": 13340,
+            "id": 360
+          },
+          {
+            "country": "Sri Lanka",
+            "arrivals": 14710,
+            "id": 144
+          },
+          {
+            "country": "Pakistan",
+            "arrivals": 11440,
+            "id": 586
+          },
+          {
+            "country": "Thailand",
+            "arrivals": 5870,
+            "id": 764
+          },
+          {
+            "country": "Bangladesh",
+            "arrivals": 5200,
+            "id": 50
+          },
+          {
+            "country": "Ireland",
+            "arrivals": 4800,
+            "id": 372
+          },
+          {
+            "country": "Germany",
+            "arrivals": 3500,
+            "id": 276
+          },
+          {
+            "country": "Canada",
+            "arrivals": 3200,
+            "id": 124
+          },
+          {
+            "country": "Zimbabwe",
+            "arrivals": 2800,
+            "id": 716
+          },
+          {
+            "country": "Fiji",
+            "arrivals": 2100,
+            "id": 242
+          },
+          {
+            "country": "Japan",
+            "arrivals": 4200,
+            "id": 392
+          },
+          {
+            "country": "Colombia",
+            "arrivals": 2500,
+            "id": 170
+          },
+          {
+            "country": "Brazil",
+            "arrivals": 2300,
+            "id": 76
+          }
         ]
       },
       "transform": [
@@ -49,34 +168,95 @@
           "from": {
             "data": {
               "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-              "format": {"type": "topojson", "feature": "countries"}
+              "format": {
+                "type": "topojson",
+                "feature": "countries"
+              }
             },
             "key": "id"
           },
           "as": "geo"
         }
       ],
-      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.5},
+      "params": [
+        {
+          "name": "highlight",
+          "select": {
+            "type": "point",
+            "on": "click",
+            "fields": [
+              "country"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape"
+      },
       "encoding": {
-        "shape": {"field": "geo", "type": "geojson"},
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
         "color": {
           "field": "arrivals",
           "type": "quantitative",
           "scale": {
             "scheme": "blues",
-            "domain": [1000, 80000]
+            "domain": [
+              1000,
+              80000
+            ]
           },
           "legend": {
             "title": "Arrivals 2024–25",
             "labelExpr": "(datum.value/1000) + 'k'",
             "orient": "right",
             "direction": "vertical",
-            "gradientLength": 150
+            "gradientLength": 150,
+            "values": [
+              1000,
+              20000,
+              40000,
+              60000,
+              80000
+            ]
           }
         },
+        "opacity": {
+          "condition": {
+            "param": "highlight",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.2
+        },
+        "stroke": {
+          "condition": {
+            "param": "highlight",
+            "empty": false,
+            "value": "#111827"
+          },
+          "value": "#ffffff"
+        },
+        "strokeWidth": {
+          "condition": {
+            "param": "highlight",
+            "empty": false,
+            "value": 2
+          },
+          "value": 0.5
+        },
         "tooltip": [
-          {"field": "country", "title": "Country"},
-          {"field": "arrivals", "title": "Arrivals", "format": ","}
+          {
+            "field": "country",
+            "title": "Country"
+          },
+          {
+            "field": "arrivals",
+            "title": "Arrivals",
+            "format": ","
+          }
         ]
       }
     }

@@ -1,50 +1,110 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
   "width": 650,
   "height": 340,
   "background": "#ffffff",
-
   "data": {
     "values": [
-
-      {"stream":"Skilled Independent","period":"Pre-COVID","value":65200},
-      {"stream":"Skilled Independent","period":"During COVID","value":22300},
-      {"stream":"Skilled Independent","period":"Post-COVID","value":30200},
-
-      {"stream":"Employer Sponsored","period":"Pre-COVID","value":38600},
-      {"stream":"Employer Sponsored","period":"During COVID","value":22000},
-      {"stream":"Employer Sponsored","period":"Post-COVID","value":48500},
-
-      {"stream":"Regional","period":"Pre-COVID","value":9800},
-      {"stream":"Regional","period":"During COVID","value":6200},
-      {"stream":"Regional","period":"Post-COVID","value":32400},
-
-      {"stream":"Business Innovation","period":"Pre-COVID","value":7300},
-      {"stream":"Business Innovation","period":"During COVID","value":11800},
-      {"stream":"Business Innovation","period":"Post-COVID","value":9200},
-
-      {"stream":"Global Talent","period":"Pre-COVID","value":5000},
-      {"stream":"Global Talent","period":"During COVID","value":15100},
-      {"stream":"Global Talent","period":"Post-COVID","value":6200},
-
-      {"stream":"Partner","period":"Pre-COVID","value":39500},
-      {"stream":"Partner","period":"During COVID","value":72300},
-      {"stream":"Partner","period":"Post-COVID","value":40500}
+      {
+        "stream": "Skilled Independent",
+        "period": "Pre-COVID",
+        "value": 65200
+      },
+      {
+        "stream": "Skilled Independent",
+        "period": "During COVID",
+        "value": 22300
+      },
+      {
+        "stream": "Skilled Independent",
+        "period": "Post-COVID",
+        "value": 30200
+      },
+      {
+        "stream": "Employer Sponsored",
+        "period": "Pre-COVID",
+        "value": 38600
+      },
+      {
+        "stream": "Employer Sponsored",
+        "period": "During COVID",
+        "value": 22000
+      },
+      {
+        "stream": "Employer Sponsored",
+        "period": "Post-COVID",
+        "value": 48500
+      },
+      {
+        "stream": "Regional",
+        "period": "Pre-COVID",
+        "value": 9800
+      },
+      {
+        "stream": "Regional",
+        "period": "During COVID",
+        "value": 6200
+      },
+      {
+        "stream": "Regional",
+        "period": "Post-COVID",
+        "value": 32400
+      },
+      {
+        "stream": "Business Innovation",
+        "period": "Pre-COVID",
+        "value": 7300
+      },
+      {
+        "stream": "Business Innovation",
+        "period": "During COVID",
+        "value": 11800
+      },
+      {
+        "stream": "Business Innovation",
+        "period": "Post-COVID",
+        "value": 9200
+      },
+      {
+        "stream": "Global Talent",
+        "period": "Pre-COVID",
+        "value": 5000
+      },
+      {
+        "stream": "Global Talent",
+        "period": "During COVID",
+        "value": 15100
+      },
+      {
+        "stream": "Global Talent",
+        "period": "Post-COVID",
+        "value": 6200
+      },
+      {
+        "stream": "Partner",
+        "period": "Pre-COVID",
+        "value": 39500
+      },
+      {
+        "stream": "Partner",
+        "period": "During COVID",
+        "value": 72300
+      },
+      {
+        "stream": "Partner",
+        "period": "Post-COVID",
+        "value": 40500
+      }
     ]
   },
-
   "layer": [
-
     {
       "mark": {
         "type": "line",
         "strokeWidth": 2.5,
         "opacity": 0.9
       },
-
       "encoding": {
-
         "y": {
           "field": "stream",
           "type": "nominal",
@@ -63,7 +123,6 @@
             "labelFontWeight": "bold"
           }
         },
-
         "x": {
           "field": "value",
           "type": "quantitative",
@@ -78,17 +137,23 @@
             "tickCount": 6
           }
         },
-
         "detail": {
           "field": "stream"
         },
-
         "color": {
           "field": "period",
           "type": "nominal",
           "scale": {
-            "domain": ["Pre-COVID", "During COVID", "Post-COVID"],
-            "range": ["#3b82f6", "#ef4444", "#10b981"]
+            "domain": [
+              "Pre-COVID",
+              "During COVID",
+              "Post-COVID"
+            ],
+            "range": [
+              "#3b82f6",
+              "#ef4444",
+              "#10b981"
+            ]
           },
           "legend": {
             "title": "Period",
@@ -101,16 +166,13 @@
         }
       }
     },
-
     {
       "mark": {
         "type": "point",
         "filled": true,
         "size": 90
       },
-
       "encoding": {
-
         "y": {
           "field": "stream",
           "type": "nominal",
@@ -123,31 +185,44 @@
             "Business Innovation"
           ]
         },
-
         "x": {
           "field": "value",
           "type": "quantitative"
         },
-
         "color": {
           "field": "period",
           "type": "nominal",
           "scale": {
-            "domain": ["Pre-COVID", "During COVID", "Post-COVID"],
-            "range": ["#1d4ed8", "#b91c1c", "#047857"]
+            "domain": [
+              "Pre-COVID",
+              "During COVID",
+              "Post-COVID"
+            ],
+            "range": [
+              "#1d4ed8",
+              "#b91c1c",
+              "#047857"
+            ]
           }
         },
-
         "tooltip": [
-          {"field": "stream", "title": "Visa Stream"},
-          {"field": "period", "title": "Period"},
-          {"field": "value", "title": "Visa Grants", "format": ","}
+          {
+            "field": "stream",
+            "title": "Visa Stream"
+          },
+          {
+            "field": "period",
+            "title": "Period"
+          },
+          {
+            "field": "value",
+            "title": "Visa Grants",
+            "format": ","
+          }
         ]
       }
     }
-
   ],
-
   "config": {
     "view": {
       "stroke": null

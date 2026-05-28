@@ -3,6 +3,7 @@
   "width": "container",
   "height": 450,
   "background": "#ffffff",
+  
   "config": {
     "view": {
       "stroke": null
@@ -116,7 +117,7 @@
           "axis": {
             "title": "Migrant Arrivals",
             "titleFontWeight": "bold",
-            "titleFontSize": 11,  
+            "titleFontSize": 11,
             "labelFontWeight": "bold",
             "labelFontSize": 11,
             "titlePadding": 10,

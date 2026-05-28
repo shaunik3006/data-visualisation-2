@@ -3,32 +3,127 @@
   "width": 750,
   "height": 420,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
-  "projection": {"type": "naturalEarth1", "rotate": [-10, 0, 0]},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1",
+    "rotate": [
+      -10,
+      0,
+      0
+    ]
+  },
   "layer": [
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
-      "transform": [{"filter": "datum.id !== 10"}],
-      "mark": {"type": "geoshape", "fill": "#e2e8f0", "stroke": "#ffffff", "strokeWidth": 0.5}
+      "transform": [
+        {
+          "filter": "datum.id !== 10"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e2e8f0",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.5
+      }
     },
     {
       "data": {
         "values": [
-          {"country": "India",       "id": 356, "peak": 86350, "covid": 11190, "drop": 87},
-          {"country": "China",       "id": 156, "peak": 82320, "covid": 9260,  "drop": 89},
-          {"country": "UK",          "id": 826, "peak": 50610, "covid": 9850,  "drop": 81},
-          {"country": "New Zealand", "id": 554, "peak": 48220, "covid": 12000, "drop": 75},
-          {"country": "Philippines", "id": 608, "peak": 22780, "covid": 3910,  "drop": 83},
-          {"country": "Nepal",       "id": 524, "peak": 25470, "covid": 540,   "drop": 98},
-          {"country": "Vietnam",     "id": 704, "peak": 13180, "covid": 2700,  "drop": 80},
-          {"country": "Sri Lanka",   "id": 144, "peak": 9370,  "covid": 1580,  "drop": 83},
-          {"country": "Pakistan",    "id": 586, "peak": 9650,  "covid": 2210,  "drop": 77},
-          {"country": "USA",         "id": 840, "peak": 7580,  "covid": 3200,  "drop": 58},
-          {"country": "Canada",      "id": 124, "peak": 3200,  "covid": 1100,  "drop": 66},
-          {"country": "Colombia",    "id": 170, "peak": 2500,  "covid": 800,   "drop": 68}
+          {
+            "country": "India",
+            "id": 356,
+            "peak": 86350,
+            "covid": 11190,
+            "drop": 87
+          },
+          {
+            "country": "China",
+            "id": 156,
+            "peak": 82320,
+            "covid": 9260,
+            "drop": 89
+          },
+          {
+            "country": "UK",
+            "id": 826,
+            "peak": 50610,
+            "covid": 9850,
+            "drop": 81
+          },
+          {
+            "country": "New Zealand",
+            "id": 554,
+            "peak": 48220,
+            "covid": 12000,
+            "drop": 75
+          },
+          {
+            "country": "Philippines",
+            "id": 608,
+            "peak": 22780,
+            "covid": 3910,
+            "drop": 83
+          },
+          {
+            "country": "Nepal",
+            "id": 524,
+            "peak": 25470,
+            "covid": 540,
+            "drop": 98
+          },
+          {
+            "country": "Vietnam",
+            "id": 704,
+            "peak": 13180,
+            "covid": 2700,
+            "drop": 80
+          },
+          {
+            "country": "Sri Lanka",
+            "id": 144,
+            "peak": 9370,
+            "covid": 1580,
+            "drop": 83
+          },
+          {
+            "country": "Pakistan",
+            "id": 586,
+            "peak": 9650,
+            "covid": 2210,
+            "drop": 77
+          },
+          {
+            "country": "USA",
+            "id": 840,
+            "peak": 7580,
+            "covid": 3200,
+            "drop": 58
+          },
+          {
+            "country": "Canada",
+            "id": 124,
+            "peak": 3200,
+            "covid": 1100,
+            "drop": 66
+          },
+          {
+            "country": "Colombia",
+            "id": 170,
+            "peak": 2500,
+            "covid": 800,
+            "drop": 68
+          }
         ]
       },
       "transform": [
@@ -37,7 +132,10 @@
           "from": {
             "data": {
               "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-              "format": {"type": "topojson", "feature": "countries"}
+              "format": {
+                "type": "topojson",
+                "feature": "countries"
+              }
             },
             "key": "id"
           },
@@ -47,18 +145,38 @@
       "params": [
         {
           "name": "highlight",
-          "select": {"type": "point", "on": "click", "fields": ["country"]}
+          "select": {
+            "type": "point",
+            "on": "click",
+            "fields": [
+              "country"
+            ]
+          }
         }
       ],
-      "mark": {"type": "geoshape", "strokeWidth": 1},
+      "mark": {
+        "type": "geoshape",
+        "strokeWidth": 1
+      },
       "encoding": {
-        "shape": {"field": "geo", "type": "geojson"},
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
         "color": {
           "field": "drop",
           "type": "quantitative",
           "scale": {
-            "domain": [55, 100],
-            "range": ["#fbbf24", "#f97316", "#dc2626", "#7f1d1d"]
+            "domain": [
+              55,
+              100
+            ],
+            "range": [
+              "#fbbf24",
+              "#f97316",
+              "#dc2626",
+              "#7f1d1d"
+            ]
           },
           "legend": {
             "title": "Arrivals drop (%)",
@@ -71,22 +189,49 @@
           }
         },
         "opacity": {
-          "condition": {"param": "highlight", "empty": true, "value": 1},
+          "condition": {
+            "param": "highlight",
+            "empty": true,
+            "value": 1
+          },
           "value": 0.25
         },
         "stroke": {
-          "condition": {"param": "highlight", "empty": false, "value": "#111827"},
+          "condition": {
+            "param": "highlight",
+            "empty": false,
+            "value": "#111827"
+          },
           "value": "#ffffff"
         },
         "strokeWidth": {
-          "condition": {"param": "highlight", "empty": false, "value": 2},
+          "condition": {
+            "param": "highlight",
+            "empty": false,
+            "value": 2
+          },
           "value": 0.5
         },
         "tooltip": [
-          {"field": "country", "title": "Country"},
-          {"field": "peak",    "title": "Peak arrivals (pre-COVID)", "format": ","},
-          {"field": "covid",   "title": "Arrivals 2020–21",          "format": ","},
-          {"field": "drop",    "title": "Drop (%)",                  "format": ".0f"}
+          {
+            "field": "country",
+            "title": "Country"
+          },
+          {
+            "field": "peak",
+            "title": "Peak arrivals (pre-COVID)",
+            "format": ","
+          },
+          {
+            "field": "covid",
+            "title": "Arrivals 2020–21",
+            "format": ","
+          },
+          {
+            "field": "drop",
+            "title": "Drop (%)",
+            "format": ".0f"
+          }
         ]
       }
     }
