@@ -12,10 +12,12 @@
     },
     "font": "DM Sans, sans-serif",
     "axis": {
-      "labelFont": "DM Sans, sans-serif",
-      "titleFont": "DM Sans, sans-serif",
+      "labelFont": "Inter, sans-serif",
+      "titleFont": "Inter, sans-serif",
       "labelFontSize": 11,
+      "labelPadding": 2,
       "titleFontSize": 12,
+      "titlePadding": 10,
       "gridColor": "#f1f5f9",
       "gridWidth": 1,
       "domainColor": "#e2e8f0",
@@ -26,8 +28,8 @@
       "titleFontWeight": "bold"
     },
     "legend": {
-      "labelFont": "DM Sans, sans-serif",
-      "titleFont": "DM Sans, sans-serif",
+      "labelFont": "Inter, sans-serif",
+      "titleFont": "Inter, sans-serif",
       "labelFontSize": 12,
       "labelColor": "#111827"
     }
