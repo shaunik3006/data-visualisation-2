@@ -4,7 +4,7 @@
   "height": 400,
   "background": "#ffffff",
   "padding": {
-    "right": 40
+    "right": 0
   },
   "config": {
     "view": {
@@ -453,7 +453,7 @@
             "symbolType": "stroke",
             "symbolStrokeWidth": 3,
             "symbolSize": 200,
-            "offset": 50
+            "offset": 20
           }
         },
         "opacity": {
