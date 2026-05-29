@@ -187,7 +187,7 @@
         "fontSize": 11,
         "fontWeight": "bold",
         "align": "right",
-        "dx": -10,
+        "dx": 10,
         "dy": -8,
         "color": "#111827"
       },
@@ -255,6 +255,7 @@
         "fontStyle": "italic",
         "align": "left",
         "dx": 10,
+        "dy": -6,
         "color": "#3b82f6"
       },
       "encoding": {
@@ -286,7 +287,8 @@
         "fontSize": 10,
         "fontStyle": "italic",
         "align": "left",
-        "dx": 10,
+        "dx": 35,
+        "dy": 3,
         "color": "#ec4899"
       },
       "encoding": {

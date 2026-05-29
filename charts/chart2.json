@@ -11,824 +11,896 @@
   "data": {
     "values": [
       {
-        "year": "1984–85",
+        "year": "1984-85",
         "stream": "Skill",
         "value": 10100,
         "i": 0
       },
       {
-        "year": "1985–86",
+        "year": "1985-86",
         "stream": "Skill",
         "value": 16200,
         "i": 1
       },
       {
-        "year": "1986–87",
+        "year": "1986-87",
         "stream": "Skill",
         "value": 28500,
         "i": 2
       },
       {
-        "year": "1987–88",
+        "year": "1987-88",
         "stream": "Skill",
         "value": 42000,
         "i": 3
       },
       {
-        "year": "1988–89",
+        "year": "1988-89",
         "stream": "Skill",
         "value": 51200,
         "i": 4
       },
       {
-        "year": "1989–90",
+        "year": "1989-90",
         "stream": "Skill",
         "value": 52700,
         "i": 5
       },
       {
-        "year": "1990–91",
+        "year": "1990-91",
         "stream": "Skill",
         "value": 49800,
         "i": 6
       },
       {
-        "year": "1991–92",
+        "year": "1991-92",
         "stream": "Skill",
         "value": 41400,
         "i": 7
       },
       {
-        "year": "1992–93",
+        "year": "1992-93",
         "stream": "Skill",
         "value": 21300,
         "i": 8
       },
       {
-        "year": "1993–94",
+        "year": "1993-94",
         "stream": "Skill",
         "value": 18300,
         "i": 9
       },
       {
-        "year": "1994–95",
+        "year": "1994-95",
         "stream": "Skill",
         "value": 30400,
         "i": 10
       },
       {
-        "year": "1995–96",
+        "year": "1995-96",
         "stream": "Skill",
         "value": 24100,
         "i": 11
       },
       {
-        "year": "1996–97",
+        "year": "1996-97",
         "stream": "Skill",
         "value": 34676,
         "i": 12
       },
       {
-        "year": "1997–98",
+        "year": "1997-98",
         "stream": "Skill",
         "value": 34446,
         "i": 13
       },
       {
-        "year": "1998–99",
+        "year": "1998-99",
         "stream": "Skill",
         "value": 34895,
         "i": 14
       },
       {
-        "year": "1999–00",
+        "year": "1999-00",
         "stream": "Skill",
         "value": 35352,
         "i": 15
       },
       {
-        "year": "2000–01",
+        "year": "2000-01",
         "stream": "Skill",
         "value": 44721,
         "i": 16
       },
       {
-        "year": "2001–02",
+        "year": "2001-02",
         "stream": "Skill",
         "value": 53507,
         "i": 17
       },
       {
-        "year": "2002–03",
+        "year": "2002-03",
         "stream": "Skill",
         "value": 66053,
         "i": 18
       },
       {
-        "year": "2003–04",
+        "year": "2003-04",
         "stream": "Skill",
         "value": 71243,
         "i": 19
       },
       {
-        "year": "2004–05",
+        "year": "2004-05",
         "stream": "Skill",
         "value": 77878,
         "i": 20
       },
       {
-        "year": "2005–06",
+        "year": "2005-06",
         "stream": "Skill",
         "value": 97336,
         "i": 21
       },
       {
-        "year": "2006–07",
+        "year": "2006-07",
         "stream": "Skill",
         "value": 97922,
         "i": 22
       },
       {
-        "year": "2007–08",
+        "year": "2007-08",
         "stream": "Skill",
         "value": 108540,
         "i": 23
       },
       {
-        "year": "2008–09",
+        "year": "2008-09",
         "stream": "Skill",
         "value": 114777,
         "i": 24
       },
       {
-        "year": "2009–10",
+        "year": "2009-10",
         "stream": "Skill",
         "value": 107868,
         "i": 25
       },
       {
-        "year": "2010–11",
+        "year": "2010-11",
         "stream": "Skill",
         "value": 113725,
         "i": 26
       },
       {
-        "year": "2011–12",
+        "year": "2011-12",
         "stream": "Skill",
         "value": 125755,
         "i": 27
       },
       {
-        "year": "2012–13",
+        "year": "2012-13",
         "stream": "Skill",
         "value": 128973,
         "i": 28
       },
       {
-        "year": "2013–14",
+        "year": "2013-14",
         "stream": "Skill",
         "value": 128550,
         "i": 29
       },
       {
-        "year": "2014–15",
+        "year": "2014-15",
         "stream": "Skill",
         "value": 127774,
         "i": 30
       },
       {
-        "year": "2015–16",
+        "year": "2015-16",
         "stream": "Skill",
         "value": 128550,
         "i": 31
       },
       {
-        "year": "2016–17",
+        "year": "2016-17",
         "stream": "Skill",
         "value": 123567,
         "i": 32
       },
       {
-        "year": "2017–18",
+        "year": "2017-18",
         "stream": "Skill",
         "value": 111099,
         "i": 33
       },
       {
-        "year": "2018–19",
+        "year": "2018-19",
         "stream": "Skill",
         "value": 109713,
         "i": 34
       },
       {
-        "year": "2019–20",
+        "year": "2019-20",
         "stream": "Skill",
         "value": 95843,
         "i": 35
       },
       {
-        "year": "2020–21",
+        "year": "2020-21",
         "stream": "Skill",
         "value": 79620,
         "i": 36
       },
       {
-        "year": "2021–22",
+        "year": "2021-22",
         "stream": "Skill",
         "value": 89063,
         "i": 37
       },
       {
-        "year": "2022–23",
+        "year": "2022-23",
         "stream": "Skill",
         "value": 142344,
         "i": 38
       },
       {
-        "year": "2023–24",
+        "year": "2023-24",
         "stream": "Skill",
         "value": 137100,
         "i": 39
       },
       {
-        "year": "2024–25",
+        "year": "2024-25",
         "stream": "Skill",
         "value": 132148,
         "i": 40
       },
       {
-        "year": "1984–85",
+        "year": "1984-85",
         "stream": "Family",
         "value": 43000,
         "i": 0
       },
       {
-        "year": "1985–86",
+        "year": "1985-86",
         "stream": "Family",
         "value": 62100,
         "i": 1
       },
       {
-        "year": "1986–87",
+        "year": "1986-87",
         "stream": "Family",
         "value": 70700,
         "i": 2
       },
       {
-        "year": "1987–88",
+        "year": "1987-88",
         "stream": "Family",
         "value": 77500,
         "i": 3
       },
       {
-        "year": "1988–89",
+        "year": "1988-89",
         "stream": "Family",
         "value": 70400,
         "i": 4
       },
       {
-        "year": "1989–90",
+        "year": "1989-90",
         "stream": "Family",
         "value": 64500,
         "i": 5
       },
       {
-        "year": "1990–91",
+        "year": "1990-91",
         "stream": "Family",
         "value": 59300,
         "i": 6
       },
       {
-        "year": "1991–92",
+        "year": "1991-92",
         "stream": "Family",
         "value": 53700,
         "i": 7
       },
       {
-        "year": "1992–93",
+        "year": "1992-93",
         "stream": "Family",
         "value": 42600,
         "i": 8
       },
       {
-        "year": "1993–94",
+        "year": "1993-94",
         "stream": "Family",
         "value": 40700,
         "i": 9
       },
       {
-        "year": "1994–95",
+        "year": "1994-95",
         "stream": "Family",
         "value": 42000,
         "i": 10
       },
       {
-        "year": "1995–96",
+        "year": "1995-96",
         "stream": "Family",
         "value": 53870,
         "i": 11
       },
       {
-        "year": "1996–97",
+        "year": "1996-97",
         "stream": "Family",
         "value": 34993,
         "i": 12
       },
       {
-        "year": "1997–98",
+        "year": "1997-98",
         "stream": "Family",
         "value": 29093,
         "i": 13
       },
       {
-        "year": "1998–99",
+        "year": "1998-99",
         "stream": "Family",
         "value": 29967,
         "i": 14
       },
       {
-        "year": "1999–00",
+        "year": "1999-00",
         "stream": "Family",
         "value": 29855,
         "i": 15
       },
       {
-        "year": "2000–01",
+        "year": "2000-01",
         "stream": "Family",
         "value": 31337,
         "i": 16
       },
       {
-        "year": "2001–02",
+        "year": "2001-02",
         "stream": "Family",
         "value": 35920,
         "i": 17
       },
       {
-        "year": "2002–03",
+        "year": "2002-03",
         "stream": "Family",
         "value": 38113,
         "i": 18
       },
       {
-        "year": "2003–04",
+        "year": "2003-04",
         "stream": "Family",
         "value": 39567,
         "i": 19
       },
       {
-        "year": "2004–05",
+        "year": "2004-05",
         "stream": "Family",
         "value": 39245,
         "i": 20
       },
       {
-        "year": "2005–06",
+        "year": "2005-06",
         "stream": "Family",
         "value": 42744,
         "i": 21
       },
       {
-        "year": "2006–07",
+        "year": "2006-07",
         "stream": "Family",
         "value": 47071,
         "i": 22
       },
       {
-        "year": "2007–08",
+        "year": "2007-08",
         "stream": "Family",
         "value": 46808,
         "i": 23
       },
       {
-        "year": "2008–09",
+        "year": "2008-09",
         "stream": "Family",
         "value": 53128,
         "i": 24
       },
       {
-        "year": "2009–10",
+        "year": "2009-10",
         "stream": "Family",
         "value": 56710,
         "i": 25
       },
       {
-        "year": "2010–11",
+        "year": "2010-11",
         "stream": "Family",
         "value": 51243,
         "i": 26
       },
       {
-        "year": "2011–12",
+        "year": "2011-12",
         "stream": "Family",
         "value": 54904,
         "i": 27
       },
       {
-        "year": "2012–13",
+        "year": "2012-13",
         "stream": "Family",
         "value": 56335,
         "i": 28
       },
       {
-        "year": "2013–14",
+        "year": "2013-14",
         "stream": "Family",
         "value": 57262,
         "i": 29
       },
       {
-        "year": "2014–15",
+        "year": "2014-15",
         "stream": "Family",
         "value": 56950,
         "i": 30
       },
       {
-        "year": "2015–16",
+        "year": "2015-16",
         "stream": "Family",
         "value": 57400,
         "i": 31
       },
       {
-        "year": "2016–17",
+        "year": "2016-17",
         "stream": "Family",
         "value": 56220,
         "i": 32
       },
       {
-        "year": "2017–18",
+        "year": "2017-18",
         "stream": "Family",
         "value": 47732,
         "i": 33
       },
       {
-        "year": "2018–19",
+        "year": "2018-19",
         "stream": "Family",
         "value": 47247,
         "i": 34
       },
       {
-        "year": "2019–20",
+        "year": "2019-20",
         "stream": "Family",
         "value": 41961,
         "i": 35
       },
       {
-        "year": "2020–21",
+        "year": "2020-21",
         "stream": "Family",
         "value": 77372,
         "i": 36
       },
       {
-        "year": "2021–22",
+        "year": "2021-22",
         "stream": "Family",
         "value": 51288,
         "i": 37
       },
       {
-        "year": "2022–23",
+        "year": "2022-23",
         "stream": "Family",
         "value": 49500,
         "i": 38
       },
       {
-        "year": "2023–24",
+        "year": "2023-24",
         "stream": "Family",
         "value": 49720,
         "i": 39
       },
       {
-        "year": "2024–25",
+        "year": "2024-25",
         "stream": "Family",
         "value": 49500,
         "i": 40
       },
       {
-        "year": "1984–85",
+        "year": "1984-85",
         "stream": "Child",
         "value": 1200,
         "i": 0
       },
       {
-        "year": "1985–86",
+        "year": "1985-86",
         "stream": "Child",
         "value": 1300,
         "i": 1
       },
       {
-        "year": "1986–87",
+        "year": "1986-87",
         "stream": "Child",
         "value": 1900,
         "i": 2
       },
       {
-        "year": "1987–88",
+        "year": "1987-88",
         "stream": "Child",
         "value": 2000,
         "i": 3
       },
       {
-        "year": "1988–89",
+        "year": "1988-89",
         "stream": "Child",
         "value": 2300,
         "i": 4
       },
       {
-        "year": "1989–90",
+        "year": "1989-90",
         "stream": "Child",
         "value": 2100,
         "i": 5
       },
       {
-        "year": "1990–91",
+        "year": "1990-91",
         "stream": "Child",
         "value": 2000,
         "i": 6
       },
       {
-        "year": "1991–92",
+        "year": "1991-92",
         "stream": "Child",
         "value": 2200,
         "i": 7
       },
       {
-        "year": "1992–93",
+        "year": "1992-93",
         "stream": "Child",
         "value": 2700,
         "i": 8
       },
       {
-        "year": "1993–94",
+        "year": "1993-94",
         "stream": "Child",
         "value": 2500,
         "i": 9
       },
       {
-        "year": "1994–95",
+        "year": "1994-95",
         "stream": "Child",
         "value": 2500,
         "i": 10
       },
       {
-        "year": "1995–96",
+        "year": "1995-96",
         "stream": "Child",
         "value": 2830,
         "i": 11
       },
       {
-        "year": "1996–97",
+        "year": "1996-97",
         "stream": "Child",
         "value": 2183,
         "i": 12
       },
       {
-        "year": "1997–98",
+        "year": "1997-98",
         "stream": "Child",
         "value": 2188,
         "i": 13
       },
       {
-        "year": "1998–99",
+        "year": "1998-99",
         "stream": "Child",
         "value": 2071,
         "i": 14
       },
       {
-        "year": "1999–00",
+        "year": "1999-00",
         "stream": "Child",
         "value": 2162,
         "i": 15
       },
       {
-        "year": "2000–01",
+        "year": "2000-01",
         "stream": "Child",
         "value": 2124,
         "i": 16
       },
       {
-        "year": "2001–02",
+        "year": "2001-02",
         "stream": "Child",
         "value": 2162,
         "i": 17
       },
       {
-        "year": "2002–03",
+        "year": "2002-03",
         "stream": "Child",
         "value": 2681,
         "i": 18
       },
       {
-        "year": "2003–04",
+        "year": "2003-04",
         "stream": "Child",
         "value": 2662,
         "i": 19
       },
       {
-        "year": "2004–05",
+        "year": "2004-05",
         "stream": "Child",
         "value": 2491,
         "i": 20
       },
       {
-        "year": "2005–06",
+        "year": "2005-06",
         "stream": "Child",
         "value": 2547,
         "i": 21
       },
       {
-        "year": "2006–07",
+        "year": "2006-07",
         "stream": "Child",
         "value": 3008,
         "i": 22
       },
       {
-        "year": "2007–08",
+        "year": "2007-08",
         "stream": "Child",
         "value": 3062,
         "i": 23
       },
       {
-        "year": "2008–09",
+        "year": "2008-09",
         "stream": "Child",
         "value": 3238,
         "i": 24
       },
       {
-        "year": "2009–10",
+        "year": "2009-10",
         "stream": "Child",
         "value": 3544,
         "i": 25
       },
       {
-        "year": "2010–11",
+        "year": "2010-11",
         "stream": "Child",
         "value": 3300,
         "i": 26
       },
       {
-        "year": "2011–12",
+        "year": "2011-12",
         "stream": "Child",
         "value": 3700,
         "i": 27
       },
       {
-        "year": "2012–13",
+        "year": "2012-13",
         "stream": "Child",
         "value": 3850,
         "i": 28
       },
       {
-        "year": "2013–14",
+        "year": "2013-14",
         "stream": "Child",
         "value": 3850,
         "i": 29
       },
       {
-        "year": "2014–15",
+        "year": "2014-15",
         "stream": "Child",
         "value": 4135,
         "i": 30
       },
       {
-        "year": "2015–16",
+        "year": "2015-16",
         "stream": "Child",
         "value": 3512,
         "i": 31
       },
       {
-        "year": "2016–17",
+        "year": "2016-17",
         "stream": "Child",
         "value": 3400,
         "i": 32
       },
       {
-        "year": "2017–18",
+        "year": "2017-18",
         "stream": "Child",
         "value": 3350,
         "i": 33
       },
       {
-        "year": "2018–19",
+        "year": "2018-19",
         "stream": "Child",
         "value": 3248,
         "i": 34
       },
       {
-        "year": "2019–20",
+        "year": "2019-20",
         "stream": "Child",
         "value": 2481,
         "i": 35
       },
       {
-        "year": "2020–21",
+        "year": "2020-21",
         "stream": "Child",
         "value": 3006,
         "i": 36
       },
       {
-        "year": "2021–22",
+        "year": "2021-22",
         "stream": "Child",
         "value": 3006,
         "i": 37
       },
       {
-        "year": "2022–23",
+        "year": "2022-23",
         "stream": "Child",
         "value": 3000,
         "i": 38
       },
       {
-        "year": "2023–24",
+        "year": "2023-24",
         "stream": "Child",
         "value": 3000,
         "i": 39
       },
       {
-        "year": "2024–25",
+        "year": "2024-25",
         "stream": "Child",
         "value": 3000,
         "i": 40
       }
     ]
   },
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone"
-  },
-  "encoding": {
-    "x": {
-      "field": "i",
-      "type": "quantitative",
-      "axis": {
-        "title": "Year",
-        "titleFontWeight": "bold",
-        "titleFontSize": 12,
-        "titlePadding": 10,
-        "labelFontWeight": "bold",
-        "labelFontSize": 11,
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+          "field": "i",
+          "type": "quantitative",
+          "axis": {
+            "title": "Year",
+            "titleFontWeight": "bold",
+            "titleFontSize": 12,
+            "titlePadding": 10,
+            "labelFontWeight": "bold",
+            "labelFontSize": 11,
+            "values": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40
+            ],
+            "labelExpr": "[\"1984-85\",\"1989-90\",\"1994-95\",\"1999-00\",\"2004-05\",\"2009-10\",\"2014-15\",\"2019-20\",\"2024-25\"][indexof([0,5,10,15,20,25,30,35,40], datum.value)]",
+            "labelAngle": -35,
+            "gridColor": "#e5e7eb"
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "stack": "zero",
+          "axis": {
+            "title": "Visa Grants",
+            "titleFontWeight": "bold",
+            "titleFontSize": 12,
+            "labelFontWeight": "bold",
+            "labelFontSize": 11,
+            "labelExpr": "datum.value >= 0 ? (datum.value/1000) + 'k' : '-' + ((-datum.value)/1000) + 'k'",
+            "gridColor": "#e5e7eb"
+          }
+        },
+        "color": {
+          "field": "stream",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Skill",
+              "Family",
+              "Child"
+            ],
+            "range": [
+              "#2563eb",
+              "#f59e0b",
+              "#10b981"
+            ]
+          },
+          "legend": {
+            "title": "Stream",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "stream",
+            "title": "Stream"
+          },
+          {
+            "field": "value",
+            "title": "Visa Grants",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
         "values": [
-          0,
-          5,
-          10,
-          15,
-          20,
-          25,
-          30,
-          35,
-          40
-        ],
-        "labelExpr": "[\"1984–85\",\"1989–90\",\"1994–95\",\"1999–00\",\"2004–05\",\"2009–10\",\"2014–15\",\"2019–20\",\"2024–25\"][indexof([0,5,10,15,20,25,30,35,40], datum.value)]",
-        "labelAngle": -35,
-        "gridColor": "#e5e7eb"
-      }
-    },
-    "y": {
-      "field": "value",
-      "type": "quantitative",
-      "stack": "zero",
-      "axis": {
-        "title": "Visa Grants",
-        "titleFontWeight": "bold",
-        "titleFontSize": 12,
-        "labelFontWeight": "bold",
-        "labelFontSize": 11,
-        "labelExpr": "datum.value >= 0 ? (datum.value/1000) + 'k' : '-' + ((-datum.value)/1000) + 'k'",
-        "gridColor": "#e5e7eb"
-      }
-    },
-    "color": {
-      "field": "stream",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "Skill",
-          "Family",
-          "Child"
-        ],
-        "range": [
-          "#2563eb",
-          "#f59e0b",
-          "#10b981"
+          {
+            "i": 0,
+            "value": 58000,
+            "label": "1984: Family 4× Skill"
+          }
         ]
       },
-      "legend": {
-        "title": "Stream",
-        "orient": "right"
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "fontStyle": "italic",
+        "color": "#111827",
+        "align": "left",
+        "dx": 10,
+        "dy": -4
+      },
+      "encoding": {
+        "x": {
+          "field": "i",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
     },
-    "tooltip": [
-      {
-        "field": "year",
-        "title": "Year"
+    {
+      "data": {
+        "values": [
+          {
+            "i": 16,
+            "value": 82000,
+            "label": "1997-98: Skill overtakes Family"
+          }
+        ]
       },
-      {
-        "field": "stream",
-        "title": "Stream"
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "fontStyle": "italic",
+        "color": "#111827",
+        "align": "left",
+        "dx": -100,
+        "dy": -4
       },
-      {
-        "field": "value",
-        "title": "Visa Grants",
-        "format": ","
+      "encoding": {
+        "x": {
+          "field": "i",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
-    ]
-  }
+    }
+  ]
 }

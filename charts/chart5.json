@@ -209,7 +209,7 @@
             ]
           },
           "legend": {
-            "title": "Arrivals 2024–25",
+            "title": "Arrivals 2024-25",
             "labelExpr": "(datum.value/1000) + 'k'",
             "orient": "right",
             "direction": "vertical",
