@@ -3,7 +3,6 @@
   "width": "container",
   "height": 450,
   "background": "#ffffff",
-  
   "config": {
     "view": {
       "stroke": null

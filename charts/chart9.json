@@ -3,62 +3,270 @@
   "width": 700,
   "height": 420,
   "background": "#ffffff",
-  "config": {"view": {"stroke": null}},
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "data": {
     "values": [
-      {"year": "2015-16", "category": "Employer Sponsored", "visas": 48250},
-      {"year": "2015-16", "category": "State/Territory Nominated", "visas": 24650},
-      {"year": "2015-16", "category": "Skilled Independent", "visas": 43994},
-      {"year": "2015-16", "category": "Regional", "visas": 0},
-      {"year": "2015-16", "category": "Other", "visas": 11456},
-      {"year": "2016-17", "category": "Employer Sponsored", "visas": 48250},
-      {"year": "2016-17", "category": "State/Territory Nominated", "visas": 23765},
-      {"year": "2016-17", "category": "Skilled Independent", "visas": 42422},
-      {"year": "2016-17", "category": "Regional", "visas": 0},
-      {"year": "2016-17", "category": "Other", "visas": 9130},
-      {"year": "2017-18", "category": "Employer Sponsored", "visas": 35528},
-      {"year": "2017-18", "category": "State/Territory Nominated", "visas": 27400},
-      {"year": "2017-18", "category": "Skilled Independent", "visas": 39137},
-      {"year": "2017-18", "category": "Regional", "visas": 0},
-      {"year": "2017-18", "category": "Other", "visas": 9034},
-      {"year": "2018-19", "category": "Employer Sponsored", "visas": 42012},
-      {"year": "2018-19", "category": "State/Territory Nominated", "visas": 25346},
-      {"year": "2018-19", "category": "Skilled Independent", "visas": 34247},
-      {"year": "2018-19", "category": "Regional", "visas": 0},
-      {"year": "2018-19", "category": "Other", "visas": 8108},
-      {"year": "2019-20", "category": "Employer Sponsored", "visas": 29261},
-      {"year": "2019-20", "category": "State/Territory Nominated", "visas": 21495},
-      {"year": "2019-20", "category": "Skilled Independent", "visas": 12986},
-      {"year": "2019-20", "category": "Regional", "visas": 23372},
-      {"year": "2019-20", "category": "Other", "visas": 8729},
-      {"year": "2020-21", "category": "Employer Sponsored", "visas": 23503},
-      {"year": "2020-21", "category": "State/Territory Nominated", "visas": 14268},
-      {"year": "2020-21", "category": "Skilled Independent", "visas": 7213},
-      {"year": "2020-21", "category": "Regional", "visas": 13585},
-      {"year": "2020-21", "category": "Other", "visas": 21051},
-      {"year": "2021-22", "category": "Employer Sponsored", "visas": 26103},
-      {"year": "2021-22", "category": "State/Territory Nominated", "visas": 19376},
-      {"year": "2021-22", "category": "Skilled Independent", "visas": 5864},
-      {"year": "2021-22", "category": "Regional", "visas": 18223},
-      {"year": "2021-22", "category": "Other", "visas": 19497},
-      {"year": "2022-23", "category": "Employer Sponsored", "visas": 35000},
-      {"year": "2022-23", "category": "State/Territory Nominated", "visas": 31000},
-      {"year": "2022-23", "category": "Skilled Independent", "visas": 32100},
-      {"year": "2022-23", "category": "Regional", "visas": 33944},
-      {"year": "2022-23", "category": "Other", "visas": 10300},
-      {"year": "2023-24", "category": "Employer Sponsored", "visas": 36825},
-      {"year": "2023-24", "category": "State/Territory Nominated", "visas": 30400},
-      {"year": "2023-24", "category": "Skilled Independent", "visas": 30375},
-      {"year": "2023-24", "category": "Regional", "visas": 32300},
-      {"year": "2023-24", "category": "Other", "visas": 7200},
-      {"year": "2024-25", "category": "Employer Sponsored", "visas": 44000},
-      {"year": "2024-25", "category": "State/Territory Nominated", "visas": 33000},
-      {"year": "2024-25", "category": "Skilled Independent", "visas": 16900},
-      {"year": "2024-25", "category": "Regional", "visas": 32948},
-      {"year": "2024-25", "category": "Other", "visas": 5300}
+      {
+        "year": "2015-16",
+        "category": "Employer Sponsored",
+        "visas": 48250
+      },
+      {
+        "year": "2015-16",
+        "category": "State/Territory Nominated",
+        "visas": 24650
+      },
+      {
+        "year": "2015-16",
+        "category": "Skilled Independent",
+        "visas": 43994
+      },
+      {
+        "year": "2015-16",
+        "category": "Regional",
+        "visas": 0
+      },
+      {
+        "year": "2015-16",
+        "category": "Other",
+        "visas": 11456
+      },
+      {
+        "year": "2016-17",
+        "category": "Employer Sponsored",
+        "visas": 48250
+      },
+      {
+        "year": "2016-17",
+        "category": "State/Territory Nominated",
+        "visas": 23765
+      },
+      {
+        "year": "2016-17",
+        "category": "Skilled Independent",
+        "visas": 42422
+      },
+      {
+        "year": "2016-17",
+        "category": "Regional",
+        "visas": 0
+      },
+      {
+        "year": "2016-17",
+        "category": "Other",
+        "visas": 9130
+      },
+      {
+        "year": "2017-18",
+        "category": "Employer Sponsored",
+        "visas": 35528
+      },
+      {
+        "year": "2017-18",
+        "category": "State/Territory Nominated",
+        "visas": 27400
+      },
+      {
+        "year": "2017-18",
+        "category": "Skilled Independent",
+        "visas": 39137
+      },
+      {
+        "year": "2017-18",
+        "category": "Regional",
+        "visas": 0
+      },
+      {
+        "year": "2017-18",
+        "category": "Other",
+        "visas": 9034
+      },
+      {
+        "year": "2018-19",
+        "category": "Employer Sponsored",
+        "visas": 42012
+      },
+      {
+        "year": "2018-19",
+        "category": "State/Territory Nominated",
+        "visas": 25346
+      },
+      {
+        "year": "2018-19",
+        "category": "Skilled Independent",
+        "visas": 34247
+      },
+      {
+        "year": "2018-19",
+        "category": "Regional",
+        "visas": 0
+      },
+      {
+        "year": "2018-19",
+        "category": "Other",
+        "visas": 8108
+      },
+      {
+        "year": "2019-20",
+        "category": "Employer Sponsored",
+        "visas": 29261
+      },
+      {
+        "year": "2019-20",
+        "category": "State/Territory Nominated",
+        "visas": 21495
+      },
+      {
+        "year": "2019-20",
+        "category": "Skilled Independent",
+        "visas": 12986
+      },
+      {
+        "year": "2019-20",
+        "category": "Regional",
+        "visas": 23372
+      },
+      {
+        "year": "2019-20",
+        "category": "Other",
+        "visas": 8729
+      },
+      {
+        "year": "2020-21",
+        "category": "Employer Sponsored",
+        "visas": 23503
+      },
+      {
+        "year": "2020-21",
+        "category": "State/Territory Nominated",
+        "visas": 14268
+      },
+      {
+        "year": "2020-21",
+        "category": "Skilled Independent",
+        "visas": 7213
+      },
+      {
+        "year": "2020-21",
+        "category": "Regional",
+        "visas": 13585
+      },
+      {
+        "year": "2020-21",
+        "category": "Other",
+        "visas": 21051
+      },
+      {
+        "year": "2021-22",
+        "category": "Employer Sponsored",
+        "visas": 26103
+      },
+      {
+        "year": "2021-22",
+        "category": "State/Territory Nominated",
+        "visas": 19376
+      },
+      {
+        "year": "2021-22",
+        "category": "Skilled Independent",
+        "visas": 5864
+      },
+      {
+        "year": "2021-22",
+        "category": "Regional",
+        "visas": 18223
+      },
+      {
+        "year": "2021-22",
+        "category": "Other",
+        "visas": 19497
+      },
+      {
+        "year": "2022-23",
+        "category": "Employer Sponsored",
+        "visas": 35000
+      },
+      {
+        "year": "2022-23",
+        "category": "State/Territory Nominated",
+        "visas": 31000
+      },
+      {
+        "year": "2022-23",
+        "category": "Skilled Independent",
+        "visas": 32100
+      },
+      {
+        "year": "2022-23",
+        "category": "Regional",
+        "visas": 33944
+      },
+      {
+        "year": "2022-23",
+        "category": "Other",
+        "visas": 10300
+      },
+      {
+        "year": "2023-24",
+        "category": "Employer Sponsored",
+        "visas": 36825
+      },
+      {
+        "year": "2023-24",
+        "category": "State/Territory Nominated",
+        "visas": 30400
+      },
+      {
+        "year": "2023-24",
+        "category": "Skilled Independent",
+        "visas": 30375
+      },
+      {
+        "year": "2023-24",
+        "category": "Regional",
+        "visas": 32300
+      },
+      {
+        "year": "2023-24",
+        "category": "Other",
+        "visas": 7200
+      },
+      {
+        "year": "2024-25",
+        "category": "Employer Sponsored",
+        "visas": 44000
+      },
+      {
+        "year": "2024-25",
+        "category": "State/Territory Nominated",
+        "visas": 33000
+      },
+      {
+        "year": "2024-25",
+        "category": "Skilled Independent",
+        "visas": 16900
+      },
+      {
+        "year": "2024-25",
+        "category": "Regional",
+        "visas": 32948
+      },
+      {
+        "year": "2024-25",
+        "category": "Other",
+        "visas": 5300
+      }
     ]
   },
-  "mark": {"type": "bar", "cornerRadiusTopLeft": 2, "cornerRadiusTopRight": 2},
+  "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 2,
+    "cornerRadiusTopRight": 2
+  },
   "encoding": {
     "x": {
       "field": "year",
@@ -91,8 +299,20 @@
       "field": "category",
       "type": "nominal",
       "scale": {
-        "domain": ["Employer Sponsored","State/Territory Nominated","Skilled Independent","Regional","Other"],
-        "range": ["#3b82f6","#10b981","#f97316","#8b5cf6","#cbd5e1"]
+        "domain": [
+          "Employer Sponsored",
+          "State/Territory Nominated",
+          "Skilled Independent",
+          "Regional",
+          "Other"
+        ],
+        "range": [
+          "#3b82f6",
+          "#10b981",
+          "#f97316",
+          "#8b5cf6",
+          "#cbd5e1"
+        ]
       },
       "legend": {
         "title": "Visa Category",
@@ -109,9 +329,19 @@
       }
     },
     "tooltip": [
-      {"field": "year", "title": "Year"},
-      {"field": "category", "title": "Category"},
-      {"field": "visas", "title": "Visas Granted", "format": ","}
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "visas",
+        "title": "Visas Granted",
+        "format": ","
+      }
     ]
   }
 }
